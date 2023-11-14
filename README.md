@@ -8,7 +8,7 @@ This website is for a builder/handyman, with the aim of functioning essentially 
 Handyman's goals...
 - wants to be found
 - wants the platform to inspire sense of **trust** and reliability in potential clients
-- wants a means of receiving quote requests
+- wants a means of receiving quote requests. This could potentially save the handyman time driving to site if potential clients can submit pictures along with a description
 
 Buyer's goals...
 - wants to find a good builder
@@ -43,7 +43,7 @@ This site will act as an extended business card and will include information abo
 
 User stories
 
-- Old granny needs help with a leaky tap. Finds clear, easy to use, reassuring website.
+- Old granny needs help with a leaky tap. Finds clear, easy to use, reassuring website. The site's accessibility allowed her to contact the handyman.
 - A home-owner who usually turns to DIY to save money needs help with a problem above his skill level, or a problem he has no time to deal with.
 
 ## Structure
@@ -84,6 +84,15 @@ The information will be structured as follows:
 1) Get quote form (Job description, attach pics, customer details, submit button)
 2) Contact details 
 3) Map with base location and operating radius
+
+## Skeleton
+
+## Surface
+
+## Building the header
+
+
+
 
 
 
