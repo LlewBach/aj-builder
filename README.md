@@ -3,17 +3,24 @@
 
 ## Strategy
 
-This website is for a builder/handyman to function essentially as an extended business card.
+This website is for a builder/handyman, with the aim of functioning essentially as an extended business card.
 
-The handyman...
-- Wants to be found
-- Wants the platform to inspire sense of **trust** and reliability in potential clients
-- Wants a means of receiving quote requests
+Handyman's goals...
+- wants to be found
+- wants the platform to inspire sense of **trust** and reliability in potential clients
+- wants a means of receiving quote requests
 
-The buyer...
+Buyer's goals...
 - wants to find a good builder
 - wants **assurance** as to handyman's quality and character
 - wants a convenient means of contacting the handyman and of requesting quotes for jobs
+
+Target audience
+- homeowners, the majority without subject expertise
+- property managers, who will probably have a variety of tasks to do on a regular basis
+
+Unique selling proposition
+- Anthony Jones is an experienced builder who charges reasonable prices, as opposed to most other tradesmen whose prices still remain high after the demand of the COVID era
 
 Considerations
 - Unlike B2C interactions, which depend more on impulsive decision making on the part of customers, hiring a builder is more like a B2B consideration. This is because hiring a builder is more of a serious commitment, both financially and because one has to live with the result thereafter. For this reason, providing assurance is paramount.
@@ -77,6 +84,8 @@ The information will be structured as follows:
 1) Get quote form (Job description, attach pics, customer details, submit button)
 2) Contact details 
 3) Map with base location and operating radius
+
+
 
 
 
