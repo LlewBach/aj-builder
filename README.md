@@ -139,6 +139,16 @@ Vertical alignment this time. By drawing borders around the divs, I eventually r
 - give each column the class .justify-content-center
 - remove previous code attempting but failing to do this
 
+`console.log(ballAche);`
+
+According to Chrome dev tools, between roughly 992px and 1236px width, I was getting this...
+
+![capture-2.png](assets/captures/capture-2.PNG)
+
+With the dev tools, I could see that div padding was cramping the email. I removed this which resulted in the awkward range shrinking to 992-1120px. One temptation is to somehow redefine the lg breakpoint to skip this range. I will leave this problem for now however, as the content of the footer may change.
+
+
+
 
 
 

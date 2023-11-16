@@ -1,4 +1,6 @@
 body {
+  padding: 0;
+  margin: 0;
   height: 1000px;
 }
 
@@ -21,4 +23,12 @@ nav ul {
 
 footer {
   height: 100px;
+}
+
+footer p {
+  margin: 0;
+}
+
+#email-col {
+  padding: 0;
 }
