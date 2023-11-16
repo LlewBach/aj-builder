@@ -147,6 +147,29 @@ According to Chrome dev tools, between roughly 992px and 1236px width, I was get
 
 With the dev tools, I could see that div padding was cramping the email. I removed this which resulted in the awkward range shrinking to 992-1120px. One temptation is to somehow redefine the lg breakpoint to skip this range. I will leave this problem for now however, as the content of the footer may change.
 
+I decided I wanted to have icons between sm-md. I initially tried to move the icons out of the paragraph with classes .d-none d-md-block so that they would always appear. I eventually realised I could put a span around the text and move the display classes from the paragraph to the span, leaving the icons visible. I had to change the display from 'block' to 'inline' however in order to keep the icons and text inline when displayed together. I also set the icons to disappear below sm by adding classes to the icon. This also required adding a .col-sm-6 to the containing divs in order for the icons to line up.
+
+```
+<div class="row">
+  <div class="col-sm-6 col-md-12 col-lg-6 text-center">
+    <p>
+      <i class="fa-solid fa-phone-volume d-none d-sm-inline"></i>
+      <span class="d-none d-md-inline">
+        07359637607
+      </span>
+    </p>
+  </div>
+  <div id="email-col" class="col-sm-6 col-md-12 col-lg-6 text-center">
+    <p>
+      <i class="fa-regular fa-envelope d-none d-sm-inline"></i>
+      <span class="d-none d-md-inline">
+        a.andrew.jones71@gmail.com
+      </span>
+    </p>
+  </div>
+</div>
+```
+![capture-3.png](assets/captures/capture-3.PNG)
 
 
 
