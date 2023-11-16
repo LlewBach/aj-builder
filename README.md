@@ -173,6 +173,8 @@ I decided I wanted to have icons between sm-md. I initially tried to move the ic
 
 I had previously tried to format the icons to appear in xs size, but I think the button text size was compressing other columns which made it hard. I then thought that if I made the button text responsive (dropping 'Free' at smaller sizes) that the icons would align better which turned out to be true.
 
+![capture-4.png](assets/captures/capture-4.PNG)
+
 
 
 
