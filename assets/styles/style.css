@@ -19,3 +19,7 @@ nav ul {
 .nav-link:hover {
   color: blue;
 }
+
+footer {
+  height: 100px;
+}
