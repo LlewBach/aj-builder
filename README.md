@@ -176,6 +176,8 @@ I had previously tried to format the icons to appear in xs size, but I think the
 ![capture-4.png](assets/captures/capture-4.PNG)
 
 
+I realised that dealing with the awkward range at the lg breakpoint would be easy if I changed the sub-column stacking from stacked to inline at the xl breakpoint instead, only 3 changes.
+
 
 
 
