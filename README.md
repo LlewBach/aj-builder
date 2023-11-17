@@ -95,7 +95,7 @@ In the next section, I will log the building process and the considerations and 
 
 With regards to the actual content of the site at this stage, I have to use some imagination as my client is rather unresponsive shall we say (contrary to the raving testimonials I shall later devise).
 
-## Building the header and footer
+## Building the navbar and footer
 
 I knew that I wanted to use the bootstrap navbar, because of its collapse functionality. However, I wondered whether or not I should wrap it in a header tag for semantic reasons. I decided that the nav element does this sufficiently well.
 
@@ -179,6 +179,18 @@ I had previously tried to format the icons to appear in xs size, but I think the
 I realised that dealing with the awkward range at the lg breakpoint would be easy if I changed the sub-column stacking from stacked to inline at the xl breakpoint instead, only 3 changes.
 
 I wanted to give the navbar and footer a dark theme so I could better see their outlines. I had to check the bootstrap docs to see that I needed a data-bs-theme attribute to apply this to the navbar. 
+
+## Building the hero (header)
+
+I was unsure of how to use the header element, but I think it is ok to use for the hero section.
+
+Because my navbar and footer are fixed, I set a margin to the header to exactly match their heights. However, on the small width I've noticed that the bootstrap navbar height is responsive and narrows, leaving whitespace. To address this I will remove the background-image margin. Because my text was centered, getting rid of the margin has also centered the text relative to the viewport.
+
+I looked at w3 schools to learn how to add the parallax effect, and only one line was required, background-attachment: fixed;
+
+## Building the services section
+
+
 
 
 
