@@ -21,8 +21,18 @@ nav ul {
   color: rgb(255, 196, 0);
 }
 
+header {
+  margin: 71px 0;
+  padding: 0;
+  background-image: url(../images/eugen-str-CrhsIRY3JWY-unsplash\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 footer {
-  height: 100px;
+  height: 71px;
 }
 
 footer p {
