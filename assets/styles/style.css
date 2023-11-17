@@ -31,6 +31,12 @@ header {
   background-attachment: fixed;
 }
 
+.service-divider {
+  border-bottom: 2px solid #212529;
+  width: 60%;
+  margin: 10px auto;
+}
+
 footer {
   height: 71px;
 }

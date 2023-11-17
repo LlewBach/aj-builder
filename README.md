@@ -190,6 +190,21 @@ I looked at w3 schools to learn how to add the parallax effect, and only one lin
 
 ## Building the services section
 
+Having gained some confidence with bootstrap grid after the footer, I went back and made a mobile wireframe of this section. When I made my first item, the image overflowed from its container, so I went to Bootstrap docs, and under images I saw the option for the .img-thumbnail class, which conveniently sizes the images for me.
+
+I downloaded the smallest version of each image from unsplash.com.
+
+I used padding to reduce the thumbnail size. However, with dev tools, I realised that I could keep the image size and bring the items closer together by using .px-4 rather than .p-4.
+
+![capture-5.png](assets/captures/capture-5.PNG)
+
+I decided to turn the service titles into bootstrap dropdown buttons.
+
+![capture-6.png](assets/captures/capture-6.PNG)
+
+My partner then strolled in and said this was a lot of whitespace and it wasn't clear which title belonged to what, so I decided to add dividers.
+
+I asked GPT-4 for ideas on how I might do this and it suggested using an empty div and formatting the borders. At this stage, I'm hoping that I'll be able to manage this well as I modify the grid layout for larger screens.
 
 
 
