@@ -30,19 +30,19 @@ header {
 }
 
 .service-item img {
-  margin-bottom: 10px;
   max-height: 172px;
 }
 
 .service-item button {
+  margin-top: 10px;
   margin-bottom: 30px;
   min-width: 130px;
 }
 
 .service-divider {
-  border-bottom: 2px solid #212529;
+  border-bottom: 4px solid #212529;
   width: 60%;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 footer {
