@@ -254,6 +254,24 @@ Some of the pictures have different sizes. I don't know how bootstraps .img-thum
 
 This was actually easy to solve. Using dev tools, I realised that all the images had equal widths, and sometimes varying height. I measured the most common height, then set a max-height at 1px greater.
 
+As I'm working on the 4x2 layout for xl+ screens, I initially reactivated the fourth service div and limited the media query with a (max-width: 1200px) but I got this.
+
+![capture-11.png](assets/captures/capture-11.PNG)
+
+I've got a feeling that this is due to the max-width declaration on this div.
+
+I had to write a separate media query for this, which fixed the issue. I also had to adjust the margin to suit the layout.
+
+``` css
+@media only screen and (min-width: 1200px) {
+  .service-divider {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+```
+I changed the width to 90% in order to better match the sm layout.
+
 
 
 
