@@ -206,6 +206,48 @@ My partner then strolled in and said this was a lot of whitespace and it wasn't 
 
 I asked GPT-4 for ideas on how I might do this and it suggested using an empty div and formatting the borders. At this stage, I'm hoping that I'll be able to manage this well as I modify the grid layout for larger screens.
 
+The following day, my fears turned out to be justified! Trying to be clever, I wanted the service dividers to switch to vertical alignment at the md-breakpoint. I thought this would be easy by changing the col-md-x proportions and simply adding a media query and switching the width declaration for height as follows.
+
+![capture-7.png](assets/captures/capture-7.png)
+
+``` css
+.service-divider {
+  border-bottom: 2px solid #212529;
+  width: 60%;
+  margin: 10px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .service-divider {
+    border-left: 2px solid #212529;
+    height: 60%;
+    margin: 0 auto;
+  }
+}
+```
+![capture-8.png](assets/captures/capture-8.PNG)
+
+I have no idea why it's behaving like this. I know that divs have different default widths and heights, but surely the horizontal dividers should at least not appear at all at the mid width range?
+
+I managed to solve it by removing any reference to height whatsoever. 
+
+``` css
+@media only screen and (min-width: 768px) {
+  .service-divider {
+    border-left: 2px solid #212529;
+    border-right: 2px solid #212529;
+    width: 0px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+```
+![capture-9.png](assets/captures/capture-9.PNG)
+
+Even if I set the divider height to 100% it completely disappears. I am however content to move on!
+
+
+
 
 
 

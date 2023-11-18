@@ -29,11 +29,7 @@ header {
   background-attachment: fixed;
 }
 
-.service-divider {
-  border-bottom: 2px solid #212529;
-  width: 60%;
-  margin: 10px auto;
-}
+
 
 footer {
   height: 71px;
@@ -45,4 +41,22 @@ footer p {
 
 #email-col {
   padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .service-divider {
+    border-bottom: 2px solid #212529;
+    width: 60%;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .service-divider {
+    border-left: 2px solid #212529;
+    border-right: 2px solid #212529;
+    width: 0px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
