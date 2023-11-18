@@ -31,10 +31,12 @@ header {
 
 .service-item img {
   margin-bottom: 10px;
+  max-height: 172px;
 }
 
 .service-item button {
   margin-bottom: 30px;
+  min-width: 130px;
 }
 
 .service-divider {

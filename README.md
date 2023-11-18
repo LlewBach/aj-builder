@@ -246,6 +246,16 @@ I managed to solve it by removing any reference to height whatsoever.
 
 Even if I set the divider height to 100% it completely disappears. I am however content to move on!
 
+`console.log(ballAche);`
+
+![capture-10.png](assets/captures/capture-10.PNG)
+
+Some of the pictures have different sizes. I don't know how bootstraps .img-thumbnail class works.
+
+This was actually easy to solve. Using dev tools, I realised that all the images had equal widths, and sometimes varying height. I measured the most common height, then set a max-height at 1px greater.
+
+
+
 
 
 
