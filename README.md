@@ -270,7 +270,9 @@ I had to write a separate media query for this, which fixed the issue. I also ha
   }
 }
 ```
-I changed the width to 90% in order to better match the sm layout.
+I changed the width to 90% in order to better match the sm layout. And that's the home page done for now!
+
+
 
 
 
