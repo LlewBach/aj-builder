@@ -272,6 +272,32 @@ I had to write a separate media query for this, which fixed the issue. I also ha
 ```
 I changed the width to 90% in order to better match the sm layout. And that's the home page done for now!
 
+## Building the About page
+
+At this point I wondered how should I organise the stylesheet. I considered a separate stylesheet for the navbar and footer, one for the content of each page. But I thought that it's currently not that long and it would be easier to stylise the whole site if it were one document. I then separated the stylesheet with comments into its different components.
+
+I found a found a YouTube tutorial covering "Split Screen Parallax Effect Tutorial | HTML CSS & Javascript". 
+
+https://www.youtube.com/watch?v=jvbL-VqACyM
+
+However, having started to follow along and apply the principles to my site, I am wondering how I am going to make this responsive. I think I am going to use Bootstrap grid to set one column on small screens and two on md+. In the one column layout, the subsection title will pin to the top of the screen (hopefully) and in the two column layout, the subsection titles will pin to the side as per the tutorial.
+
+Despite the mobile first approach, I will follow along for larger screen sizes first in order to learn the principles of ScrollMagic, with which I am completely unfamiliar.
+
+With the tutorial above, I had trouble implementing ScrollMagic. I found another lesson YouTube series that is very good.
+
+https://www.youtube.com/watch?v=qTzXNJeoHDw&list=PLugdEmbrdWSwKttz5Yfqt9jpNakpA_1Io&index=2
+
+On my About page, I have now been able to pin an item for a fixed duration of scrolling. 
+
+![capture-12.png](assets/captures/capture-12.PNG)
+
+![capture-13.png](assets/captures/capture-13.PNG)
+
+
+
+
+
 
 
 

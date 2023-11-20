@@ -2,6 +2,8 @@ body {
   padding-bottom: 87px;
 }
 
+/* --------------------------------------- Navbar */
+
 .navbar-brand {
   padding-top: 0;
   margin-top: 0;
@@ -19,7 +21,9 @@ nav ul {
   color: rgb(255, 196, 0);
 }
 
-header {
+/* --------------------------------------- Index */
+
+.index-header {
   margin: 0;
   padding: 0;
   background-image: url(../images/hero-1.jpg);
@@ -45,6 +49,43 @@ header {
   margin: 15px auto;
 }
 
+/* --------------------------------------- About */
+
+.parallax-section {
+  height: 300vh;
+}
+
+.about-title {
+  width: 50%;
+}
+
+.about-text {
+  width: 50%;
+  height: 100vh;
+}
+
+.about-text p {
+  width: 80%;
+  margin: 0;
+}
+
+
+/* .description {
+  margin-bottom: 200px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.description.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+
+
+/* --------------------------------------- Footer */
+
 footer {
   height: 71px;
 }
@@ -56,6 +97,8 @@ footer p {
 #email-col {
   padding: 0;
 }
+
+/* --------------------------------------- Media Queries */
 
 @media only screen and (min-width: 768px) {
   .service-divider {
