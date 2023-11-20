@@ -296,7 +296,11 @@ At this point my progress was stalling. I asked my mentor if he was familiar wit
 
 `position: sticky;`
 
-Having experimented with it, I am in love with how much simpler it is.
+Having experimented with it, I am in love with how much simpler it is and I can't wait to spend the rest of my days with it.
+
+My new plan is to have a very simple sticky effect, where the title of each section sticks to the top of the screen below the navbar. I will simulate text appearing and disappearing at the start and end by placing a cover with a high-z index at the top and bottom of each section.
+
+
 
 
 
