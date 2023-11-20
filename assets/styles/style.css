@@ -51,36 +51,30 @@ nav ul {
 
 /* --------------------------------------- About */
 
-.parallax-section {
-  height: 300vh;
-}
-
-.about-title {
-  width: 50%;
-}
-
-.about-text {
-  width: 50%;
+#sticky-col {
+  background-color: pink;
   height: 100vh;
+
 }
 
-.about-text p {
-  width: 80%;
-  margin: 0;
+#sticky-col2 {
+  background-color: lightblue;
 }
 
-
-/* .description {
-  margin-bottom: 200px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease-out;
+#sticky1 {
+  position: sticky;
+  top: 40vh;
 }
 
-.description.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-} */
+#sticky2 {
+  position: sticky;
+  top: 50px;
+  background-color: white;
+}
+
+.spacer {
+  height: 30vh;
+}
 
 
 

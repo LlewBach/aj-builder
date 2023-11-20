@@ -282,9 +282,7 @@ https://www.youtube.com/watch?v=jvbL-VqACyM
 
 However, having started to follow along and apply the principles to my site, I am wondering how I am going to make this responsive. I think I am going to use Bootstrap grid to set one column on small screens and two on md+. In the one column layout, the subsection title will pin to the top of the screen (hopefully) and in the two column layout, the subsection titles will pin to the side as per the tutorial.
 
-Despite the mobile first approach, I will follow along for larger screen sizes first in order to learn the principles of ScrollMagic, with which I am completely unfamiliar.
-
-With the tutorial above, I had trouble implementing ScrollMagic. I found another lesson YouTube series that is very good.
+With the tutorial above, I had trouble implementing ScrollMagic as I do not fully understand the automatic formatting it implements. I found another lesson YouTube series that is very good.
 
 https://www.youtube.com/watch?v=qTzXNJeoHDw&list=PLugdEmbrdWSwKttz5Yfqt9jpNakpA_1Io&index=2
 
@@ -293,6 +291,14 @@ On my About page, I have now been able to pin an item for a fixed duration of sc
 ![capture-12.png](assets/captures/capture-12.PNG)
 
 ![capture-13.png](assets/captures/capture-13.PNG)
+
+At this point my progress was stalling. I asked my mentor if he was familiar with ScrollMagic as I was wondering if there were an industry standard, perhaps with better, more recent tutorials online. He pointed out that JavaScript would not be marked for this project and that CSS would be sufficient for my needs. Upon further research I came across the Holy Grail
+
+`position: sticky;`
+
+Having experimented with it, I am in love with how much simpler it is.
+
+
 
 
 
