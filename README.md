@@ -292,13 +292,32 @@ On my About page, I have now been able to pin an item for a fixed duration of sc
 
 ![capture-13.png](assets/captures/capture-13.PNG)
 
-At this point my progress was stalling. I asked my mentor if he was familiar with ScrollMagic as I was wondering if there were an industry standard, perhaps with better, more recent tutorials online. He pointed out that JavaScript would not be marked for this project and that CSS would be sufficient for my needs. Upon further research I came across the Holy Grail
+At this point my progress was stalling. I asked my mentor if he was familiar with ScrollMagic as I was wondering if there were an industry standard for animated scrolling, perhaps with better, more recent tutorials online. He pointed out that JavaScript would not be marked for this project and that CSS would be sufficient for my needs. Upon further research I came across the Holy Grail
 
 `position: sticky;`
 
-Having experimented with it, I am in love with how much simpler it is and I can't wait to spend the rest of my days with it.
+Having experimented with it, I am in love with how much simpler it is.
 
-My new plan is to have a very simple sticky effect, where the title of each section sticks to the top of the screen below the navbar. I will simulate text appearing and disappearing at the start and end by placing a cover with a high-z index at the top and bottom of each section.
+My new plan is to have a very simple sticky effect, where the title of each section sticks to the top of the screen below the navbar. I will try to simulate text appearing and disappearing at the start and end by placing a cover with a high-z index at the top and bottom of each section.
+
+With the fixed images, I had a fair amount of trouble with containing them. To get a parallax effect, I had to use CSS background properties rather than an image element. I then found out that the background-attachment: fixed; declaration positions and sizes the background image relative to the viewport, not the container. To get around this I set...
+
+```css
+.image-col {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: auto 70%;
+  background-attachment: fixed;
+}
+
+#image-1 {
+  background-image: url(../images/about/about-fake-1.png);
+}
+```
+
+However, because these values are relative to the viewport, not the container, it is hard to perfect positioning on all screen sizes, as all the other elements behave relative to their containers.
+
 
 
 

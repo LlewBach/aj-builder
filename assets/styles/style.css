@@ -51,23 +51,40 @@ nav ul {
 
 /* --------------------------------------- About */
 
+.about-header {
+  background-color: aquamarine;
+}
+
 .sticky-row {
-  height: 100vh;
-  background-color: lightblue;
+  min-height: 80vh;
 }
 
 .image-col {
   padding: 0;
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: auto 70%;
+  background-attachment: fixed;
 }
 
-.image-col img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+#image-1 {
+  background-image: url(../images/about/about-fake-1.png);
 }
+
+#image-2 {
+  background-image: url(../images/about/about-fake-2.png);
+}
+
+#image-3 {
+  background-image: url(../images/about/about-fake-3.png);
+}
+
+/* .image-col img {
+  object-fit: cover;
+  max-width: 80%;
+} */
 
 .text-col {
-  max-width: 500px;
   padding: 0 5%;
 }
 
@@ -78,6 +95,7 @@ nav ul {
 
 .spacer {
   height: 30vh;
+  background-color: lightblue;
 }
 
 .testimonial-section {
