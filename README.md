@@ -363,7 +363,27 @@ Which turned out pretty dang good...
 
 ![capture-18.png](assets/captures/capture-18.PNG)
 
-I had to leave a fair bit of padding at the top of the .sticky-title to help cover up the text passing underneath.
+I had to leave a fair bit of padding at the top of the .sticky-title to help cover up the text passing underneath. I've noticed on the xs-screens, the bootstrap navbar shrinks from a height of 71 to 55px, which leaves a gap through which passing text appears. Since adding padding to the top of the title is problematic as it affects where it appears, another option is to add another cover but I'd rather not do this in order to minimise the number of components.
+
+![capture-19.png](assets/captures/capture-19.PNG)
+
+Given that the footer doesn't change height across different widths, I am going to set a min-height of 71px to the navbar in order to avoid text exposure and improve symmetry. 
+
+For aesthetic consistency, I'm going to add a title cover to the bottom of the container so that the title disappears in the same way as it appears. Luckily this should involve duplication and minimal changes.
+
+I would like to modify the title cover to have an opacity gradient to better simulate a smooth fade effect.
+
+```css
+background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 85%,
+      rgba(255, 255, 255, 0) 100%);
+```
+I had to use only a small colour stop range for the fade effect as the height of the cover is quite small.
+
+![capture-20.png](assets/captures/capture-20.PNG)
+
+
 
 
 
