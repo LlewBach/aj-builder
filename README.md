@@ -318,6 +318,54 @@ With the fixed images, I had a fair amount of trouble with containing them. To g
 
 However, because these values are relative to the viewport, not the container, it is hard to perfect positioning on all screen sizes, as all the other elements behave relative to their containers.
 
+My next challenge is to replicate fading in and out of the .sticky-title elements. First I want to set the titles so that they start their 'fix' at the right time so that they can pop out from under their cover, have space to appear before paragraphs. This is how it currently looks...
+
+![capture-14.png](assets/captures/capture-14.PNG)
+
+![capture-15.png](assets/captures/capture-15.PNG)
+
+After some tinkering, I ended up inserting a div (.title-cover) above the h2 element in the .text-col, and styling as follows...
+
+```css
+.text-col {
+  padding: 0;
+  position: relative;
+}
+
+.title-cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 65px;
+  background-color: purple;
+  z-index: 1;
+}
+
+.sticky-title {
+  margin-bottom: 0;
+  padding: 20px 0 10px 0;
+  position: sticky;
+  top: 70px;
+  background-color: lightgoldenrodyellow
+}
+
+.text-col p:first-of-type {
+  background-color: pink;
+  margin-top: 120px;
+}
+```
+Which turned out pretty dang good...
+
+![capture-16.png](assets/captures/capture-16.PNG)
+
+![capture-17.png](assets/captures/capture-17.PNG)
+
+![capture-18.png](assets/captures/capture-18.PNG)
+
+I had to leave a fair bit of padding at the top of the .sticky-title to help cover up the text passing underneath.
+
+
 
 
 
