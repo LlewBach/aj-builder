@@ -177,24 +177,15 @@ nav ul {
 /* --------------------------------------- Contact */
 
 .contact-header {
-  margin: 71px 0;
+  margin: 86px 0 30px;
 }
 
 .form-section {
   margin-bottom: 50px;
 }
 
-.form-row {
-  height: 80vh;
-  background-color: pink;
-}
-
 textarea {
   height: 100px;
-}
-
-.submit-button-row {
-  background-color: orange;
 }
 
 .picture-col {

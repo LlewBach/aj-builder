@@ -469,13 +469,25 @@ This is what I have so far...
 
 ![capture-22.png](assets/captures/capture-22.PNG)
 
-What I would really like is for the job description label and box line up with the name and email inputs, and for the 'Upload Photos' label and input to line up with the 'Phone:' ones.
+What I would really like is for the job description label and box line up with the name and email inputs, and for the 'Upload Photos' label and input to line up with the 'Phone:' ones. 
+
+Having had a short break, I can see that the obvious answer is to split the form into two rows.
+
+![capture-23.png](assets/captures/capture-23.PNG)
+
+I've just realised that this will cause the form items to stack in the wrong order on small screens.
+
+![capture-24.png](assets/captures/capture-24.PNG)
+
+If I could switch the column order of the first row so that 'Job Description' and 'Name and Email' trade places, that will do. 
+
+Achieved with bootstrap order classes.
+
+![capture-25.png](assets/captures/capture-25.PNG)
 
 ### The 'info row'
 
 Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details.
-
-I
 
 
 

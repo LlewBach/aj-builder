@@ -41,8 +41,9 @@
   <section class="form-section">
     <form>
       <div class="container">
-        <div class="form-row row">
-          <div class="col-md-6 d-flex flex-column justify-content-between">
+
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-between">
 
             <label for="name" class="form-label">Name: </label>
             <div class="input-group">
@@ -52,7 +53,6 @@
               <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name">
             </div>
 
-
             <label for="email" class="form-label">Email: </label>
             <div class="input-group">
               <span class="input-group-text">
@@ -61,27 +61,8 @@
               <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com">
             </div>
 
-
-            <label for="phone" class="form-label">Phone: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-phone"></i>
-              </span>
-              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number">
-            </div>
-
-
-            <label for="postcode" class="form-label">Postcode: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-address-book"></i>
-              </span>
-              <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode">
-            </div>
-
-
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-between">
+          <div class="col-md-6 order-1 order-md-2 d-flex flex-column justify-content-between">
 
             <label for="job-description" class="form-label">Job Description</label>
             <div class="input-group">
@@ -92,6 +73,30 @@
                 placeholder="Please provide a short description of the jobs you have in mind"></textarea>
             </div>
 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <label for="phone" class="form-label">Phone: </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number">
+            </div>
+
+            <label for="postcode" class="form-label">Postcode: </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-address-book"></i>
+              </span>
+              <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode">
+            </div>
+          </div>
+          <div class="col-md-6">
+
             <label for="photo-upload" class="form-label">Upload Photos</label>
             <div class="input-group">
               <span class="input-group-text">
@@ -100,10 +105,8 @@
               <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
             </div>
 
-            <div class="submit-button-row row">
-              <div class="col d-flex justify-content-center align-items-center">
-                <input type="submit" value="Submit">
-              </div>
+            <div class="button-wrapper">
+              <input type="submit" value="Submit">
             </div>
 
           </div>
