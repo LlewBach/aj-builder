@@ -97,6 +97,8 @@ With regards to the actual content of the site at this stage, I have to use some
 
 ## Building the navbar and footer
 
+### Adding the navbar
+
 I knew that I wanted to use the bootstrap navbar, because of its collapse functionality. However, I wondered whether or not I should wrap it in a header tag for semantic reasons. I decided that the nav element does this sufficiently well.
 
 I copied the bootstrap navbar and modified the content.
@@ -109,7 +111,11 @@ I had a problem vertically aligning the logo text and the menu items due to the 
 
 The navbar and footer are fixed to top and bottom, so that everything is only one click away at all times.
 
+### Bootstrap classes vs CSS?
+
 By this point, I was wondering how extensively I should use Bootstrap classes rather than CSS. After all, one of the main points of using a stylesheet is to make the HTML more readable. I've decided to make use of bootstrap classes for the sake of consistency with regards to structural considerations such as flexbox, grid, centering items etc and using CSS if I can reuse code for more refined or superficial purposes multiple times (eg, using CSS to set margin-right: 20px for all the menu items rather than .me-x for each one). I realise this is something I'll have to refine with experience.
+
+### Responsive layout
 
 Initially, I thought I would vertically stack the footer items on small screens. However, I decided that this would be a pointless waste of screen real estate, because the contact details are only one click away anyway on the contact page. I therefore made all but the button .d-none at small screen sizes.
 
@@ -182,7 +188,7 @@ I wanted to give the navbar and footer a dark theme so I could better see their 
 
 ## Building the hero (header)
 
-I was unsure of how to use the header element, but I think it is ok to use for the hero section.
+I was unsure of how to use the header element, but I think it is ok to use for the hero section. (Future me: yes this makes good semantic sense).
 
 Because my navbar and footer are fixed, I set a margin to the header to exactly match their heights. However, on the small width I've noticed that the bootstrap navbar height is responsive and narrows, leaving whitespace. To address this I will remove the background-image margin. Because my text was centered, getting rid of the margin has also centered the text relative to the viewport.
 
@@ -274,7 +280,11 @@ I changed the width to 90% in order to better match the sm layout. And that's th
 
 ## Building the About Page .parallax-section
 
-At this point I wondered how should I organise the stylesheet. I considered a separate stylesheet for the navbar and footer, one for the content of each page. But I thought that it's currently not that long and it would be easier to stylise the whole site if it were one document. I then separated the stylesheet with comments into its different components.
+### Stylesheet considerations
+
+At this point I wondered how should I organise the stylesheet. I considered a separate stylesheet for the navbar and footer, one for the content of each page. But I thought that it's currently not that long and it would be easier to stylise the whole site if it were one document. (Future me: and having all the declarations in one place makes it much easier to look for conflicting rules when something doesn't behave as expected). I then separated the stylesheet with comments into its different components.
+
+### ScrollMagic rabbit hole
 
 I found a found a YouTube tutorial covering "Split Screen Parallax Effect Tutorial | HTML CSS & Javascript". 
 
@@ -292,6 +302,8 @@ On my About page, I have now been able to pin an item for a fixed duration of sc
 
 ![capture-13.png](assets/captures/capture-13.PNG)
 
+### Coming back to sanity and simple CSS
+
 At this point my progress was stalling. I asked my mentor if he was familiar with ScrollMagic as I was wondering if there were an industry standard for animated scrolling, perhaps with better, more recent tutorials online. He pointed out that JavaScript would not be marked for this project and that CSS would be sufficient for my needs. Upon further research I came across the Holy Grail
 
 `position: sticky;`
@@ -299,6 +311,8 @@ At this point my progress was stalling. I asked my mentor if he was familiar wit
 Having experimented with it, I am in love with how much simpler it is.
 
 My new plan is to have a very simple sticky effect, where the title of each section sticks to the top of the screen below the navbar. I will try to simulate text appearing and disappearing at the start and end by placing a cover with a high-z index at the top and bottom of each section.
+
+### Fixing images for parallax
 
 With the fixed images, I had a fair amount of trouble with containing them. To get a parallax effect, I had to use CSS background properties rather than an image element. I then found out that the background-attachment: fixed; declaration positions and sizes the background image relative to the viewport, not the container. To get around this I set...
 
@@ -317,6 +331,8 @@ With the fixed images, I had a fair amount of trouble with containing them. To g
 ```
 
 However, because these values are relative to the viewport, not the container, it is hard to perfect positioning on all screen sizes, as all the other elements behave relative to their containers.
+
+### Simulating fade in and out with sticky titles
 
 My next challenge is to replicate fading in and out of the .sticky-title elements. First I want to set the titles so that they start their 'fix' at the right time so that they can pop out from under their cover, have space to appear before paragraphs. This is how it currently looks...
 
@@ -367,7 +383,7 @@ I had to leave a fair bit of padding at the top of the .sticky-title to help cov
 
 ![capture-19.png](assets/captures/capture-19.PNG)
 
-Given that the footer doesn't change height across different widths, I am going to set a min-height of 71px to the navbar in order to avoid text exposure and improve symmetry. 
+Given that the footer doesn't change height across different widths, I am going to set a min-height of 71px to the navbar in order to avoid text exposure and improve symmetry with the footer. 
 
 For aesthetic consistency, I'm going to add a title cover to the bottom of the container so that the title disappears in the same way as it appears. Luckily this should involve duplication and minimal changes.
 
@@ -379,11 +395,13 @@ background: linear-gradient(to bottom,
       rgba(255, 255, 255, 1) 85%,
       rgba(255, 255, 255, 0) 100%);
 ```
-I had to use only a small colour stop range for the fade effect as the height of the cover is quite small.
+I had to use only a small colour stop range for the fade effect as the height of the cover is quite small and I don't want to add too much scrolling distance to the page.
 
 ![capture-20.png](assets/captures/capture-20.PNG)
 
 ## Building the About Page .testimonial-section
+
+### Image sizing
 
 For this I used the Bootstrap carousel component. Having never used this before, it involved a lot of trial and error to set it up to fit nicely and responsively between my navbar and footer. Bootstrap's carousel is set up to fill the viewport by default, but this was an issue because my navbar and footer are fixed. I experimented with different image sizes to find the smallest one that fulfilled my needs. I also had a problem with the images contracting and expanding in and out of view as the viewport width narrowed and widened. The reason I had difficulty with this was due to selecting the wrong targets. 
 
@@ -413,7 +431,7 @@ Here is the HTML hierarchy
   height: 100%;
 }
 ```
-I initially tried to controll the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. However, only the upper part of the image was in view. When I targeted the image element within that div, the full image filled the available view space on all screen sizes.
+I initially tried to controll the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. I assume this is because the image only responds to the height settings of its direct parent. However, only the upper part of the image was in view. When I targeted the image element within that div and set the height to 100%, the full image filled the available view space on all screen sizes.
 
 ![capture-21.png](assets/captures/capture-21.PNG)
 
@@ -429,7 +447,13 @@ After a short-lived feeling of relief, I encountered a new problem. On xs screen
 
 This works because at the xs breakpoint, the image width becomes the constraining factor. 
 
+### Carousel transitions
+
 Another issue was with the transitions between images. I'm not sure why, but the images would transition at a larger size then snap back into the size set by me. I asked GPT-4 for advice and one of its suggestions was to add `transition: none !important;` as shown above.
+
+### Carousel captions
+
+Below md sizes, the bootstrap carousel is set up to remove captions. However, because the point of this section is to provide testimonials, the caption text is actually the priority. I removed the .d-none and .d-md-block classes from the .carousel-caption divs. Then I realised that I need an overlay to make the text more legible. This I added but I had to target the .carousel-caption divs and give them a z-index of 2 to bring them above the overlay with a z-index of 1.
 
 
 
