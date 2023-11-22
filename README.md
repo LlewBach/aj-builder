@@ -465,7 +465,11 @@ https://www.youtube.com/watch?v=dKVX22GR7zQ
 
 As per the tutorial, I used .form-label, .form-control, .input-group and .input-group-text classes for some nice styling effects.
 
-I have yet to decide where to put the 'Upload photos' and 'Submit' buttons. 
+This is what I have so far...
+
+![capture-22.png](assets/captures/capture-22.PNG)
+
+What I would really like is for the job description label and box line up with the name and email inputs, and for the 'Upload Photos' label and input to line up with the 'Phone:' ones.
 
 ### The 'info row'
 

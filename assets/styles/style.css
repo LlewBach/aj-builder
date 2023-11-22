@@ -184,8 +184,17 @@ nav ul {
   margin-bottom: 50px;
 }
 
+.form-row {
+  height: 80vh;
+  background-color: pink;
+}
+
 textarea {
-  height: 200px;
+  height: 100px;
+}
+
+.submit-button-row {
+  background-color: orange;
 }
 
 .picture-col {
