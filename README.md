@@ -453,7 +453,30 @@ Another issue was with the transitions between images. I'm not sure why, but the
 
 ### Carousel captions
 
-Below md sizes, the bootstrap carousel is set up to remove captions. However, because the point of this section is to provide testimonials, the caption text is actually the priority. I removed the .d-none and .d-md-block classes from the .carousel-caption divs. Then I realised that I need an overlay to make the text more legible. This I added but I had to target the .carousel-caption divs and give them a z-index of 2 to bring them above the overlay with a z-index of 1.
+Below md sizes, the bootstrap carousel is set up to remove captions. However, because the point of this section is to provide testimonials, the caption text is actually the priority. I removed the .d-none and .d-md-block classes from the .carousel-caption divs. Then I realised that I need an overlay to make the text more legible. This I added but I then had to target the .carousel-caption divs and give them a z-index of 2 to bring them above the overlay with a z-index of 1.
+
+## Building the Contact page
+
+### The form
+
+I watched this tutorial to get an idea of how to use bootstrap classes for forms.
+
+https://www.youtube.com/watch?v=dKVX22GR7zQ
+
+As per the tutorial, I used .form-label, .form-control, .input-group and .input-group-text classes for some nice styling effects.
+
+I have yet to decide where to put the 'Upload photos' and 'Submit' buttons. 
+
+### The 'info row'
+
+Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details.
+
+I
+
+
+
+
+
 
 
 
