@@ -1,6 +1,4 @@
-body {
-  padding-bottom: 87px;
-}
+body {}
 
 /* --------------------------------------- Navbar */
 
@@ -35,6 +33,10 @@ nav ul {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.service-section {
+  margin-bottom: 87px;
 }
 
 .service-item img {
@@ -145,10 +147,18 @@ nav ul {
 }
 
 .testimonial-section {
-  height: 82vh;
+  margin-bottom: 70px;
+  background-color: lightcoral;
 }
 
+#carousel .carousel-item {
+  height: 82vh;
+  transition: none !important;
+}
 
+#carousel .carousel-item img {
+  height: 100%;
+}
 
 /* --------------------------------------- Footer */
 
@@ -166,6 +176,12 @@ footer p {
 
 /* --------------------------------------- Media Queries */
 
+@media only screen and (max-width: 576px) {
+  #carousel .carousel-item {
+    height: auto;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .service-divider {
     border-left: 2px solid #212529;
@@ -177,10 +193,6 @@ footer p {
 }
 
 @media only screen and (min-width: 1200px) {
-  body {
-    padding-bottom: 60px;
-  }
-
   .service-divider {
     width: 90%;
     margin: 0 auto 30px auto;

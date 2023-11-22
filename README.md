@@ -272,7 +272,7 @@ I had to write a separate media query for this, which fixed the issue. I also ha
 ```
 I changed the width to 90% in order to better match the sm layout. And that's the home page done for now!
 
-## Building the About page
+## Building the About Page .parallax-section
 
 At this point I wondered how should I organise the stylesheet. I considered a separate stylesheet for the navbar and footer, one for the content of each page. But I thought that it's currently not that long and it would be easier to stylise the whole site if it were one document. I then separated the stylesheet with comments into its different components.
 
@@ -382,6 +382,57 @@ background: linear-gradient(to bottom,
 I had to use only a small colour stop range for the fade effect as the height of the cover is quite small.
 
 ![capture-20.png](assets/captures/capture-20.PNG)
+
+## Building the About Page .testimonial-section
+
+For this I used the Bootstrap carousel component. Having never used this before, it involved a lot of trial and error to set it up to fit nicely and responsively between my navbar and footer. Bootstrap's carousel is set up to fill the viewport by default, but this was an issue because my navbar and footer are fixed. I experimented with different image sizes to find the smallest one that fulfilled my needs. I also had a problem with the images contracting and expanding in and out of view as the viewport width narrowed and widened. The reason I had difficulty with this was due to selecting the wrong targets. 
+
+Here is the HTML hierarchy
+```html
+<section class="testimonial-section">
+  <div id="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img>
+```
+
+```css
+.testimonial-section {
+  margin-bottom: 70px;
+  background-color: lightcoral;
+}
+
+#carousel {}
+
+#carousel .carousel-item {
+  height: 82vh;
+  transition: none !important;
+}
+
+#carousel .carousel-item img {
+  height: 100%;
+}
+```
+I initially tried to controll the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. However, only the upper part of the image was in view. When I targeted the image element within that div, the full image filled the available view space on all screen sizes.
+
+![capture-21.png](assets/captures/capture-21.PNG)
+
+After a short-lived feeling of relief, I encountered a new problem. On xs screen sizes, the images become squeezed width-wise. To fix this I added a media query.
+
+```css
+@media only screen and (max-width: 576px) {
+  #carousel .carousel-item {
+    height: auto;
+  }
+}
+```
+
+This works because at the xs breakpoint, the image width becomes the constraining factor. 
+
+Another issue was with the transitions between images. I'm not sure why, but the images would transition at a larger size then snap back into the size set by me. I asked GPT-4 for advice and one of its suggestions was to add `transition: none !important;` as shown above.
+
+
+
 
 
 
