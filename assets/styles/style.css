@@ -72,15 +72,15 @@ nav ul {
 }
 
 #image-1 {
-  background-image: url(../images/about/about-fake-1.png);
+  background-image: url(../images/about/about-1.png);
 }
 
 #image-2 {
-  background-image: url(../images/about/about-fake-2.png);
+  background-image: url(../images/about/about-2.png);
 }
 
 #image-3 {
-  background-image: url(../images/about/about-fake-3.png);
+  background-image: url(../images/about/about-3.png);
 }
 
 .text-col {
@@ -188,9 +188,17 @@ textarea {
   height: 100px;
 }
 
+.button-wrapper {
+  height: 50%;
+}
+
+.info-section {
+  margin-bottom: 30px;
+}
+
 .picture-col {
   height: 300px;
-  background-image: url(../images/builder-squirrel-2.png);
+  background-image: url(../images/call-me.png);
   background-size: cover;
   background-position: center;
 }
