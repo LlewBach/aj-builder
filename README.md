@@ -539,6 +539,83 @@ I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However
 
 My next challenge is to fine tune the point at which the 'sticky titles' pop out from under their covers, the spacing between the sticky titles and the paragraph, and the paragraph text sizes on all screens. 
 
+I realised that having changed the original Lorem ipsum text that was divided into three small paragraphs for one paragraph of 'real' text, the .justify-content-between was making the spacing weird. Given that the .text-col has an h2 and a p element, I would need a wrapper around the p element to center it without affecting the position of the h2.
+
+Having wrapped the paragraphs and centered them, they look much better. 
+
+This code is now drawing my attention...
+
+```css
+.text-col p:first-of-type {
+  margin-top: 120px;
+}
+
+.text-col p:last-of-type {
+  margin-bottom: 120px;
+}
+```
+
+The large and hard margin sizes are likely to be causing problems. However, having tried removing them, I remember their original purpose of keeping the paragraph out from under the title covers. I just need to bring them down to match the title cover height (~65px) more closely. I will bring them down to 80px for now.
+
+This actually caused the p text to overflow, which meant there was a contraining issue. I realised that giving the .p-wrapper a min-height of 100% was a mistake. I now believe the proper height of the p-wrapper should be 100% - 2 * (percentage height of title cover).
+
+Giving the title covers a % height rather than px has been tempting me for a while and the hour has now arrived.
+
+I thought I could make the .text-col children completely responsive by giving them heights that would add up to 100%. Here is the html of the structure.
+
+![capture-34.png](assets/captures/capture-34.png)
+
+I tried giving the title-covers a height of 20% each and the .p-wrapper a height of 60% but this didn't work and I don't know why. The .text-col has a defined height of 100vh, and the sticky-title is no longer in the flow. 
+
+I've just realised that the .title-cover divs are also removed from the document flow as they are positioned absolutely.
+
+I will try wrapping the h2 title in a div, and give that a specific height%.
+
+I've realised this wont work because now the title will only stick for the length of its div which is now very short. This is not an option.
+
+Even though this is a bit messy, I might just get rid of the p-wrapper, and add in a small p afterwards, then make the .text-col a flexbox and set justify-contents-around. This will center the paragraph responsively. The small p will be hidden under the bottom title cover and I'll also set the colour to match the background. There must be a better way to do this but this will have to do.
+
+Because I now have two paragraphs, one of which is 'sacrificial', I now have only a .text-col p:first-of-type selector. I have adopted the principle of setting the margin top and bottom for this to be slightly bigger than the title cover sizes. The specific sizes will have to be set for each screen with media queries, as their requirements are quite different. I have set the default for xs.
+
+Ok, I have found a balance of factors that work well on xs:
+
+- .title-cover height 20%
+- opacity gradient stop now starts at 50% for better effect
+- the main paragraph has margin top and bottom of 50%
+- sticky title padding now 20% top and bottom
+- sticky title top position of 5%
+
+I'm now going to finetune the factors above for xl, because md is a really awkward range for me, as the views on the iPad simulator and my compressed laptop screen are completely different, even though they are both in the md range.
+
+For the xl range, I have set the above factors as follows:
+
+```css
+.image-col {
+    background-size: auto 80%;
+    padding: 32% 0;
+}
+
+.sticky-title {
+  padding: 10% 0;
+}
+
+.text-col p:first-of-type {
+  font-size: 2rem;
+  margin: 25% auto;
+}
+```
+
+I luckily discovered that I can get the duration to the fixed image to match the text length by adjusting the top and bottom padding of the .image-col! Absolute game-changer! This might be applicable to the md range.
+
+
+
+
+
+
+
+
+
+
 
 
 
