@@ -503,13 +503,15 @@ Now, on my md-size laptop screen, the pages look pretty good. But after viewing 
 
 I would rather try to resolve the blatant spacing issues structurally rather than relying heavily on media queries. 
 
+### Making fixed images work responsively
+
 After some reflection, I think I need image wrappers to position the images properly.
 
-The wrappers did not work.
+The wrappers did not work at all.
 
 Also, originally I had the image column disappear below md. I tried to reintroduce it to smaller screens by removing the .d-flex and d-md-block classes, but all hell broke loose. 
 
-What followed next was an odessey of pain trying to resolve a problem I don't understand. I tried to resolve it by adjusting the stylesheet and html to an extent that I lost track of what I'd done and ended up making it worse. In the end I had to resort to 'git restore'. Having done this, the website actually seems better than I remember at the last git push, probably due to trauma. 
+What followed next was an odessey of pain trying to resolve a problem I still don't understand. I tried to resolve it by adjusting the stylesheet and html to an extent that I lost track of what I'd done and ended up making it worse. In the end I had to resort to 'git restore'. Having done this, the website actually seems better than I remember at the last git push, probably due to trauma. 
 
 Anyway, what I'm now facing is a curious but at least functional situation. I've reinstated the first .image-col to appear on smaller screens. On the iPhone 12 simulator, I get this...
 
@@ -523,7 +525,19 @@ No image to be seen.
 
 Even though I'd given .sticky-row a minimum height of 100vh, this was not inherited by the columns. After I gave both .image-col and .text-col a height of 100vh, things improved. However, I noticed that the .text-col text was getting squeezed into the following row, probably due to the hard margin rules of the inner paragraph. I changed the .text-col declaration to 'min-height: 100vh' and the issue was resolved on all screens.
 
-I decided to center the fixed images by default and reposition the images to the left in the md media query. Because fixed images are positioned relative to the viewport, I had initially given the fixed images a background-position: 10% center; on md+ screens.
+I decided to center the fixed images by default and reposition the images to the left in the md media query. Because fixed images are positioned relative to the viewport, I had initially given the fixed images (.image-col) a background-position: 10% center; on md+ screens. I tried doing position: left then translatingX by 25%, but I realised that this was moving the whole column which was disastrous. I then settled back on background-position: 10% center;
+
+But this did not resolve the issue ubiquitously. Below are the views of the page both on md screen sizes. The first on an iPad simulator, the second on my narrowed laptop screen.
+
+![capture-32.png](assets/captures/capture-32.PNG)
+
+![capture-33.png](assets/captures/capture-33.PNG)
+
+I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad.
+
+### Adjusting sticky titles and text
+
+My next challenge is to fine tune the point at which the 'sticky titles' pop out from under their covers, the spacing between the sticky titles and the paragraph, and the paragraph text sizes on all screens. 
 
 
 

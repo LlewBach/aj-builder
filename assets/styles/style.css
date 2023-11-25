@@ -239,7 +239,19 @@ footer p {
   }
 
   .image-col {
-    background-position: left center;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: ;
+  }
+}
+
+/* LG */
+
+@media only screen and (min-width: 992px) {
+  .image-col {
+    background-attachment: fixed;
+    background-position: 10% center;
+    background-size: auto 70%;
   }
 }
 
