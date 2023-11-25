@@ -59,14 +59,13 @@ nav ul {
   background-color: aquamarine;
 }
 
-.sticky-row {
-  min-height: 100vh;
-}
+.sticky-row {}
 
 .image-col {
+  height: 100vh;
   padding: 0;
   background-repeat: no-repeat;
-  background-position: 10% center;
+  background-position: center;
   background-size: auto 70%;
   background-attachment: fixed;
 }
@@ -84,6 +83,7 @@ nav ul {
 }
 
 .text-col {
+  min-height: 100vh;
   padding: 0;
   position: relative;
 }
@@ -219,11 +219,15 @@ footer p {
 
 /* --------------------------------------- Media Queries */
 
+/* XS Only */
+
 @media only screen and (max-width: 576px) {
   #carousel .carousel-item {
     height: auto;
   }
 }
+
+/* MD */
 
 @media only screen and (min-width: 768px) {
   .service-divider {
@@ -233,7 +237,13 @@ footer p {
     margin: 0 auto;
     padding: 0;
   }
+
+  .image-col {
+    background-position: left center;
+  }
 }
+
+/* XL */
 
 @media only screen and (min-width: 1200px) {
   .service-divider {

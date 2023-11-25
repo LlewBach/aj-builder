@@ -155,7 +155,7 @@ With the dev tools, I could see that div padding was cramping the email. I remov
 
 I decided I wanted to have icons between sm-md. I initially tried to move the icons out of the paragraph with classes .d-none d-md-block so that they would always appear. I eventually realised I could put a span around the text and move the display classes from the paragraph to the span, leaving the icons visible. I had to change the display from 'block' to 'inline' however in order to keep the icons and text inline when displayed together. I also set the icons to disappear below sm by adding classes to the icon. This also required adding a .col-sm-6 to the containing divs in order for the icons to line up.
 
-```
+```html
 <div class="row">
   <div class="col-sm-6 col-md-12 col-lg-6 text-center">
     <p>
@@ -487,7 +487,55 @@ Achieved with bootstrap order classes.
 
 ### The 'info row'
 
-Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details.
+Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details. The map I got from going to Google Maps, clicking 'share' then 'embed'.
+
+## Finetuning layout and positioning
+
+Now, on my md-size laptop screen, the pages look pretty good. But after viewing all the pages through the dev tool iPhone view, I realize that narrowing the laptop screen page width is not good enough of a test to see how pages look on small screens.
+
+![capture-26.png](assets/captures/capture-26.png)
+
+![capture-27.png](assets/captures/capture-27.png)
+
+![capture-28.png](assets/captures/capture-28.png)
+
+![capture-29.png](assets/captures/capture-29.png)
+
+I would rather try to resolve the blatant spacing issues structurally rather than relying heavily on media queries. 
+
+After some reflection, I think I need image wrappers to position the images properly.
+
+The wrappers did not work.
+
+Also, originally I had the image column disappear below md. I tried to reintroduce it to smaller screens by removing the .d-flex and d-md-block classes, but all hell broke loose. 
+
+What followed next was an odessey of pain trying to resolve a problem I don't understand. I tried to resolve it by adjusting the stylesheet and html to an extent that I lost track of what I'd done and ended up making it worse. In the end I had to resort to 'git restore'. Having done this, the website actually seems better than I remember at the last git push, probably due to trauma. 
+
+Anyway, what I'm now facing is a curious but at least functional situation. I've reinstated the first .image-col to appear on smaller screens. On the iPhone 12 simulator, I get this...
+
+![capture-30.png](assets/captures/capture-30.PNG)
+
+However, on a narrowed laptop screen, I get this...
+
+![capture-31.png](assets/captures/capture-31.PNG)
+
+No image to be seen.
+
+Even though I'd given .sticky-row a minimum height of 100vh, this was not inherited by the columns. After I gave both .image-col and .text-col a height of 100vh, things improved. However, I noticed that the .text-col text was getting squeezed into the following row, probably due to the hard margin rules of the inner paragraph. I changed the .text-col declaration to 'min-height: 100vh' and the issue was resolved on all screens.
+
+I decided to center the fixed images by default and reposition the images to the left in the md media query. Because fixed images are positioned relative to the viewport, I had initially given the fixed images a background-position: 10% center; on md+ screens.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
