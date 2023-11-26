@@ -684,6 +684,22 @@ I also changed the .form-section margin-bottom to 15% which spaces the two secti
 
 I set the form to change to a 4:8 col ratio on lg+ screens to avoid the smaller input fields getting too long.
 
+## Surface Plane
+
+Now I will work on the cosmetics of the website, such as colour palette, font pair, links and hover/focus states and accessibility.
+
+### Buttons and Links
+
+On the advice of GPT-4, I reformatted by footer button elements to an anchor element and styled it as a button. From the Bootstrap documentation, I gather that button elements are most often used to trigger JavaScripts. 
+
+I formatted the footer button anchor to have a .btn-light class to contrast with the footer's dark theme.
+
+I linked the footer labels for Instagram and Checkatrade to the corresponding sites, opening in new tabs. I also wrapped the icons within the anchor tags so that when these collapse to icons only on small screens, they are also links.
+
+I was going to link the phone number and email address to the .info-section on the contact page in the same way, but after initially failing, GPT-4 told me that do link to another page you need to link to the page's URL with the id tagged on to the end. As my site doesn't have a domain yet, I'll leave this.
+
+I set all a tags to have decoration: none;
+
 
 
 
