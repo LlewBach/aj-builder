@@ -634,6 +634,41 @@ The carousel is already in place but looks horrendous. I think because it is bui
 
 ![capture-39.png](assets/captures/capture-39.PNG)
 
+After the Vietnam that was the last section's epic struggle, handling the carousel images now feels much easier this time around. I replaced all previous sizing attemps with:
+
+```css
+#carousel .carousel-item img {
+  min-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+```
+
+This has made this section look much better on all screen sizes already. However, some factors will need tuning, such as text size, text location and width and height. When the screen is very wide, the image becomes too tall for example.
+
+As per my mentor's recommendation, I added another overlay behind the text to make it more readable, and rounded the corners which looks cool.
+
+I tried to vertically center the caption by making the .carousel-item a flexbox but that did <u>not</u> work.
+
+Searching for an easy fix, I Googled 'how to vertically center a Bootstrap carousel caption?' and found exactly what I was looking for on Stack Overflow.
+
+https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption
+
+```css
+.carousel-caption {
+  z-index: 2;
+  /* The 3 lines below are from Stack Overflow */
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+```
+The only further change was to increase font-size after md. I played around but couldn't make it look better by changing the width and height, so I'm leaving it there.
+
+
+
+
+
 
 
 

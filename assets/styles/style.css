@@ -133,7 +133,7 @@ nav ul {
 
 .text-col p:first-of-type {
   font-size: 1.5rem;
-  margin: 65% auto;
+  margin: 70% auto;
 }
 
 .spacer {
@@ -147,13 +147,14 @@ nav ul {
 }
 
 #carousel .carousel-item {
-  height: 82vh;
   transition: none !important;
   position: relative;
 }
 
 #carousel .carousel-item img {
-  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 #carousel .carousel-item::before {
@@ -169,6 +170,23 @@ nav ul {
 
 .carousel-caption {
   z-index: 2;
+  font-size: 1.2rem;
+  /* The 3 lines below are from Stack Overflow */
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-caption:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  border-radius: 20px;
 }
 
 /* --------------------------------------- Contact */
@@ -218,11 +236,7 @@ footer p {
 
 /* XS Only */
 
-@media only screen and (max-width: 576px) {
-  #carousel .carousel-item {
-    height: auto;
-  }
-}
+@media only screen and (max-width: 576px) {}
 
 /* SM */
 
@@ -276,6 +290,10 @@ footer p {
   .text-col p:first-of-type {
     font-size: 1.2rem;
     margin: 40% auto;
+  }
+
+  .carousel-caption {
+    font-size: 1.4rem;
   }
 }
 
