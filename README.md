@@ -511,7 +511,7 @@ The wrappers did not work at all.
 
 Also, originally I had the image column disappear below md. I tried to reintroduce it to smaller screens by removing the .d-flex and d-md-block classes, but all hell broke loose. 
 
-What followed next was an odessey of pain trying to resolve a problem I still don't understand. I tried to resolve it by adjusting the stylesheet and html to an extent that I lost track of what I'd done and ended up making it worse. In the end I had to resort to 'git restore'. Having done this, the website actually seems better than I remember at the last git push, probably due to trauma. 
+What followed next was two day odessey of pain trying to resolve a problem I still don't understand. I tried adjusting the stylesheet and html to an extent that I lost track of what I'd done and ended up making it worse. In the end I had to resort to 'git restore'. Having done this, the website actually seems better than I remember at the last git push, probably due to trauma. 
 
 Anyway, what I'm now facing is a curious but at least functional situation. I've reinstated the first .image-col to appear on smaller screens. On the iPhone 12 simulator, I get this...
 
@@ -533,29 +533,17 @@ But this did not resolve the issue ubiquitously. Below are the views of the page
 
 ![capture-33.png](assets/captures/capture-33.PNG)
 
-I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad.
+I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad. (Future me: I later fix the image again and fix the layout).
 
-### Adjusting sticky titles and text
+### Adjusting .text-col elements
 
 My next challenge is to fine tune the point at which the 'sticky titles' pop out from under their covers, the spacing between the sticky titles and the paragraph, and the paragraph text sizes on all screens. 
 
 I realised that having changed the original Lorem ipsum text that was divided into three small paragraphs for one paragraph of 'real' text, the .justify-content-between was making the spacing weird. Given that the .text-col has an h2 and a p element, I would need a wrapper around the p element to center it without affecting the position of the h2.
 
-Having wrapped the paragraphs and centered them, they look much better. 
+Having wrapped the paragraphs and centered them, they look much better. But now the question is how to make the wrapper size reliably responsive so that the p text is always vertically centered.
 
-This code is now drawing my attention...
-
-```css
-.text-col p:first-of-type {
-  margin-top: 120px;
-}
-
-.text-col p:last-of-type {
-  margin-bottom: 120px;
-}
-```
-
-The large and hard margin sizes are likely to be causing problems. However, having tried removing them, I remember their original purpose of keeping the paragraph out from under the title covers. I just need to bring them down to match the title cover height (~65px) more closely. I will bring them down to 80px for now.
+The large and hard paragraph margin sizes are likely to be causing problems. However, having tried removing them, I remember their original purpose of keeping the paragraph out from under the title covers. I just need to bring them down to match the title cover height (~65px) more closely. I will bring them down to 80px for now.
 
 This actually caused the p text to overflow, which meant there was a contraining issue. I realised that giving the .p-wrapper a min-height of 100% was a mistake. I now believe the proper height of the p-wrapper should be 100% - 2 * (percentage height of title cover).
 
@@ -573,7 +561,7 @@ I will try wrapping the h2 title in a div, and give that a specific height%.
 
 I've realised this wont work because now the title will only stick for the length of its div which is now very short. This is not an option.
 
-Even though this is a bit messy, I might just get rid of the p-wrapper, and add in a small p afterwards, then make the .text-col a flexbox and set justify-contents-around. This will center the paragraph responsively. The small p will be hidden under the bottom title cover and I'll also set the colour to match the background. There must be a better way to do this but this will have to do.
+Even though this is a bit messy, I might just get rid of the p-wrapper, and add in a small p afterwards, then make the .text-col a flexbox and set justify-contents-between. This will center the paragraph responsively. The small p will be hidden under the bottom title cover and I'll also set the colour to match the background. There must be a better way to do this but this will have to do.
 
 Because I now have two paragraphs, one of which is 'sacrificial', I now have only a .text-col p:first-of-type selector. I have adopted the principle of setting the margin top and bottom for this to be slightly bigger than the title cover sizes. The specific sizes will have to be set for each screen with media queries, as their requirements are quite different. I have set the default for xs.
 
@@ -587,25 +575,75 @@ Ok, I have found a balance of factors that work well on xs:
 
 I'm now going to finetune the factors above for xl, because md is a really awkward range for me, as the views on the iPad simulator and my compressed laptop screen are completely different, even though they are both in the md range.
 
-For the xl range, I have set the above factors as follows:
+I luckily discovered that I can set the scroll duration to the fixed image to match the text length by adjusting the top and bottom padding of the .image-col! Absolute game-changer!
+
+After fine tuning the factors for xl, I worked my way back down to md. Having improved my understanding of how the different factors interact on less troublesome larger screens, I went back to the xs size and finetuned the layout for each size from xs to xl. Below is an example of the factors I had to tune.
+
+- Make the title covers big enough to give a nice fade in/out effect, but small enough that the p text didn't fall under them, leave a bit of room for titles to pop out and not take up too much vertical space.
+- Make the p margins big enough to clear the text from the title covers on all screen 'modes', whilst not taking up too much vertical space.
+- Make the sticky titles stick at a suitable height, and make sure that the padding was big enough to cover the text all they way to the top of the screen, and leaving a nice gap below the title to buffer it from the paragraph, but leaving a nice amount of room for text on all screen 'modes'.
+- Add padding to the image so that the scroll length roughly matched the text scroll length. This was a matter of compromise to appear acceptable on different devices.
+
+This is an example of the media query settings required.
 
 ```css
-.image-col {
-    background-size: auto 80%;
-    padding: 32% 0;
-}
+/* MD */
 
-.sticky-title {
-  padding: 10% 0;
-}
-
-.text-col p:first-of-type {
-  font-size: 2rem;
-  margin: 25% auto;
+@media only screen and (min-width: 768px) {
+  .image-col {
+    background-position: 10% center;
+    padding: 45% 0;
+  }
+  .title-cover-top {
+    height: 22%;
+  }
+  .title-cover-bottom {
+    height: 22%;
+  }
+  .sticky-title {
+    padding: 12% 0 10% 0;
+    top: 6%;
+  }
+  .text-col p:first-of-type {
+    font-size: 1.2rem;
+    margin: 40% auto;
+  }
 }
 ```
+On the smaller simulators (iPhone and iPad), the percentage figures made very little difference to the layout, whereas on a compressed laptop screen they made a huge difference. This allowed me to make the layout work on both. This whole operation was a matter of compromise and optimisation, and on different screen dimensions, the layout is slightly different, but it works and looks ok.
 
-I luckily discovered that I can get the duration to the fixed image to match the text length by adjusting the top and bottom padding of the .image-col! Absolute game-changer! This might be applicable to the md range.
+### Final .parallax-section image considerations
+
+I am now very happy with the layout settings of the .parallax-section, save for one thing, the image positioning on the iPad screen (md range). Here are the three scenes currently...
+
+![capture-35.png](assets/captures/capture-35.png)
+
+![capture-36.png](assets/captures/capture-36.png)
+
+![capture-37.png](assets/captures/capture-37.png)
+
+To be clear, these are impossible to move, because on the compressed laptop view in the md range, they are completely visible and look fine. All attempts to reconcile these two views have completely failed. However, I've thought of a shameless easy fix. If you squint your eyes, you might agree that the first and third images actually still work in a 'kinda arty' way. For the second image to work similarly, all I need to do is get an image whose subject is mostly visible left of center!
+
+![capture-38.png](assets/captures/capture-38.PNG)
+
+Boom.
+
+## Testimonial carousel revamp
+
+The carousel is already in place but looks horrendous. I think because it is built to be full screen, I should enable this as much as possible. I've also realised that the whole point of this section is to give testimonials, not to be a gallery. This is how it currently looks on iPhone.
+
+![capture-39.png](assets/captures/capture-39.PNG)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
