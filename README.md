@@ -665,10 +665,24 @@ https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstra
 ```
 The only further change was to increase font-size after md. I played around but couldn't make it look better by changing the width and height, so I'm leaving it there.
 
+### Contact page tune-up
 
+As far as I can see, the only things that need attention are the middle text column and the fact that on the iPad, the content only comes down two thirds of the page.
 
+![capture-40.png](assets/captures/capture-40.PNG)
 
+My mentor quickly mentioned something about adding 'pipes' to the text column. I think I'm going to add dividers similar to those on the first page, to reinforce styling consistency and theme.
 
+```css
+.contact-divider {
+  width: 80%;
+  border-bottom: 4px solid #212529;
+}
+```
+
+I also changed the .form-section margin-bottom to 15% which spaces the two sections a bit better on the iPad. I later changed it down to 10% because I didn't think it was worth the effect everywhere else just to satisfy the iPad.
+
+I set the form to change to a 4:8 col ratio on lg+ screens to avoid the smaller input fields getting too long.
 
 
 

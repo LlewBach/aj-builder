@@ -196,7 +196,7 @@ nav ul {
 }
 
 .form-section {
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
 
 textarea {
@@ -209,6 +209,12 @@ textarea {
 
 .info-section {
   margin-bottom: 30px;
+
+}
+
+.contact-divider {
+  width: 80%;
+  border-bottom: 4px solid #212529;
 }
 
 .picture-col {
