@@ -1,5 +1,20 @@
+/* --------------------------------------- Links */
+
 a {
+  color: white;
   text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 196, 0);
+}
+
+.btn-dark:hover,
+.btn-light:hover {
+  background-color: #212529;
+  border-color: #4381C1;
+  color: rgb(255, 196, 0);
+  box-shadow: 2px 2px 5px rgba(67, 129, 193, 0.5);
 }
 
 /* --------------------------------------- Navbar */
@@ -11,6 +26,10 @@ nav {
 .navbar-brand {
   padding-top: 0;
   margin-top: 0;
+}
+
+.navbar-brand:hover {
+  color: rgb(255, 196, 0);
 }
 
 nav ul {
@@ -37,6 +56,27 @@ nav ul {
   background-attachment: fixed;
 }
 
+.hero-text {
+  position: relative;
+  padding: 20px;
+}
+
+.hero-text:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.hero-text h1 {
+  position: relative;
+  z-index: 1;
+}
+
 .service-section {
   margin-bottom: 87px;
 }
@@ -61,7 +101,7 @@ nav ul {
 
 .about-header {
   height: 100vh;
-  background-color: aquamarine;
+  background-color: #5DFDCB;
 }
 
 .image-col {
@@ -142,12 +182,11 @@ nav ul {
 
 .spacer {
   height: 20vh;
-  background-color: lightblue;
+  background-color: #4381C1;
 }
 
 .testimonial-section {
   margin-bottom: 70px;
-  background-color: lightcoral;
 }
 
 #carousel .carousel-item {
@@ -213,7 +252,14 @@ textarea {
 
 .info-section {
   margin-bottom: 30px;
+}
 
+.info-section a {
+  color: #212529;
+}
+
+.info-section a:hover {
+  color: rgb(255, 196, 0);
 }
 
 .contact-divider {

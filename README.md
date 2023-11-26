@@ -700,6 +700,69 @@ I was going to link the phone number and email address to the .info-section on t
 
 I set all a tags to have decoration: none;
 
+### Colour Palette
+
+Although I like this bootstrap dark theme as it is, I need to decide on a complimentary colour palette. My first port of call is coolors.co, which I heard about from one of the CI webinars.
+
+With a colour drop, I selected the Bootstrap dark theme colour and put it into coolors.co which then offers complimentary colour palettes. No doubt my partner would despair at yet another example of my deplorable taste, but I settled on the following:
+
+- #212529 Eerie black (Bootstrap dark theme)
+- #FFC400 Mikado yellow
+- #4381C1 Steel blue
+- #5DFDCB Aquamarine
+
+I have set the button:hover color to the mikado yellow and used the other colours elsewhere on the site.
+
+### Font
+
+## Lighthouse 
+
+Here are my initial scores from Lighthouse:
+
+- index.html (mobile)
+  - Performance: 50
+  - Accessibility: 84
+  - Best Practices: 100
+  - SEO: 83
+
+- index.html (desktop)
+  - Performance 93
+  - Accessibility: 84
+  - Best Practices: 100
+  - SEO: 80
+
+- about.html (mobile)
+  - Performance: 74
+  - Accessibility: 91
+  - Best Practices: 100
+  - SEO: 92
+
+- about.html (desktop)
+  - Performance: 94
+  - Accessibility: 91
+  - Best Practices: 100
+  - SEO: 90
+
+- contact.html (mobile)
+  - Performance: 97
+  - Accessibility: 92
+  - Best Practices: 95
+  - SEO: 91
+
+- contact.html (desktop)
+  - Performance: 99
+  - Accessibility: 92
+  - Best Practices: 95
+  - SEO: 89
+
+I can't quite believe the great results for accessibility on the contact page, as I know there are no aria labels on the inputs at all. 
+
+
+
+
+
+
+
 
 
 
