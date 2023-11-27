@@ -812,6 +812,12 @@ Here are a few new points raised/noticed
 
 Well, although converting the images to WebP definitely reduced their sizes, for some reason my lighthouse performance thereafter absolutely tanked. I put this to my mentor who told me I should avoid WebP for now as it's not supported by some versions of Safari. Thankfully, all my old images were still in the Recycling Bin! 
 
+I had indeed neglected to compress the carousel images, which I've now done.
+
+I changed the non-sequential h titles and replaced them with p elements whose classes I targeted to adjust font size.
+
+
+
 
 
 
