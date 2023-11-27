@@ -765,6 +765,55 @@ I added alt-text to all the index.html images. I then added aria-labels to all d
 
 Under SEO feedback I can see that I need to add a unique meta description to each page.
 
+Ok, time to review Lighthouse scores
+
+- index.html (mobile)
+  - Performance: 94
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- index.html (desktop)
+  - Performance 98
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (mobile)
+  - Performance: 92
+  - Accessibility: 98
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (desktop)
+  - Performance: 94
+  - Accessibility: 98
+  - Best Practices: 100
+  - SEO: 100
+
+- contact.html (mobile)
+  - Performance: 94
+  - Accessibility: 92
+  - Best Practices: 95
+  - SEO: 100
+
+- contact.html (desktop)
+  - Performance: 99
+  - Accessibility: 93
+  - Best Practices: 95
+  - SEO: 100
+
+Here are a few new points raised/noticed
+- It's advising that I convert jpeg/png format images to WebP/AVIF
+- I've realised that I probably still need to compress the carousel images
+- I have h elements in non-sequential order
+- I need an accessibility title on the Google Maps iframe
+- I need to remove unused Bootstrap JS script tags on the contact page which doesn't require it.
+
+
+
+
+
 
 
 
