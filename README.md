@@ -860,9 +860,9 @@ Time for the last test (hopefully!)
   - Best Practices: 95
   - SEO: 100
 
-Mixed results with many scores actually coming down! Anyway, "tha'll do Donkeh, tha'll do".
+Mixed results with many scores actually coming down! 
 
-If you've made it this far dear reader, I salute you!
+Anyway, "tha'll do Donkeh, tha'll do".
 
 
 
