@@ -818,7 +818,51 @@ I had indeed neglected to compress the carousel images, which I've now done.
 
 I changed the non-sequential h titles and replaced them with p elements whose classes I targeted to adjust font size.
 
+I added a title to the map iframe.
 
+I'm not going to mess around with removing bootstrap tags.
+
+Time for the last test (hopefully!)
+
+- index.html (mobile)
+  - Performance: 93
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- index.html (desktop)
+  - Performance 93
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (mobile)
+  - Performance: 86
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (desktop)
+  - Performance: 95
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- contact.html (mobile)
+  - Performance: 91
+  - Accessibility: 100
+  - Best Practices: 95
+  - SEO: 92
+
+- contact.html (desktop)
+  - Performance: 99
+  - Accessibility: 100
+  - Best Practices: 95
+  - SEO: 100
+
+Mixed results with many scores actually coming down! Anyway, "tha'll do Donkeh, tha'll do".
+
+If you've made it this far dear reader, I salute you!
 
 
 
