@@ -810,7 +810,7 @@ Here are a few new points raised/noticed
 - I need an accessibility title on the Google Maps iframe
 - I need to remove unused Bootstrap JS script tags on the contact page which doesn't require it.
 
-
+Well, although converting the images to WebP definitely reduced their sizes, for some reason my lighthouse performance thereafter absolutely tanked. I put this to my mentor who told me I should avoid WebP for now as it's not supported by some versions of Safari. Thankfully, all my old images were still in the Recycling Bin! 
 
 
 

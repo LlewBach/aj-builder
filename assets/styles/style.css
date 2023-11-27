@@ -228,6 +228,10 @@ nav ul {
   border-radius: 20px;
 }
 
+.caption-title {
+  font-size: 1.8rem;
+}
+
 /* --------------------------------------- Contact */
 
 .contact-header {
@@ -256,6 +260,10 @@ textarea {
 
 .info-section a:hover {
   color: rgb(255, 196, 0);
+}
+
+.contact-title {
+  font-size: 1.2rem;
 }
 
 .contact-divider {
