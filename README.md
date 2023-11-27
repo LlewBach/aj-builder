@@ -581,7 +581,7 @@ After fine tuning the factors for xl, I worked my way back down to md. Having im
 
 - Make the title covers big enough to give a nice fade in/out effect, but small enough that the p text didn't fall under them, leave a bit of room for titles to pop out and not take up too much vertical space.
 - Make the p margins big enough to clear the text from the title covers on all screen 'modes', whilst not taking up too much vertical space.
-- Make the sticky titles stick at a suitable height, and make sure that the padding was big enough to cover the text all they way to the top of the screen, and leaving a nice gap below the title to buffer it from the paragraph, but leaving a nice amount of room for text on all screen 'modes'.
+- Make the sticky titles stick at a suitable height, and make sure that the padding was big enough to cover the text all they way to the top of the screen, and leaving a nice gap below the title to buffer it from the paragraph, but leaving a nice amount of room for text on all screen 'modes', and without being too big that the title padding would push them back out from under their covers.
 - Add padding to the image so that the scroll length roughly matched the text scroll length. This was a matter of compromise to appear acceptable on different devices.
 
 This is an example of the media query settings required.
@@ -704,7 +704,7 @@ I set all a tags to have decoration: none;
 
 Although I like this bootstrap dark theme as it is, I need to decide on a complimentary colour palette. My first port of call is coolors.co, which I heard about from one of the CI webinars.
 
-With a colour drop, I selected the Bootstrap dark theme colour and put it into coolors.co which then offers complimentary colour palettes. No doubt my partner would despair at yet another example of my deplorable taste, but I settled on the following:
+With a colour drop, I selected the Bootstrap dark theme colour and put it into coolors.co which then offers complimentary colour palettes. No doubt my partner would despair at yet another example of my deplorable lack of taste, but I settled on the following:
 
 - #212529 Eerie black (Bootstrap dark theme)
 - #FFC400 Mikado yellow
@@ -755,7 +755,9 @@ Here are my initial scores from Lighthouse:
   - Best Practices: 95
   - SEO: 89
 
-I can't quite believe the great results for accessibility on the contact page, as I know there are no aria labels on the inputs at all. 
+The first thing that comes to mind is to compress the images on the index.html. I already downloaded the smallest image size from Unsplash, but they clearly need to be smaller, especially for the sake of the mobile site. 
+
+
 
 
 
