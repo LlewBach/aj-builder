@@ -49,7 +49,7 @@ nav ul {
 .index-header {
   margin: 0;
   padding: 0;
-  background-image: url(../images/hero-1.webp);
+  background-image: url(../images/hero-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -114,15 +114,15 @@ nav ul {
 }
 
 #image-1 {
-  background-image: url(../images/about/about-1.webp);
+  background-image: url(../images/about/about-1.png);
 }
 
 #image-2 {
-  background-image: url(../images/about/about-4.webp);
+  background-image: url(../images/about/about-4.png);
 }
 
 #image-3 {
-  background-image: url(../images/about/about-3.webp);
+  background-image: url(../images/about/about-3.png);
 }
 
 .text-col {
@@ -265,7 +265,7 @@ textarea {
 
 .picture-col {
   height: 300px;
-  background-image: url(../images/call-me.webp);
+  background-image: url(../images/call-me.png);
   background-size: cover;
   background-position: center;
 }
