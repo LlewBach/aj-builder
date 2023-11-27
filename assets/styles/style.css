@@ -136,7 +136,6 @@ nav ul {
   left: 0;
   right: 0;
   top: 0;
-  /* height: 65px; */
   height: 22%;
   background-color: white;
   z-index: 1;
@@ -151,7 +150,6 @@ nav ul {
   left: 0;
   right: 0;
   bottom: 0;
-  /* height: 65px; */
   height: 22%;
   z-index: 1;
   background: linear-gradient(to bottom,
@@ -162,10 +160,8 @@ nav ul {
 
 .sticky-title {
   margin-bottom: 0;
-  /* padding: 20px 0 50px 0; */
   padding: 18% 0 10% 0;
   position: sticky;
-  /* top: 70px; */
   top: 5%;
   background-color: white
 }
