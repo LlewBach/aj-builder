@@ -2,7 +2,8 @@
 
 h1,
 h2,
-.navbar-brand {
+.navbar-brand,
+.transparent-text {
   font-family: 'Stick No Bills', sans-serif;
   font-weight: 700;
 }
@@ -11,6 +12,7 @@ body,
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 /* --------------------------------------- Links */
@@ -129,7 +131,7 @@ nav ul {
 }
 
 .image-col {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -206,7 +208,8 @@ nav ul {
 }
 
 .transparent-text {
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
   background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
   color: transparent;
   background-attachment: fixed;
@@ -364,7 +367,6 @@ footer p {
 
   .image-col {
     background-position: 10% center;
-    padding: 45% 0;
   }
 
   .title-cover-top {
@@ -393,11 +395,6 @@ footer p {
 /* LG */
 
 @media only screen and (min-width: 992px) {
-  .image-col {
-    background-size: auto 70%;
-    padding: 38% 0;
-  }
-
   .title-cover-top {
     height: 24%;
   }
@@ -426,7 +423,6 @@ footer p {
 
   .image-col {
     background-size: auto 80%;
-    padding: 40% 0;
   }
 
   .title-cover-top {

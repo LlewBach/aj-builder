@@ -754,6 +754,12 @@ This was much simpler and made sense to me, and taught me to apply a background 
 
 If you notice in the screenshot above, as my partner did rather brutally, there is effectively a white bar above the black spacer which looks sub-optimal. I am keen to try and displace this, although I am nervous I will have to 'tune' many other elements as a result!
 
+After some tinkering, this was easily resolved by changing the .image-col 'height' declaration to 'min-height'. Very satisfying! I've just realised that I probably can get rid of all the padding I added I painstakingly specified for each media query...
+
+Yes it does oh my god. Had I changed height to min-height earlier, I would have saved literally hours and hours of time, refining the padding to get it to better match the .text-col on all devices. Earlier satisfaction revoked!
+
+
+
 ## Testing
 
 ### Lighthouse 
