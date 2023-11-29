@@ -727,6 +727,8 @@ https://favicon.io/favicon-generator/
 
 I used the same font as for my headers and the same colour scheme for brand consistency. The site's instructions were to save the files in the site's root directory, but I thought this was messy and changed the link filepaths to the 'favicon' folder within assets.
 
+
+
 ## Testing
 
 ### Lighthouse 
@@ -874,7 +876,9 @@ Time for the last test (hopefully!)
 
 Mixed results with many scores actually coming down! 
 
-Anyway, "tha'll do Donkeh, tha'll do".
+### Wave
+
+
 
 
 
