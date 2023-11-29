@@ -713,6 +713,12 @@ With a colour drop, I selected the Bootstrap dark theme colour and put it into c
 
 I have set the button:hover color to the mikado yellow and used the other colours elsewhere on the site.
 
+Future me: Due to later feedback, I am changing this to:
+
+- #212529 Eerie black (Bootstrap dark theme)
+- rgb(255, 255, 0) (yellow)
+- white
+
 ### Font
 
 I decided on Roboto, then found a consensus online that Open Sans, which I happen to like, pairs well with Roboto. GPT-4 recommended I use Open Sans for titles, due to more open style, and Roboto for body as it is more condensed and readable in smaller sizes.

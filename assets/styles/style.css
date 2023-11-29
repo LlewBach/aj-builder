@@ -27,14 +27,14 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 196, 0);
+  color: yellow;
 }
 
 .btn-dark:hover,
 .btn-light:hover {
   background-color: #212529;
   border-color: #4381C1;
-  color: rgb(255, 196, 0);
+  color: yellow;
   box-shadow: 2px 2px 5px rgba(67, 129, 193, 0.5);
 }
 
@@ -50,7 +50,7 @@ nav {
 }
 
 .navbar-brand:hover {
-  color: rgb(255, 196, 0);
+  color: yellow;
 }
 
 nav ul {
@@ -62,7 +62,7 @@ nav ul {
 }
 
 .nav-link:hover {
-  color: rgb(255, 196, 0);
+  color: yellow;
 }
 
 /* --------------------------------------- Index */
