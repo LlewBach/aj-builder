@@ -758,7 +758,9 @@ After some tinkering, this was easily resolved by changing the .image-col 'heigh
 
 Yes it does oh my god. Had I changed height to min-height earlier, I would have saved literally hours and hours of time, refining the padding to get it to better match the .text-col on all devices. Earlier satisfaction revoked!
 
+I decided to add the spacers to every page, which also helps brand consistency. However, having set their font-size to 3rem, I noticed that the text was wrapping on small screens, meaning the effect was ruined. After setting it back to one, the text fits on one line but the letters are quite small. This text is decorative and it doesn't really matter if the effect is quite subtle. 
 
+I actually adjusted this by reducing the text spacing and increasing the font size. Having looked at this on all devices, I can see that some media queries are in order.
 
 ## Testing
 

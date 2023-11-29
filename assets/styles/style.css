@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+}
+
 /* --------------------------------------- Fonts */
 
 h1,
@@ -97,6 +101,21 @@ nav ul {
 
 .hero-text p {
   color: #ccc;
+}
+
+.spacer {
+  height: 20vh;
+  background-color: #212529;
+}
+
+.transparent-text {
+  font-size: 2rem;
+  letter-spacing: ;
+  background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
+  color: transparent;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .service-section {
@@ -202,21 +221,6 @@ nav ul {
   margin: 70% auto;
 }
 
-.spacer {
-  height: 20vh;
-  background-color: #212529;
-}
-
-.transparent-text {
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
-  background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
-  color: transparent;
-  background-attachment: fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
 .testimonial-section {
   margin-bottom: 70px;
 }
@@ -275,6 +279,7 @@ nav ul {
 }
 
 .form-section {
+  /* min-height: 80vh; */
   margin-bottom: 10%;
 }
 
@@ -308,7 +313,7 @@ textarea {
 }
 
 .picture-col {
-  height: 300px;
+  min-height: 80vh;
   background-image: url(../images/call-me.png);
   background-size: cover;
   background-position: center;
@@ -357,6 +362,16 @@ footer p {
 /* MD */
 
 @media only screen and (min-width: 768px) {
+  .transparent-text {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    /* background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
+    color: transparent;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text; */
+  }
+
   .service-divider {
     border-left: 2px solid #212529;
     border-right: 2px solid #212529;
@@ -416,6 +431,11 @@ footer p {
 /* XL */
 
 @media only screen and (min-width: 1200px) {
+  .transparent-text {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+
   .service-divider {
     width: 90%;
     margin: 0 auto 30px auto;
