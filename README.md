@@ -717,7 +717,11 @@ I have set the button:hover color to the mikado yellow and used the other colour
 
 I decided on Roboto, then found a consensus online that Open Sans, which I happen to like, pairs well with Roboto. GPT-4 recommended I use Open Sans for titles, due to more open style, and Roboto for body as it is more condensed and readable in smaller sizes.
 
-## Lighthouse 
+My mentor later said this was boring, so I went for 'Stick No Bills' and 'Open Sans' for the body.
+
+## Testing
+
+### Lighthouse 
 
 Here are my initial scores from Lighthouse:
 

@@ -1,14 +1,15 @@
 /* --------------------------------------- Fonts */
 
 h1,
-h2 {
-  font-family: 'Open Sans', sans-serif;
+h2,
+.navbar-brand {
+  font-family: 'Stick No Bills', sans-serif;
   font-weight: 700;
 }
 
 body,
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
