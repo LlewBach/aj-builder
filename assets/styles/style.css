@@ -142,7 +142,11 @@ nav ul {
 
 .about-header {
   height: 100vh;
-  background-color: #5DFDCB;
+  background-image: url(../images/hero-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .parallax-section {

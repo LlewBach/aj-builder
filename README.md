@@ -768,6 +768,10 @@ I decided to add the spacers to every page, which also helps brand consistency. 
 
 I actually adjusted this by reducing the text spacing and increasing the font size. Having looked at this on all devices, I can see that some media queries are in order.
 
+### Revamping the about page header
+
+
+
 ## Testing
 
 ### Lighthouse 
