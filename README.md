@@ -719,6 +719,14 @@ I decided on Roboto, then found a consensus online that Open Sans, which I happe
 
 My mentor later said this was boring, so I went for 'Stick No Bills' and 'Open Sans' for the body.
 
+### Favicon
+
+I generated a simple favicon with 
+
+https://favicon.io/favicon-generator/
+
+I used the same font as for my headers and the same colour scheme for brand consistency. The site's instructions were to save the files in the site's root directory, but I thought this was messy and changed the link filepaths to the 'favicon' folder within assets.
+
 ## Testing
 
 ### Lighthouse 
