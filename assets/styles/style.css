@@ -124,6 +124,10 @@ nav ul {
   background-color: #5DFDCB;
 }
 
+.parallax-section {
+  padding: 0;
+}
+
 .image-col {
   height: 100vh;
   padding: 0;
@@ -198,7 +202,16 @@ nav ul {
 
 .spacer {
   height: 20vh;
-  background-color: #4381C1;
+  background-color: #212529;
+}
+
+.transparent-text {
+  font-size: 2rem;
+  background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
+  color: transparent;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .testimonial-section {

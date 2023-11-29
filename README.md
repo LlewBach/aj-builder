@@ -719,15 +719,40 @@ I decided on Roboto, then found a consensus online that Open Sans, which I happe
 
 My mentor later said this was boring, so I went for 'Stick No Bills' and 'Open Sans' for the body.
 
-### Favicon
+### Logo and favicon
 
-I generated a simple favicon with 
+After trying to quickly make some logos on looka.com, I then put GPT-4 to the task, and it created a simple logo that I liked. I then compressed the image from 134kb to around 4kb. I then used a 'favicon converter' to make a favicon out of the logo. I had already made a simple favicon with favicon.io, but I then decided to make the favicon the same as the logo.
 
-https://favicon.io/favicon-generator/
+### Adding some spice to the .spacer rows
 
-I used the same font as for my headers and the same colour scheme for brand consistency. The site's instructions were to save the files in the site's root directory, but I thought this was messy and changed the link filepaths to the 'favicon' folder within assets.
+I had my final meeting with my mentor today, and my key takeaway from his keen feedback was that my use of section colours was simultaneously 'boring' and even 'offensive'. This has made me resolve to spice things up!
 
+I've had an idea to include the text Anthony Jones Handyman across the spacer, with transparent text over a second background with a gradient to create the effect of light shining through the letters as the spacer moves up the page.
 
+I initially asked the Oracle that is GPT-4, but even before I tried it, it didn't look right and was confused with a huge amount of unnecessary lines. However, it introduced me to the concept of background-clip: text. I then turned to YouTube and from searching for 'background-clip text' I found this tutorial
+
+https://www.youtube.com/watch?v=9Kr3T4Ndl-o
+
+This was much simpler and made sense to me, and taught me to apply a background directly to the p element and clip it to the text. I then fixed the background, and from my previous experience, I knew that this meant that the background was now relative to the viewport and would take up the full screen which is what I wanted for the effect to work. Next I had to set the gradient stops in such a way as to simulate light passing behind, while also making some of the surrounding text visible for coherence.
+
+```css
+.spacer {
+  height: 20vh;
+  background-color: #212529;
+}
+.transparent-text {
+  font-size: 2rem;
+  background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
+  color: transparent;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+```
+
+![capture-41.png](assets/captures/capture-41.png)
+
+If you notice in the screenshot above, as my partner did rather brutally, there is effectively a white bar above the black spacer which looks sub-optimal. I am keen to try and displace this, although I am nervous I will have to 'tune' many other elements as a result!
 
 ## Testing
 
