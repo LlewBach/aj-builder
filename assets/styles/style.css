@@ -87,9 +87,14 @@ nav ul {
   border-radius: 20px;
 }
 
-.hero-text h1 {
+.hero-text h1,
+.hero-text p {
   position: relative;
   z-index: 1;
+}
+
+.hero-text p {
+  color: #ccc;
 }
 
 .service-section {
