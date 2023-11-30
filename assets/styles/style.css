@@ -1,7 +1,3 @@
-body {
-  padding: 0;
-}
-
 /* --------------------------------------- Fonts */
 
 h1,
@@ -110,7 +106,6 @@ nav ul {
 
 .transparent-text {
   font-size: 2rem;
-  letter-spacing: ;
   background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
   color: transparent;
   background-attachment: fixed;
@@ -155,7 +150,6 @@ nav ul {
 
 .image-col {
   min-height: 100vh;
-  padding: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 70%;
@@ -176,7 +170,6 @@ nav ul {
 
 .text-col {
   min-height: 100vh;
-  padding: 0;
   position: relative;
 }
 
