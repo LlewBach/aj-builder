@@ -251,6 +251,7 @@ nav ul {
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
+  padding: 20px;
 }
 
 .carousel-caption:before {
