@@ -401,7 +401,6 @@ footer p {
 
   .sticky-title {
     padding: 12% 0 10% 0;
-    top: 6%;
   }
 
   .text-col p:first-of-type {
@@ -468,5 +467,12 @@ footer p {
     font-size: 1.8rem;
     margin: 30% auto;
   }
+}
 
+/* Height above 1450px */
+
+@media screen and (min-height: 1100px) {
+  nav {
+    min-height: 7%;
+  }
 }

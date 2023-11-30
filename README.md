@@ -774,6 +774,10 @@ I actually adjusted this by reducing the text spacing and increasing the font si
 
 ## Testing
 
+### Tall screens
+
+Found the minimum px height where you could see text between the title-cover and the navbar.
+
 ### Lighthouse 
 
 Here are my initial scores from Lighthouse:
