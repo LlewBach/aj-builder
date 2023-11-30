@@ -49,6 +49,11 @@ nav {
   color: yellow;
 }
 
+.logo {
+  box-shadow: 0 0 4px 4px white;
+  margin-right: 10px;
+}
+
 nav ul {
   margin-top: 7px;
 }
