@@ -40,11 +40,6 @@ nav {
   min-height: 71px;
 }
 
-.navbar-brand {
-  padding-top: 0;
-  margin-top: 0;
-}
-
 .navbar-brand:hover {
   color: yellow;
 }
@@ -52,10 +47,6 @@ nav {
 .logo {
   box-shadow: 0 0 4px 4px white;
   margin-right: 10px;
-}
-
-nav ul {
-  margin-top: 7px;
 }
 
 .nav-link {
