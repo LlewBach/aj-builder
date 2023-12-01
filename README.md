@@ -730,6 +730,14 @@ I also changed the .form-section margin-bottom to 15% which spaces the two secti
 
 I set the form to change to a 4:8 col ratio on lg+ screens to avoid the smaller input fields getting too long.
 
+I later added the blinged up spacer to this page for brand consistency. 
+
+When the info row columns are stacked in mobile view, I added margins to space them out which I reset to zero in the md media query. I also reinstated the 'call me maybe' image for small screens and had to resize it so the hand gesture was visible, then reset it to height: 80vh; in the md media query.
+
+After a good while of tinkering, I finally cracked how to deal the different views of md widths on my laptop and on the ipad. I set a media query for only the md width range and a min-height of 1000px, which is just under the max height of the iPad (gleaned from testing). I had a huge amount of trouble sizing the .picture-col, but I found I had to change the min-height in the previous media query to 'height', and then I could change it within the iPad media query. This allowed me to fit everything on one page, by reducing picture to a size in which the hand gesture can be seen, and reducing the spacer height. Given that the page no longer scrolled, I changed the background gradient of the spacer to be wider in order for the text to be readable while maintaining some gradient effect.
+
+![capture-42.png](assets/captures/capture-42.png)
+
 ## Surface Plane
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)

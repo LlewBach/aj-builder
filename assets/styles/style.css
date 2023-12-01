@@ -299,6 +299,7 @@ textarea {
 }
 
 .info-section {
+  margin-top: 10%;
   margin-bottom: 30px;
 }
 
@@ -308,6 +309,10 @@ textarea {
 
 .info-section a:hover {
   color: rgb(255, 196, 0);
+}
+
+.map-col {
+  margin-bottom: 10%;
 }
 
 .map-col iframe {
@@ -325,7 +330,8 @@ textarea {
 }
 
 .picture-col {
-  min-height: 80vh;
+  height: 60vh;
+  margin-top: 10%;
   background-image: url(../images/call-me.png);
   background-size: cover;
   background-position: center;
@@ -411,6 +417,36 @@ footer p {
   .carousel-caption {
     font-size: 1.4rem;
   }
+
+  .map-col {
+    margin-bottom: 0;
+  }
+
+  .picture-col {
+    height: 75vh;
+    margin-top: 0;
+  }
+}
+
+/* iPad */
+
+@media screen and (min-width: 768px) and (max-width: 991px) and (min-height: 1000px) {
+  .spacer {
+    height: 10vh;
+  }
+
+  .transparent-text {
+    font-size: 2rem;
+    background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
+    color: transparent;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .picture-col {
+    height: 30vh;
+  }
 }
 
 /* LG */
@@ -432,6 +468,14 @@ footer p {
   .text-col p:first-of-type {
     font-size: 1.2rem;
     margin: 30% auto;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    height: 100px;
   }
 }
 
@@ -468,9 +512,17 @@ footer p {
     font-size: 1.8rem;
     margin: 30% auto;
   }
+
+  .input-group {
+    margin-bottom: 30px;
+  }
+
+  textarea {
+    height: 200px;
+  }
 }
 
-/* Height above 1450px */
+/* Height above 1100px */
 
 @media screen and (min-height: 1100px) {
   nav {
