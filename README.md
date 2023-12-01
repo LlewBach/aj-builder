@@ -20,7 +20,7 @@
 > 7. [Surface Plane](#surface-plane)
 > 8. [Final testing](#final-testing)
 > 9. [Deployment](#deployment)
-> 10. Credits
+> 10. [Credits](#credits)
 
 ## Overview
 
@@ -134,7 +134,7 @@ With regards to the actual content of the site at this stage, I have to use some
 
 ## Building process and functional testing
 
-I did the majority of my testing as I built each element, so I have included much of the testing I conducted within this section.
+I did the majority of my testing as I built each element, so I have included much of the testing I conducted within this section, especially for responsiveness.
 
 ### Navbar and footer
 
@@ -830,9 +830,13 @@ Yes I can oh my god. Had I changed height to min-height earlier, I would have sa
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+### Responsiveness
+
+I documented most of the testing for responiveness in the Building section above.
+
 ### Tall screens
 
-Found the minimum px height where you could see text between the title-cover and the navbar.
+My mentor pointed out to me that on tall screens, the sticky title sticks out from below the opaque section of the title cover. To fix this I looked at the height range at which this starts to happen with Chrome Dev Tools and adjusted the 'top' declaration of the sticky title using a min-height media query, where I change the top value to 7% above a certain height.
 
 ### Lighthouse 
 
@@ -1028,21 +1032,28 @@ https://llewbach.github.io/aj-builder/
 
 The site updates to include every new git push.
 
-### How to run locally
+### How to run this project locally
 
-1. Visit the GitHub repository for [AJHandyman]().
+1. Download the IDE of your choice as well as Git.
+1. Visit the GitHub repository for [AJHandyman](https://github.com/LlewBach/aj-builder).
+2. Click on "Code" and copy the HTTPS link.
+3. Create the folder where you would like to save the repository.
+4. In your terminal, navigate to the folder and then input 'git clone ', then paste the HTTPS link and press enter.
+5. Open the folder in your IDE. Use the Live Server extension to view the HTML pages.
 
 ## Credits
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-In building this project, I used GPT-4 extensively as a resource to look up things quickly, discover new tools and learn how to use them. I also used it to try to diagnose problems I came across. My use of GPT-4 is documented in the Building section.
+In building this project, I used GPT-4 extensively as a resource to look up things quickly, discover new tools and learn how to use them. I also used it to try to diagnose problems I came across. I also used GPT-4 to draw me images of 'Anthony' and the logo. My use of GPT-4 is documented in the Building section.
 
 StackOverflow provided me with a quick way of centering Bootstrap's carousel caption vertically. This is highlighted in the code and Building section.
 
-I used the Bootstrap framework for advanced features such as the navbar, dropdown menus, carousel and contact form.
+I used the Bootstrap framework and documentation for advanced features such as the navbar, dropdown menus, carousel and contact form.
 
-I would like to thank my mentor Ben Kavanagh for his sharp eye, great feedback and encouragement.
+I used Unsplash for all real images as they are free to use. https://unsplash.com/
+
+I would like to thank my mentor Ben Kavanagh for his sharp eye, great feedback and encouragement. I also looked up to the README of his first project, [Hard Drivers](https://github.com/BAK2K3/hard-drivers) as a mark to aspire to.
 
 
 
