@@ -832,7 +832,7 @@ Yes I can oh my god. Had I changed height to min-height earlier, I would have sa
 
 ### Responsiveness
 
-I documented most of the testing for responiveness in the Building section above.
+I documented most of the testing for responiveness in the [Building section](#building-process-and-functional-testing) above.
 
 ### Tall screens
 
