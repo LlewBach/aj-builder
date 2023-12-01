@@ -1045,7 +1045,7 @@ The site updates to include every new git push.
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-In building this project, I used GPT-4 extensively as a resource to look up things quickly, discover new tools and learn how to use them. I also used it to try to diagnose problems I came across. I also used GPT-4 to draw me images of 'Anthony' and the logo. My use of GPT-4 is documented in the Building section.
+In building this project, I used GPT-4 extensively as a resource to look up things quickly, discover new tools and learn how to use them. I also used it to try to diagnose problems I came across. I also used GPT-4 to draw me images of 'Anthony' and the logo, as well as to write the testimonial text for the carousel. My use of GPT-4 is documented in the Building section.
 
 StackOverflow provided me with a quick way of centering Bootstrap's carousel caption vertically. This is highlighted in the code and Building section.
 
