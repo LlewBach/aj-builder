@@ -10,26 +10,30 @@
 > 3. [Scope Plane](#scope-plane)
 > 4. [Structure Plane](#structure-plane)
 > 5. [Skeleton Plane](#skeleton-plane)
-> 6. Building process and functional testing
+> 6. [Building process and functional testing](#building-process-and-functional-testing)
 >> 1. [Navbar and footer](#navbar-and-footer)
 >> 2. [Hero](#holding-out-for-a-hero)
 >> 3. [Services section](#services-section)
 >> 4. [About page parallax sections](#about-page-parallax-sections)
 >> 5. [About page testimonial section](#about-page-testimonial-section)
->> 6. [Contact page form](#contact-page-form)
->> 7. [Contact page info row](#contact-page-info-row)
+>> 6. [Contact page](#contact-page)
 > 7. [Surface Plane](#surface-plane)
-> 8. Final testing
+> 8. [Final testing](#final-testing)
 > 9. Deployment
 > 10. Credits
 
 ## Overview
 
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
 This website is for educational purposes only. I originally planned to make this site for a real builder, but due to poor responsiveness, I've made it for an imaginary handyman.
 
-In the first instance, I wrote this README chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the README out of compassion for any readers. A chronological sense of the development process can the obtained from the git pushes.
+In the first instance, I wrote this README chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the README out of compassion for any readers. A chronological sense of the development process can be more reliably obtained from the git pushes.
 
 ## Strategy Plane
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
 This website is for a builder/handyman, with the aim of functioning essentially as an extended business card.
 
 Handyman's goals...
@@ -40,7 +44,7 @@ Handyman's goals...
 Buyer's goals...
 - wants to find a good builder
 - wants **assurance** as to handyman's quality and character
-- wants a convenient means of contacting the handyman and of requesting quotes for jobs
+- wants a convenient means of contacting the handyman and of requesting quotes for jobs, with the possibility of fewer home visits if pictures can be sent as well
 
 Target audience
 - homeowners, the majority without subject expertise
@@ -52,11 +56,12 @@ Unique selling proposition
 Considerations
 - Unlike B2C interactions, which depend more on impulsive decision making on the part of customers, hiring a builder is more like a B2B consideration. This is because hiring a builder is more of a serious commitment, both financially and because one has to live with the result thereafter. For this reason, providing assurance is paramount.
 - Unlike a B2B interaction however, most customers are not industry experts and don't fully understand the problem, the solution or best practice. It is well known that among builders there are many 'cowboys' and those who will try to overcharge as much as possible. For this reason, it is vital that the site instills a positive emotional response in potential customers that inspires trust.
-- Given how important trust is, with the goal of a long term relationship that hopefully lead to more jobs, honesty is important. This has implications for presentation also. If I made a super slick, shiny and ‘professional’ site, the customer may feel somewhat catfished if someone turns up a bit late, in trackies, cracking a smile front and back. I would rather the site were a bit more subtle, down to earth, what it says on the tin kind of thing.
 
 Given that in today's age, business is advertised and found via websites, the creation of a website is fully justified to fulfil the requirements above, if not essential.
 
 ## Scope Plane
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 1) What the customer says they need - a builder
 2) What the customer actually needs - a good value, trustworthy builder
@@ -78,6 +83,8 @@ User stories
 - A home-owner who usually turns to DIY to save money needs help with a problem above his skill level, or a problem he has no time to deal with.
 
 ## Structure Plane
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 Information needs to convey what (services), who (experience and character), how (contact) and how much (quote request form). Given that our strategy has set out to instill trust, this order makes sense for our site's pages. 
 
@@ -117,9 +124,11 @@ The information will be structured as follows:
 
 ## Skeleton Plane
 
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
 I drew up some wireframes (available to view in the assets folder) in order to help direct the building phase. I decided to focus on building the structure of the site first before worrying about surface plane considerations. The reason is that this is my first solo site, and I'm not completely sure of what is possible for me to build, and that some trial and error will be involved. It would thus be more time efficient to focus on surface plane features after I have made a web structure to work with, that is within my capability.
 
-In the next section, I will log the building process and the considerations and problems that arise, and then return to consider the surface plane.
+In the next section, I will log the building process and the considerations and problems that arise, and then return to consider the surface plane and relevant aspects such as font, colours, and appearance in general.
 
 With regards to the actual content of the site at this stage, I have to use some imagination as my client is rather unresponsive shall we say (contrary to the raving testimonials I shall later devise).
 
@@ -128,6 +137,8 @@ With regards to the actual content of the site at this stage, I have to use some
 I did the majority of my testing as I built each element, so I have included much of the testing I conducted within this section.
 
 ### Navbar and footer
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 I knew that I wanted to use the bootstrap navbar, because of its collapse functionality. However, I wondered whether or not I should wrap it in a header tag for semantic reasons. I decided that the nav element does this sufficiently well.
 
@@ -141,15 +152,17 @@ I had a problem vertically aligning the logo text and the menu items due to the 
 
 The navbar and footer are fixed to top and bottom, so that everything is only one click away at all times.
 
+My mentor later pointed out that these items were still out of alignment...
+
 #### Bootstrap classes vs CSS?
 
 By this point, I was wondering how extensively I should use Bootstrap classes rather than CSS. After all, one of the main points of using a stylesheet is to make the HTML more readable. I've decided to make use of bootstrap classes for the sake of consistency with regards to structural considerations such as flexbox, grid, centering items etc and using CSS if I can reuse code for more refined or superficial purposes multiple times (eg, using CSS to set margin-right: 20px for all the menu items rather than .me-x for each one). I realise this is something I'll have to refine with experience.
 
 #### Responsive layout
 
-Initially, I thought I would vertically stack the footer items on small screens. However, I decided that this would be a pointless waste of screen real estate, because the contact details are only one click away anyway on the contact page. I therefore made all but the button .d-none at small screen sizes.
+Initially, I thought I would vertically stack the footer items on small screens. However, I decided that this would be a pointless waste of screen real estate, because the contact details are only one click away anyway on the contact page. I therefore initially made all but the button .d-none at small screen sizes.
 
-I had to reconstruct my footer using bootstrap row and column classes because flexbox wasn't enough to keep the button central.
+I had to rebuild my footer using bootstrap row and column classes because flexbox wasn't enough to keep the button central.
 
 On md screens, I divided the footer into 3 columns at md-size, with the 2 items on each side stacked with .flex-column. For lg screens, I wanted the items next to each other. To this end, I used nested bootstrap rows and columns. Looking at the result, I appreciate why mobile-first design makes sense! It would be much harder to work backwards from lg screens.
 
@@ -181,9 +194,9 @@ According to Chrome dev tools, between roughly 992px and 1236px width, I was get
 
 ![capture-2.png](assets/captures/capture-2.PNG)
 
-With the dev tools, I could see that div padding was cramping the email. I removed this which resulted in the awkward range shrinking to 992-1120px. One temptation is to somehow redefine the lg breakpoint to skip this range. I will leave this problem for now however, as the content of the footer may change.
+With the dev tools, I could see that div padding was cramping the email. I removed this which resulted in the awkward range shrinking to 992-1120px. One temptation is to somehow redefine the lg breakpoint to skip this range. I will leave this problem for now however, as the content of the footer may change. (I did in fact do this later.)
 
-I decided I wanted to have icons between sm-md. I initially tried to move the icons out of the paragraph with classes .d-none d-md-block so that they would always appear. I eventually realised I could put a span around the text and move the display classes from the paragraph to the span, leaving the icons visible. I had to change the display from 'block' to 'inline' however in order to keep the icons and text inline when displayed together. I also set the icons to disappear below sm by adding classes to the icon. This also required adding a .col-sm-6 to the containing divs in order for the icons to line up.
+I decided I wanted to have icons between xs-md. I initially tried to move the icons out of the paragraph with classes .d-none d-md-block so that they would always appear. I eventually realised I could put a span around the text and move the display classes from the paragraph to the span, leaving the icons visible. I had to change the display from 'block' to 'inline' however in order to keep the icons and text inline when displayed together. I also initially set the icons to disappear below sm by adding classes to the icon. This also required adding a .col-sm-6 to the containing divs in order for the icons to line up.
 
 ```html
 <div class="row">
@@ -216,7 +229,10 @@ I realised that dealing with the awkward range at the lg breakpoint would be eas
 
 I wanted to give the navbar and footer a dark theme so I could better see their outlines. I had to check the bootstrap docs to see that I needed a data-bs-theme attribute to apply this to the navbar. 
 
+
 ### Holding out for a hero
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 I was unsure of how to use the header element (whether it should be used for the navbar), but I think it is ok to use for the hero section. (Future me: yes this makes good semantic sense).
 
@@ -224,17 +240,25 @@ Because my navbar and footer are fixed, I set a margin to the header to exactly 
 
 I looked at w3 schools to learn how to add the parallax effect, and only one line was required, background-attachment: fixed;
 
+I then added an overlay beneath the text to make it more legible. 
+
+This is also how I made the about page hero.
+
 ### Services section
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 Having gained some confidence with bootstrap grid after the footer, I went back and made a mobile wireframe of this section. When I made my first item, the image overflowed from its container, so I went to Bootstrap docs, and under images I saw the option for the .img-thumbnail class, which conveniently sizes the images for me.
 
-I downloaded the smallest version of each image from unsplash.com.
+I downloaded the smallest version of each image from unsplash.com. In the future, I also compress every image using...
+
+https://imageresizer.com/image-compressor
 
 I used padding to reduce the thumbnail size. However, with dev tools, I realised that I could keep the image size and bring the items closer together by using .px-4 rather than .p-4.
 
 ![capture-5.png](assets/captures/capture-5.PNG)
 
-I decided to turn the service titles into bootstrap dropdown buttons.
+I decided to turn the service titles into bootstrap dropdown buttons using the documentation.
 
 ![capture-6.png](assets/captures/capture-6.PNG)
 
@@ -309,6 +333,8 @@ I had to write a separate media query for this, which fixed the issue. I also ha
 I changed the width to 90% in order to better match the sm layout. And that's the home page done for now!
 
 ### About page parallax sections
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 #### Stylesheet considerations
 
@@ -429,6 +455,8 @@ I had to use only a small colour stop range for the fade effect as the height of
 
 ![capture-20.png](assets/captures/capture-20.PNG)
 
+(Future me: I later manage to increase the padding size to extend the opacity gradient's 'zone').
+
 #### Making fixed images work responsively
 
 After some reflection, I think I need image wrappers to position the images properly.
@@ -449,7 +477,7 @@ However, on a narrowed laptop screen, I get this...
 
 No image to be seen.
 
-Even though I'd given .sticky-row a minimum height of 100vh, this was not inherited by the columns. After I gave both .image-col and .text-col a height of 100vh, things improved. However, I noticed that the .text-col text was getting squeezed into the following row, probably due to the hard margin rules of the inner paragraph. I changed the .text-col declaration to 'min-height: 100vh' and the issue was resolved on all screens.
+Even though I'd given .sticky-row a minimum height of 100vh, this was not inherited by the columns. After I gave both .image-col and .text-col a height of 100vh, things improved. However, I noticed that the .text-col text was getting squeezed into the following row, probably due to the hard margin rules of the inner paragraph. I changed the .text-col declaration to 'min-height: 100vh' and the issue was resolved on all screens. (Note that here I didn't also immediately do this for the .image-col...).
 
 I decided to center the fixed images by default and reposition the images to the left in the md media query. Because fixed images are positioned relative to the viewport, I had initially given the fixed images (.image-col) a background-position: 10% center; on md+ screens. I tried doing position: left then translatingX by 25%, but I realised that this was moving the whole column which was disastrous. I then settled back on background-position: 10% center;
 
@@ -556,6 +584,8 @@ Boom.
 
 ### About page testimonial section
 
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
 #### Image sizing
 
 For this I used the Bootstrap carousel component. Having never used this before, it involved a lot of trial and error to set it up to fit nicely and responsively between my navbar and footer. Bootstrap's carousel is set up to fill the viewport by default, but this was an issue because my navbar and footer are fixed. I experimented with different image sizes to find the smallest one that fulfilled my needs. I also had a problem with the images contracting and expanding in and out of view as the viewport width narrowed and widened. The reason I had difficulty with this was due to selecting the wrong targets. 
@@ -649,6 +679,8 @@ The only further change was to increase font-size after md. I played around but 
 
 ### Contact page
 
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
 #### Contact form
 
 I watched this tutorial to get an idea of how to use bootstrap classes for forms.
@@ -679,7 +711,7 @@ Achieved with bootstrap order classes.
 
 #### Contact page info row
 
-Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details. The map I got from going to Google Maps, clicking 'share' then 'embed'.
+Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details. The map I got from going to Google Maps, clicking 'share' then 'embed' which gave me an iframe link.
 
 #### Contact page tune-up
 
@@ -700,29 +732,9 @@ I also changed the .form-section margin-bottom to 15% which spaces the two secti
 
 I set the form to change to a 4:8 col ratio on lg+ screens to avoid the smaller input fields getting too long.
 
-### Tuning layout and positioning
-
-Now, on my md-size laptop screen, the pages look pretty good. But after viewing all the pages through the dev tool iPhone view, I realize that narrowing the laptop screen page width is not good enough of a test to see how pages look on small screens.
-
-![capture-26.png](assets/captures/capture-26.png)
-
-![capture-27.png](assets/captures/capture-27.png)
-
-![capture-28.png](assets/captures/capture-28.png)
-
-![capture-29.png](assets/captures/capture-29.png)
-
-I would rather try to resolve the blatant spacing issues structurally rather than relying heavily on media queries. 
-
-
-
-
-
-
-
-
-
 ## Surface Plane
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 Now I will work on the cosmetics of the website, such as colour palette, font pair, links and hover/focus states and accessibility.
 
@@ -738,6 +750,14 @@ I was going to link the phone number and email address to the .info-section on t
 
 I set all a tags to have decoration: none;
 
+### Icons, logo and favicon
+
+At the request of my mentor I added icons to the menu items, as well as a logo and favicon. To do this I asked GPT-4 to make a logo with a roof based on the letter A, which eventually produced one I liked. I then compressed this image and included it in the bootstrap navbar. I then made a favicon out of this logo using a logo to favicon converter
+
+https://favicon.io/favicon-converter/
+
+I then added a border blur to the logo using box-shadow.
+
 ### Colour Palette
 
 Although I like this bootstrap dark theme as it is, I need to decide on a complimentary colour palette. My first port of call is coolors.co, which I heard about from one of the CI webinars.
@@ -751,11 +771,11 @@ With a colour drop, I selected the Bootstrap dark theme colour and put it into c
 
 I have set the button:hover color to the mikado yellow and used the other colours elsewhere on the site.
 
-Future me: Due to later feedback, I am changing this to:
+(Future me: Due to later feedback as you'll see, I am changing this to:
 
 - #212529 Eerie black (Bootstrap dark theme)
 - rgb(255, 255, 0) (yellow)
-- white
+- white)
 
 ### Font
 
@@ -763,21 +783,17 @@ I used Google Fonts for this. I decided on Roboto, then found a consensus online
 
 My mentor later said this was boring, so I went for 'Stick No Bills' and 'Open Sans' for the body.
 
-### Logo and favicon
-
-After trying to quickly make some logos on looka.com, I then put GPT-4 to the task, and it created a simple logo that I liked. I then compressed the image from 134kb to around 4kb. I then used a 'favicon converter' to make a favicon out of the logo. I had already made a simple favicon with favicon.io, but I then decided to make the favicon the same as the logo.
-
 ### Adding some spice to the .spacer rows
 
 I had my final meeting with my mentor today, and my key takeaway from his keen feedback was that my use of section colours was simultaneously 'boring' and even 'offensive'. This has made me resolve to spice things up!
 
 I've had an idea to include the text Anthony Jones Handyman across the spacer, with transparent text over a second background with a gradient to create the effect of light shining through the letters as the spacer moves up the page.
 
-I initially asked the Oracle that is GPT-4, but even before I tried it, it didn't look right and was confused with a huge amount of unnecessary lines. However, it introduced me to the concept of background-clip: text. I then turned to YouTube and from searching for 'background-clip text' I found this tutorial
+I initially asked GPT-4, but even before I tried it, it didn't look right and was confused with a huge amount of unnecessary lines. However, it introduced me to the concept of background-clip: text. I then turned to YouTube and from searching for 'background-clip text' I found this tutorial
 
 https://www.youtube.com/watch?v=9Kr3T4Ndl-o
 
-This was much simpler and made sense to me, and taught me to apply a background directly to the p element and clip it to the text. I then fixed the background, and from my previous experience, I knew that this meant that the background was now relative to the viewport and would take up the full screen which is what I wanted for the effect to work. Next I had to set the gradient stops in such a way as to simulate light passing behind, while also making some of the surrounding text visible for coherence.
+This was much simpler and made sense to me, and taught me to apply a background directly to the p element and clip it to the text. I then fixed the background, and from my previous experience, I knew that this meant that the background was now relative to the viewport and would take up the full screen which is what I wanted for the effect to work. Next I had to set the gradient stops in such a way as to simulate light passing behind, while also making enought of the surrounding text visible for coherence.
 
 ```css
 .spacer {
@@ -794,20 +810,27 @@ This was much simpler and made sense to me, and taught me to apply a background 
 }
 ```
 
-![capture-41.png](assets/captures/capture-41.png)
-
-If you notice in the screenshot above, as my partner did rather brutally, there is effectively a white bar above the black spacer which looks sub-optimal. I am keen to try and displace this, although I am nervous I will have to 'tune' many other elements as a result!
-
-After some tinkering, this was easily resolved by changing the .image-col 'height' declaration to 'min-height'. Very satisfying! I've just realised that I probably can get rid of all the padding I added I painstakingly specified for each media query...
-
-Yes it does oh my god. Had I changed height to min-height earlier, I would have saved literally hours and hours of time, refining the padding to get it to better match the .text-col on all devices. Earlier satisfaction revoked!
+This only worked after including the -webkit above.
 
 I decided to add the spacers to every page, which also helps brand consistency. However, having set their font-size to 3rem, I noticed that the text was wrapping on small screens, meaning the effect was ruined. After setting it back to one, the text fits on one line but the letters are quite small. This text is decorative and it doesn't really matter if the effect is quite subtle. 
 
 I actually adjusted this by reducing the text spacing and increasing the font size. Having looked at this on all devices, I can see that some media queries are in order.
 
+My mentor pointed out that I was now getting a slight x-overflow on the about page. I fixed this by moving the .spacer divs out of the .container for the rows. This meant I had to create a separate section container for each row.
 
-## Testing
+![capture-41.png](assets/captures/capture-41.png)
+
+### .image-col tuneup
+
+If you notice in the screenshot above, as my partner did rather brutally, there is effectively a white bar above the black spacer which looks sub-optimal. I am keen to try and displace this, although I am nervous I will have to 'tune' many other elements as a result!
+
+After some tinkering, this was easily resolved by changing the .image-col 'height' declaration to 'min-height'. Very satisfying! I've just realised that I probably can get rid of all the padding I painstakingly specified for each media query...
+
+Yes I can oh my god. Had I changed height to min-height earlier, I would have saved literally hours and hours of time, refining the padding to get it to better match the .text-col on all devices. Earlier satisfaction revoked!
+
+## Final testing
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
 
 ### Tall screens
 
@@ -958,11 +981,28 @@ Time for the last test (hopefully!)
 
 Mixed results with many scores actually coming down! 
 
-### Wave
+### WAVE
+
+I've had a look on WAVE (Web Accessibility Evaluation Tool) and the only issue that catches my eye is that is says low colour contrast, but I don't think the software can take overlays into account.
 
 ### Validators
 
+#### HTML
 
+https://validator.w3.org/
+
+The index and about pages passed straight away, but the contact page got caught out.
+
+- I'd given the form textarea a type="textarea", probably in an effort to be accessible, but I don't remember clearly why I added that
+  - Solution: delete attribute
+- The sections don't have their own headers
+- "Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead"
+  - Solution: specify width and height with CSS instead
+- "Bad value 100% for attribute height on element iframe: Expected a digit but saw % instead.
+  - Solution: specify width and height with CSS instead
+- Typo: hp instead of p element
+  - Solution: delete 'h'
+- Other fallout from the 'hp' mistake above
 
 
 
