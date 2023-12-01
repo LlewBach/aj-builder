@@ -40,6 +40,11 @@ nav {
   min-height: 71px;
 }
 
+/* .navbar-brand {
+  padding-top: 0;
+  margin-top: 0;
+} */
+
 .navbar-brand:hover {
   color: yellow;
 }
@@ -48,6 +53,10 @@ nav {
   box-shadow: 0 0 4px 4px white;
   margin-right: 10px;
 }
+
+/* nav ul {
+  margin-top: 7px;
+} */
 
 .nav-link {
   margin-right: 20px;
@@ -204,7 +213,7 @@ nav {
   margin-bottom: 0;
   padding: 18% 0 10% 0;
   position: sticky;
-  top: 5%;
+  top: 6%;
   background-color: white
 }
 
@@ -363,11 +372,6 @@ footer p {
   .transparent-text {
     font-size: 3rem;
     letter-spacing: 0.5rem;
-    /* background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
-    color: transparent;
-    background-attachment: fixed;
-    background-clip: text;
-    -webkit-background-clip: text; */
   }
 
   .service-divider {
@@ -417,6 +421,7 @@ footer p {
 
   .sticky-title {
     padding: 12% 0 8% 0;
+    top: 5%;
   }
 
   .text-col p:first-of-type {

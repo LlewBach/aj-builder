@@ -1,9 +1,36 @@
-# Mileston 1 Project - Anthony Jones Builder
+# Mileston 1 Project - Anthony Jones Handyman
 ###### By Gareth Llewelyn
 
-## Strategy Plane
+[View website on GitHub Pages](https://llewbach.github.io/aj-builder/)
 
-This website is for a real builder/handyman, with the aim of functioning essentially as an extended business card.
+## Table of contents
+
+> 1. [Overview](#overview)
+> 2. [Strategy Plane](#strategy-plane)
+> 3. [Scope Plane](#scope-plane)
+> 4. [Structure Plane](#structure-plane)
+> 5. [Skeleton Plane](#skeleton-plane)
+> 6. Building process and functional testing
+>> 1. [Navbar and footer](#navbar-and-footer)
+>> 2. [Hero](#holding-out-for-a-hero)
+>> 3. [Services section](#services-section)
+>> 4. [About page parallax sections](#about-page-parallax-sections)
+>> 5. [About page testimonial section](#about-page-testimonial-section)
+>> 6. [Contact page form](#contact-page-form)
+>> 7. [Contact page info row](#contact-page-info-row)
+> 7. [Surface Plane](#surface-plane)
+> 8. Final testing
+> 9. Deployment
+> 10. Credits
+
+## Overview
+
+This website is for educational purposes only. I originally planned to make this site for a real builder, but due to poor responsiveness, I've made it for an imaginary handyman.
+
+In the first instance, I wrote this README chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the README out of compassion for any readers. A chronological sense of the development process can the obtained from the git pushes.
+
+## Strategy Plane
+This website is for a builder/handyman, with the aim of functioning essentially as an extended business card.
 
 Handyman's goals...
 - wants to be found
@@ -26,6 +53,8 @@ Considerations
 - Unlike B2C interactions, which depend more on impulsive decision making on the part of customers, hiring a builder is more like a B2B consideration. This is because hiring a builder is more of a serious commitment, both financially and because one has to live with the result thereafter. For this reason, providing assurance is paramount.
 - Unlike a B2B interaction however, most customers are not industry experts and don't fully understand the problem, the solution or best practice. It is well known that among builders there are many 'cowboys' and those who will try to overcharge as much as possible. For this reason, it is vital that the site instills a positive emotional response in potential customers that inspires trust.
 - Given how important trust is, with the goal of a long term relationship that hopefully lead to more jobs, honesty is important. This has implications for presentation also. If I made a super slick, shiny and ‘professional’ site, the customer may feel somewhat catfished if someone turns up a bit late, in trackies, cracking a smile front and back. I would rather the site were a bit more subtle, down to earth, what it says on the tin kind of thing.
+
+Given that in today's age, business is advertised and found via websites, the creation of a website is fully justified to fulfil the requirements above, if not essential.
 
 ## Scope Plane
 
@@ -58,17 +87,15 @@ The information will be structured as follows:
 
 ### Header 
 
-1) Name
+1) Logo and name
 2) Nav bar
 
 ### Footer 
 
-1) Contact details
-2) Base location
-3) **Call to action** (Get Quote!)
-4) Check a trade
-5) Instagram
-6) My GitHub?
+1) Phone and email
+2) **Call to action** (Get Quote!)
+3) Instagram
+4) Checkatrade
 
 ### Home page
 
@@ -79,6 +106,7 @@ The information will be structured as follows:
 
 1) Background, history, experience
 2) Ethos, customer care
+3) Specialties
 3) Testimonials
 
 ### Contact
@@ -95,9 +123,11 @@ In the next section, I will log the building process and the considerations and 
 
 With regards to the actual content of the site at this stage, I have to use some imagination as my client is rather unresponsive shall we say (contrary to the raving testimonials I shall later devise).
 
-## Building the navbar and footer
+## Building process and functional testing
 
-### Adding the navbar
+I did the majority of my testing as I built each element, so I have included much of the testing I conducted within this section.
+
+### Navbar and footer
 
 I knew that I wanted to use the bootstrap navbar, because of its collapse functionality. However, I wondered whether or not I should wrap it in a header tag for semantic reasons. I decided that the nav element does this sufficiently well.
 
@@ -111,11 +141,11 @@ I had a problem vertically aligning the logo text and the menu items due to the 
 
 The navbar and footer are fixed to top and bottom, so that everything is only one click away at all times.
 
-### Bootstrap classes vs CSS?
+#### Bootstrap classes vs CSS?
 
 By this point, I was wondering how extensively I should use Bootstrap classes rather than CSS. After all, one of the main points of using a stylesheet is to make the HTML more readable. I've decided to make use of bootstrap classes for the sake of consistency with regards to structural considerations such as flexbox, grid, centering items etc and using CSS if I can reuse code for more refined or superficial purposes multiple times (eg, using CSS to set margin-right: 20px for all the menu items rather than .me-x for each one). I realise this is something I'll have to refine with experience.
 
-### Responsive layout
+#### Responsive layout
 
 Initially, I thought I would vertically stack the footer items on small screens. However, I decided that this would be a pointless waste of screen real estate, because the contact details are only one click away anyway on the contact page. I therefore made all but the button .d-none at small screen sizes.
 
@@ -186,15 +216,15 @@ I realised that dealing with the awkward range at the lg breakpoint would be eas
 
 I wanted to give the navbar and footer a dark theme so I could better see their outlines. I had to check the bootstrap docs to see that I needed a data-bs-theme attribute to apply this to the navbar. 
 
-## Building the hero (header)
+### Holding out for a hero
 
-I was unsure of how to use the header element, but I think it is ok to use for the hero section. (Future me: yes this makes good semantic sense).
+I was unsure of how to use the header element (whether it should be used for the navbar), but I think it is ok to use for the hero section. (Future me: yes this makes good semantic sense).
 
 Because my navbar and footer are fixed, I set a margin to the header to exactly match their heights. However, on the small width I've noticed that the bootstrap navbar height is responsive and narrows, leaving whitespace. To address this I will remove the background-image margin. Because my text was centered, getting rid of the margin has also centered the text relative to the viewport.
 
 I looked at w3 schools to learn how to add the parallax effect, and only one line was required, background-attachment: fixed;
 
-## Building the services section
+### Services section
 
 Having gained some confidence with bootstrap grid after the footer, I went back and made a mobile wireframe of this section. When I made my first item, the image overflowed from its container, so I went to Bootstrap docs, and under images I saw the option for the .img-thumbnail class, which conveniently sizes the images for me.
 
@@ -278,13 +308,13 @@ I had to write a separate media query for this, which fixed the issue. I also ha
 ```
 I changed the width to 90% in order to better match the sm layout. And that's the home page done for now!
 
-## Building the About Page .parallax-section
+### About page parallax sections
 
-### Stylesheet considerations
+#### Stylesheet considerations
 
 At this point I wondered how should I organise the stylesheet. I considered a separate stylesheet for the navbar and footer, one for the content of each page. But I thought that it's currently not that long and it would be easier to stylise the whole site if it were one document. (Future me: and having all the declarations in one place makes it much easier to look for conflicting rules when something doesn't behave as expected). I then separated the stylesheet with comments into its different components.
 
-### ScrollMagic rabbit hole
+#### Two day ScrollMagic rabbit hole
 
 I found a found a YouTube tutorial covering "Split Screen Parallax Effect Tutorial | HTML CSS & Javascript". 
 
@@ -302,7 +332,7 @@ On my About page, I have now been able to pin an item for a fixed duration of sc
 
 ![capture-13.png](assets/captures/capture-13.PNG)
 
-### Coming back to sanity and simple CSS
+#### Coming back to sanity and simple CSS
 
 At this point my progress was stalling. I asked my mentor if he was familiar with ScrollMagic as I was wondering if there were an industry standard for animated scrolling, perhaps with better, more recent tutorials online. He pointed out that JavaScript would not be marked for this project and that CSS would be sufficient for my needs. Upon further research I came across the Holy Grail
 
@@ -312,7 +342,7 @@ Having experimented with it, I am in love with how much simpler it is.
 
 My new plan is to have a very simple sticky effect, where the title of each section sticks to the top of the screen below the navbar. I will try to simulate text appearing and disappearing at the start and end by placing a cover with a high-z index at the top and bottom of each section.
 
-### Fixing images for parallax
+#### Fixing images for parallax
 
 With the fixed images, I had a fair amount of trouble with containing them. To get a parallax effect, I had to use CSS background properties rather than an image element. I then found out that the background-attachment: fixed; declaration positions and sizes the background image relative to the viewport, not the container. To get around this I set...
 
@@ -332,7 +362,7 @@ With the fixed images, I had a fair amount of trouble with containing them. To g
 
 However, because these values are relative to the viewport, not the container, it is hard to perfect positioning on all screen sizes, as all the other elements behave relative to their containers.
 
-### Simulating fade in and out with sticky titles
+#### Simulating fade in and out with sticky titles
 
 My next challenge is to replicate fading in and out of the .sticky-title elements. First I want to set the titles so that they start their 'fix' at the right time so that they can pop out from under their cover, have space to appear before paragraphs. This is how it currently looks...
 
@@ -399,111 +429,7 @@ I had to use only a small colour stop range for the fade effect as the height of
 
 ![capture-20.png](assets/captures/capture-20.PNG)
 
-## Building the About Page .testimonial-section
-
-### Image sizing
-
-For this I used the Bootstrap carousel component. Having never used this before, it involved a lot of trial and error to set it up to fit nicely and responsively between my navbar and footer. Bootstrap's carousel is set up to fill the viewport by default, but this was an issue because my navbar and footer are fixed. I experimented with different image sizes to find the smallest one that fulfilled my needs. I also had a problem with the images contracting and expanding in and out of view as the viewport width narrowed and widened. The reason I had difficulty with this was due to selecting the wrong targets. 
-
-Here is the HTML hierarchy
-```html
-<section class="testimonial-section">
-  <div id="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item">
-        <img>
-```
-
-```css
-.testimonial-section {
-  margin-bottom: 70px;
-  background-color: lightcoral;
-}
-
-#carousel {}
-
-#carousel .carousel-item {
-  height: 82vh;
-  transition: none !important;
-}
-
-#carousel .carousel-item img {
-  height: 100%;
-}
-```
-I initially tried to controll the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. I assume this is because the image only responds to the height settings of its direct parent. However, only the upper part of the image was in view. When I targeted the image element within that div and set the height to 100%, the full image filled the available view space on all screen sizes.
-
-![capture-21.png](assets/captures/capture-21.PNG)
-
-After a short-lived feeling of relief, I encountered a new problem. On xs screen sizes, the images become squeezed width-wise. To fix this I added a media query.
-
-```css
-@media only screen and (max-width: 576px) {
-  #carousel .carousel-item {
-    height: auto;
-  }
-}
-```
-
-This works because at the xs breakpoint, the image width becomes the constraining factor. 
-
-### Carousel transitions
-
-Another issue was with the transitions between images. I'm not sure why, but the images would transition at a larger size then snap back into the size set by me. I asked GPT-4 for advice and one of its suggestions was to add `transition: none !important;` as shown above.
-
-### Carousel captions
-
-Below md sizes, the bootstrap carousel is set up to remove captions. However, because the point of this section is to provide testimonials, the caption text is actually the priority. I removed the .d-none and .d-md-block classes from the .carousel-caption divs. Then I realised that I need an overlay to make the text more legible. This I added but I then had to target the .carousel-caption divs and give them a z-index of 2 to bring them above the overlay with a z-index of 1.
-
-## Building the Contact page
-
-### The form
-
-I watched this tutorial to get an idea of how to use bootstrap classes for forms.
-
-https://www.youtube.com/watch?v=dKVX22GR7zQ
-
-As per the tutorial, I used .form-label, .form-control, .input-group and .input-group-text classes for some nice styling effects.
-
-This is what I have so far...
-
-![capture-22.png](assets/captures/capture-22.PNG)
-
-What I would really like is for the job description label and box line up with the name and email inputs, and for the 'Upload Photos' label and input to line up with the 'Phone:' ones. 
-
-Having had a short break, I can see that the obvious answer is to split the form into two rows.
-
-![capture-23.png](assets/captures/capture-23.PNG)
-
-I've just realised that this will cause the form items to stack in the wrong order on small screens.
-
-![capture-24.png](assets/captures/capture-24.PNG)
-
-If I could switch the column order of the first row so that 'Job Description' and 'Name and Email' trade places, that will do. 
-
-Achieved with bootstrap order classes.
-
-![capture-25.png](assets/captures/capture-25.PNG)
-
-### The 'info row'
-
-Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details. The map I got from going to Google Maps, clicking 'share' then 'embed'.
-
-## Finetuning layout and positioning
-
-Now, on my md-size laptop screen, the pages look pretty good. But after viewing all the pages through the dev tool iPhone view, I realize that narrowing the laptop screen page width is not good enough of a test to see how pages look on small screens.
-
-![capture-26.png](assets/captures/capture-26.png)
-
-![capture-27.png](assets/captures/capture-27.png)
-
-![capture-28.png](assets/captures/capture-28.png)
-
-![capture-29.png](assets/captures/capture-29.png)
-
-I would rather try to resolve the blatant spacing issues structurally rather than relying heavily on media queries. 
-
-### Making fixed images work responsively
+#### Making fixed images work responsively
 
 After some reflection, I think I need image wrappers to position the images properly.
 
@@ -535,7 +461,7 @@ But this did not resolve the issue ubiquitously. Below are the views of the page
 
 I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad. (Future me: I later fix the image again and fix the layout).
 
-### Adjusting .text-col elements
+#### Adjusting .text-col elements
 
 My next challenge is to fine tune the point at which the 'sticky titles' pop out from under their covers, the spacing between the sticky titles and the paragraph, and the paragraph text sizes on all screens. 
 
@@ -612,7 +538,7 @@ This is an example of the media query settings required.
 ```
 On the smaller simulators (iPhone and iPad), the percentage figures made very little difference to the layout, whereas on a compressed laptop screen they made a huge difference. This allowed me to make the layout work on both. This whole operation was a matter of compromise and optimisation, and on different screen dimensions, the layout is slightly different, but it works and looks ok.
 
-### Final .parallax-section image considerations
+#### Final .parallax-section image considerations
 
 I am now very happy with the layout settings of the .parallax-section, save for one thing, the image positioning on the iPad screen (md range). Here are the three scenes currently...
 
@@ -628,7 +554,63 @@ To be clear, these are impossible to move, because on the compressed laptop view
 
 Boom.
 
-## Testimonial carousel revamp
+### About page testimonial section
+
+#### Image sizing
+
+For this I used the Bootstrap carousel component. Having never used this before, it involved a lot of trial and error to set it up to fit nicely and responsively between my navbar and footer. Bootstrap's carousel is set up to fill the viewport by default, but this was an issue because my navbar and footer are fixed. I experimented with different image sizes to find the smallest one that fulfilled my needs. I also had a problem with the images contracting and expanding in and out of view as the viewport width narrowed and widened. The reason I had difficulty with this was due to selecting the wrong targets. 
+
+Here is the HTML hierarchy
+```html
+<section class="testimonial-section">
+  <div id="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img>
+```
+
+```css
+.testimonial-section {
+  margin-bottom: 70px;
+  background-color: lightcoral;
+}
+
+#carousel {}
+
+#carousel .carousel-item {
+  height: 82vh;
+  transition: none !important;
+}
+
+#carousel .carousel-item img {
+  height: 100%;
+}
+```
+I initially tried to controll the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. I assume this is because the image only responds to the height settings of its direct parent. However, only the upper part of the image was in view. When I targeted the image element within that div and set the height to 100%, the full image filled the available view space on all screen sizes.
+
+![capture-21.png](assets/captures/capture-21.PNG)
+
+After a short-lived feeling of relief, I encountered a new problem. On xs screen sizes, the images become squeezed width-wise. To fix this I added a media query.
+
+```css
+@media only screen and (max-width: 576px) {
+  #carousel .carousel-item {
+    height: auto;
+  }
+}
+```
+
+This works because at the xs breakpoint, the image width becomes the constraining factor. 
+
+#### Carousel transitions
+
+Another issue was with the transitions between images. I'm not sure why, but the images would transition at a larger size then snap back into the size set by me. I asked GPT-4 for advice and one of its suggestions was to add `transition: none !important;` as shown above.
+
+#### Carousel captions
+
+Below md sizes, the bootstrap carousel is set up to remove captions. However, because the point of this section is to provide testimonials, the caption text is actually the priority. I removed the .d-none and .d-md-block classes from the .carousel-caption divs. Then I realised that I need an overlay to make the text more legible. This I added but I then had to target the .carousel-caption divs and give them a z-index of 2 to bring them above the overlay with a z-index of 1.
+
+#### Testimonial carousel revamp
 
 The carousel is already in place but looks horrendous. I think because it is built to be full screen, I should enable this as much as possible. I've also realised that the whole point of this section is to give testimonials, not to be a gallery. This is how it currently looks on iPhone.
 
@@ -665,7 +647,41 @@ https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstra
 ```
 The only further change was to increase font-size after md. I played around but couldn't make it look better by changing the width and height, so I'm leaving it there.
 
-### Contact page tune-up
+### Contact page
+
+#### Contact form
+
+I watched this tutorial to get an idea of how to use bootstrap classes for forms.
+
+https://www.youtube.com/watch?v=dKVX22GR7zQ
+
+As per the tutorial, I used .form-label, .form-control, .input-group and .input-group-text classes for some nice styling effects.
+
+This is what I have so far...
+
+![capture-22.png](assets/captures/capture-22.PNG)
+
+What I would really like is for the job description label and box line up with the name and email inputs, and for the 'Upload Photos' label and input to line up with the 'Phone:' ones. 
+
+Having had a short break, I can see that the obvious answer is to split the form into two rows.
+
+![capture-23.png](assets/captures/capture-23.PNG)
+
+I've just realised that this will cause the form items to stack in the wrong order on small screens.
+
+![capture-24.png](assets/captures/capture-24.PNG)
+
+If I could switch the column order of the first row so that 'Job Description' and 'Name and Email' trade places, that will do. 
+
+Achieved with bootstrap order classes.
+
+![capture-25.png](assets/captures/capture-25.PNG)
+
+#### Contact page info row
+
+Below the 'form row' I created an 'info row' split into three. One with a map, one with a fun image, and the other with the handyman's contact details. The map I got from going to Google Maps, clicking 'share' then 'embed'.
+
+#### Contact page tune-up
 
 As far as I can see, the only things that need attention are the middle text column and the fact that on the iPad, the content only comes down two thirds of the page.
 
@@ -683,6 +699,28 @@ My mentor quickly mentioned something about adding 'pipes' to the text column. I
 I also changed the .form-section margin-bottom to 15% which spaces the two sections a bit better on the iPad. I later changed it down to 10% because I didn't think it was worth the effect everywhere else just to satisfy the iPad.
 
 I set the form to change to a 4:8 col ratio on lg+ screens to avoid the smaller input fields getting too long.
+
+### Tuning layout and positioning
+
+Now, on my md-size laptop screen, the pages look pretty good. But after viewing all the pages through the dev tool iPhone view, I realize that narrowing the laptop screen page width is not good enough of a test to see how pages look on small screens.
+
+![capture-26.png](assets/captures/capture-26.png)
+
+![capture-27.png](assets/captures/capture-27.png)
+
+![capture-28.png](assets/captures/capture-28.png)
+
+![capture-29.png](assets/captures/capture-29.png)
+
+I would rather try to resolve the blatant spacing issues structurally rather than relying heavily on media queries. 
+
+
+
+
+
+
+
+
 
 ## Surface Plane
 
@@ -721,7 +759,7 @@ Future me: Due to later feedback, I am changing this to:
 
 ### Font
 
-I decided on Roboto, then found a consensus online that Open Sans, which I happen to like, pairs well with Roboto. GPT-4 recommended I use Open Sans for titles, due to more open style, and Roboto for body as it is more condensed and readable in smaller sizes.
+I used Google Fonts for this. I decided on Roboto, then found a consensus online that Open Sans, which I happen to like, pairs well with Roboto. GPT-4 recommended I use Open Sans for titles, due to more open style, and Roboto for body as it is more condensed and readable in smaller sizes.
 
 My mentor later said this was boring, so I went for 'Stick No Bills' and 'Open Sans' for the body.
 
@@ -767,9 +805,6 @@ Yes it does oh my god. Had I changed height to min-height earlier, I would have 
 I decided to add the spacers to every page, which also helps brand consistency. However, having set their font-size to 3rem, I noticed that the text was wrapping on small screens, meaning the effect was ruined. After setting it back to one, the text fits on one line but the letters are quite small. This text is decorative and it doesn't really matter if the effect is quite subtle. 
 
 I actually adjusted this by reducing the text spacing and increasing the font size. Having looked at this on all devices, I can see that some media queries are in order.
-
-### Revamping the about page header
-
 
 
 ## Testing
@@ -924,6 +959,8 @@ Time for the last test (hopefully!)
 Mixed results with many scores actually coming down! 
 
 ### Wave
+
+### Validators
 
 
 
