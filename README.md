@@ -19,7 +19,7 @@
 >> 6. [Contact page](#contact-page)
 > 7. [Surface Plane](#surface-plane)
 > 8. [Final testing](#final-testing)
-> 9. Deployment
+> 9. [Deployment](#deployment)
 > 10. Credits
 
 ## Overview
@@ -224,11 +224,9 @@ I had previously tried to format the icons to appear in xs size, but I think the
 
 ![capture-4.png](assets/captures/capture-4.PNG)
 
-
 I realised that dealing with the awkward range at the lg breakpoint would be easy if I changed the sub-column stacking from stacked to inline at the xl breakpoint instead, only 3 changes.
 
 I wanted to give the navbar and footer a dark theme so I could better see their outlines. I had to check the bootstrap docs to see that I needed a data-bs-theme attribute to apply this to the navbar. 
-
 
 ### Holding out for a hero
 
@@ -996,6 +994,7 @@ The index and about pages passed straight away, but the contact page got caught 
 - I'd given the form textarea a type="textarea", probably in an effort to be accessible, but I don't remember clearly why I added that
   - Solution: delete attribute
 - The sections don't have their own headers
+  - Solution: remove section element from around the form, replace .info-row section with a div
 - "Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead"
   - Solution: specify width and height with CSS instead
 - "Bad value 100% for attribute height on element iframe: Expected a digit but saw % instead.
@@ -1003,6 +1002,52 @@ The index and about pages passed straight away, but the contact page got caught 
 - Typo: hp instead of p element
   - Solution: delete 'h'
 - Other fallout from the 'hp' mistake above
+
+HTML Validator appeased!
+
+#### CSS
+
+https://jigsaw.w3.org/css-validator/
+
+Thankfully passed first time. Two warnings though..
+
+- "The value text is deprecated"
+- "-webkit-background-clip is a vendor extension"
+
+GPT-4 advises to set a fallback, such as to make the text transparent, which is already the case for me, so I'm happy to move on.
+
+## Deployment
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
+### Web deployment
+
+I deployed the site using GitHub Pages. Here is the link:
+
+https://llewbach.github.io/aj-builder/
+
+The site updates to include every new git push.
+
+### How to run locally
+
+1. Visit the GitHub repository for [AJHandyman]().
+
+## Credits
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
+In building this project, I used GPT-4 extensively as a resource to look up things quickly, discover new tools and learn how to use them. I also used it to try to diagnose problems I came across. My use of GPT-4 is documented in the Building section.
+
+StackOverflow provided me with a quick way of centering Bootstrap's carousel caption vertically. This is highlighted in the code and Building section.
+
+I used the Bootstrap framework for advanced features such as the navbar, dropdown menus, carousel and contact form.
+
+I would like to thank my mentor Ben Kavanagh for his sharp eye, great feedback and encouragement.
+
+
+
+
+
 
 
 
