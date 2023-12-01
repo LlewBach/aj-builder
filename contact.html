@@ -49,89 +49,86 @@
     <h1>Get in Touch</h1>
   </header>
 
-  <section class="form-section">
-    <form>
-      <div class="container">
+  <form class="form-section">
+    <div class="container">
 
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4 order-2 order-md-1 d-flex flex-column justify-content-between">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 order-2 order-md-1 d-flex flex-column justify-content-between">
 
-            <label for="name" class="form-label">Name: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-signature"></i>
-              </span>
-              <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
-            </div>
-
-            <label for="email" class="form-label">Email: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com"
-                required>
-            </div>
-
+          <label for="name" class="form-label">Name: </label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fa-solid fa-signature"></i>
+            </span>
+            <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
           </div>
-          <div class="col-md-6 col-lg-8 order-1 order-md-2 d-flex flex-column justify-content-between">
 
-            <label for="job-description" class="form-label">Job Description:</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-wrench"></i>
-              </span>
-              <textarea id="job-description" name="job-description" class="form-control"
-                placeholder="Please provide a short description of the jobs you have in mind" required></textarea>
-            </div>
+          <label for="email" class="form-label">Email: </label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com" required>
+          </div>
 
+        </div>
+        <div class="col-md-6 col-lg-8 order-1 order-md-2 d-flex flex-column justify-content-between">
+
+          <label for="job-description" class="form-label">Job Description:</label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fa-solid fa-wrench"></i>
+            </span>
+            <textarea id="job-description" name="job-description" class="form-control"
+              placeholder="Please provide a short description of the jobs you have in mind" required></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+
+          <label for="phone" class="form-label">Phone: </label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required>
+          </div>
+
+          <label for="postcode" class="form-label">Postcode: </label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fa-solid fa-address-book"></i>
+            </span>
+            <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
+              required>
           </div>
         </div>
+        <div class="col-md-6 col-lg-8">
 
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-
-            <label for="phone" class="form-label">Phone: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-phone"></i>
-              </span>
-              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required>
-            </div>
-
-            <label for="postcode" class="form-label">Postcode: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-address-book"></i>
-              </span>
-              <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
-                required>
-            </div>
+          <label for="photo-upload" class="form-label">Upload Photos:</label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <i class="fa-solid fa-image"></i>
+            </span>
+            <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
           </div>
-          <div class="col-md-6 col-lg-8">
 
-            <label for="photo-upload" class="form-label">Upload Photos:</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-image"></i>
-              </span>
-              <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
-            </div>
-
-            <div class="button-wrapper d-flex justify-content-center align-items-end">
-              <input class="btn btn-dark" type="submit" value="Submit">
-            </div>
+          <div class="button-wrapper d-flex justify-content-center align-items-end">
+            <input class="btn btn-dark" type="submit" value="Submit">
           </div>
         </div>
       </div>
-    </form>
-  </section>
+    </div>
+  </form>
 
   <div class="spacer d-flex justify-content-center align-items-center">
     <p class="transparent-text">Anthony Jones Handyman</p>
   </div>
 
-  <section class="info-section container">
+  <div class="info-section container">
     <div class="row">
       <div class="map-col col-md-4">
         <iframe title="Map showing Anthony Jones Handyman's center of operations in Bridgend, South Wales"
@@ -153,9 +150,7 @@
       <div class="picture-col d-none d-md-block col-md-4" role="img" aria-label="Anthony making a call-me gesture">
       </div>
     </div>
-  </section>
-
-
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
