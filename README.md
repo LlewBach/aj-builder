@@ -736,7 +736,11 @@ When the info row columns are stacked in mobile view, I added margins to space t
 
 After a good while of tinkering, I finally cracked how to deal the different views of md widths on my laptop and on the ipad. I set a media query for only the md width range and a min-height of 1000px, which is just under the max height of the iPad (gleaned from testing). I had a huge amount of trouble sizing the .picture-col, but I found I had to change the min-height in the previous media query to 'height', and then I could change it within the iPad media query. This allowed me to fit everything on one page, by reducing picture to a size in which the hand gesture can be seen, and reducing the spacer height. Given that the page no longer scrolled, I changed the background gradient of the spacer to be wider in order for the text to be readable while maintaining some gradient effect.
 
-![capture-42.png](assets/captures/capture-42.png)
+![capture-43.png](assets/captures/capture-43.png)
+
+After I pushed to GitHub, I checked my GitHub Page on exactly the same view (iPad Pro, 1024 x 1366, 34% zoom), and looks unaffected...
+
+![capture-44.png](assets/captures/capture-44.png)
 
 ## Surface Plane
 
