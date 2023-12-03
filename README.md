@@ -584,6 +584,8 @@ My mentor pointed out that there was an x overflow, which I had fixed by taking 
 
 I made the mistake of asking GPT-4 for quick advice on how to remove gutters, and the answer I got was to add the .no-gutters class to the rows. After seeing this not work, I went on for several hours trying a huge variety of different solutions. I later tried adding the class gx-0 to the rows and this finally worked! I went back to GPT-4 and asked if .no-gutters was still a current class, and it replied 'no'. I always used to think that if GPT-4 had a physical body I would be in danger for asking so many dumb questions, but now the idea of it fills me with vengeful lust.
 
+I've just noticed that this fix has solved the moving navbar and footer! Two in one.
+
 ### About page testimonial section
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)

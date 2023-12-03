@@ -430,7 +430,7 @@ footer p {
   }
 
   .picture-col {
-    height: 75vh;
+    /* height: 75vh; */
     margin-top: 0;
   }
 }
