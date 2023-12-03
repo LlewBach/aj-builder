@@ -524,7 +524,7 @@ footer p {
 
 /* Height above 1100px */
 
-@media screen and (min-height: 1100px) {
+@media screen and (min-width: 1200px) and (min-height: 1100px) {
   nav {
     min-height: 7%;
   }

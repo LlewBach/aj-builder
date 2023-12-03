@@ -742,6 +742,14 @@ After I pushed to GitHub, I checked my GitHub Page on exactly the same view (iPa
 
 ![capture-44.png](assets/captures/capture-44.png)
 
+I also noticed that there is more space between the navbar and the title on the first (local) version than the deployed version.
+
+This is irritating and inexplicable ballAche that I absolutely do not need right now! The fact I have to test for two different appearances based on the same code is something wasn't expecting, nor the fact I can no longer trust that what changes I make locally are even real!
+
+After some tinkering, I've realized that the GitHub Page version takes the stated screen dimensions much more seriously than the local version. I had asked GPT-4 why I had to use the md range to affect changes to the iPad view when its stated screen width was greater (1024). The answer I got was that there was a difference between real pixels and 'logical' pixels. GitHub clearly regards this answer as utter bullshit.
+
+I changed the original iPad media query to go up to 1025 width and pushed, and the media query then kicked in on the GitHub page. I think the difference in title/navbar gap is most probably due to a media query also. Using Chrome Dev Tools I measured the height of the navbar on both views and saw that the height of the better looking one (local) was 71px (the default) and the other (GitHub) was 95.6px, meaning that the min-height: 1100px media query was only working on GitHub, because again for some reason the GitHub version takes the stated height of the iPad (1366) more seriously. To solve this, I'm going to add a min-width of xl to the height media query, so that the %padding of the sticky title can move with the increasing navbar height.
+
 ## Surface Plane
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
