@@ -758,6 +758,10 @@ I changed the original iPad media query to go up to 1025 width and pushed, and t
 
 This has been a good lesson to focus testing on the deployed version rather than the live server version.
 
+I later came back to it and saw it had reverted back...
+
+
+
 ## Surface Plane
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
