@@ -580,6 +580,10 @@ To be clear, these are impossible to move, because on the compressed laptop view
 
 Boom.
 
+My mentor pointed out that there was an x overflow, which I had fixed by taking the spacers outside of row containers. I thought this was fixed but he pointed out that it was still happening on the mobile view. There's also an issue with the supposedly fixed navbar and footer scrolling a small amount with the page. I've got a feeling the x-overflow is due to the bootstrap container and grid. My mentor mentioned a potential gutter issue. 
+
+I made the mistake of asking GPT-4 for quick advice on how to remove gutters, and the answer I got was to add the .no-gutters class to the rows. After seeing this not work, I went on for several hours trying a huge variety of different solutions. I later tried adding the class gx-0 to the rows and this finally worked! I went back to GPT-4 and asked if .no-gutters was still a current class, and it replied 'no'. I always used to think that if GPT-4 had a physical body I would be in danger for asking so many dumb questions, but now the idea of it fills me with vengeful lust.
+
 ### About page testimonial section
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
@@ -748,7 +752,9 @@ This is irritating and inexplicable ballAche that I absolutely do not need right
 
 After some tinkering, I've realized that the GitHub Page version takes the stated screen dimensions much more seriously than the local version. I had asked GPT-4 why I had to use the md range to affect changes to the iPad view when its stated screen width was greater (1024). The answer I got was that there was a difference between real pixels and 'logical' pixels. GitHub clearly regards this answer as utter bullshit.
 
-I changed the original iPad media query to go up to 1025 width and pushed, and the media query then kicked in on the GitHub page. I think the difference in title/navbar gap is most probably due to a media query also. Using Chrome Dev Tools I measured the height of the navbar on both views and saw that the height of the better looking one (local) was 71px (the default) and the other (GitHub) was 95.6px, meaning that the min-height: 1100px media query was only working on GitHub, because again for some reason the GitHub version takes the stated height of the iPad (1366) more seriously. To solve this, I'm going to add a min-width of xl to the height media query, so that the %padding of the sticky title can move with the increasing navbar height.
+I changed the original iPad media query to go up to 1025 width and pushed, and the media query then kicked in on the GitHub page. I think the difference in title/navbar gap is most probably due to a media query also. Using Chrome Dev Tools I measured the height of the navbar on both views and saw that the height of the better looking one (local) was 71px (the default) and the other (GitHub) was 95.6px, meaning that the min-height: 1100px media query was only working on GitHub, because again for some reason the GitHub version takes the stated height of the iPad (1366) more seriously. To solve this, I'm going to add a min-width of xl to the height media query, so that the %padding of the sticky title can move with the increasing navbar height. Ok, the iPad view is now fixed. 
+
+This has been a good lesson to focus testing on the deployed version rather than the live server version.
 
 ## Surface Plane
 

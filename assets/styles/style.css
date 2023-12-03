@@ -38,6 +38,10 @@ a:hover {
 
 nav {
   min-height: 71px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
 }
 
 /* .navbar-brand {
@@ -341,6 +345,9 @@ textarea {
 
 footer {
   height: 71px;
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
 }
 
 footer p {
