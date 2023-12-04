@@ -469,9 +469,12 @@ footer p {
     height: 10vh;
   }
 
+  .spacer .transparent-text {
+    font-size: 3.2rem;
+  }
+
   .contact-spacer .transparent-text {
-    font-size: 2rem;
-    background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
+    background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
     color: transparent;
     background-attachment: fixed;
     background-clip: text;
@@ -530,18 +533,21 @@ footer p {
     margin-bottom: 140px;
   }
 
-  .spacer {
-    height: 10vh;
-  }
-
   .text-col p:first-of-type {
     font-size: 1.8rem;
     margin: 70% auto;
   }
 
+  .spacer {
+    height: 10vh;
+  }
+
+  .spacer .transparent-text {
+    font-size: 4rem;
+  }
+
   .contact-spacer .transparent-text {
-    font-size: 3rem;
-    background: linear-gradient(to top left, #212529 25%, yellow 50%, #212529 75%);
+    background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
     color: transparent;
     background-attachment: fixed;
     background-clip: text;
