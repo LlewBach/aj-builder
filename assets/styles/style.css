@@ -286,12 +286,16 @@ nav {
 /* --------------------------------------- Contact */
 
 .contact-header {
-  margin: 86px 0 30px;
+  margin: 100px 0 30px;
 }
 
 .form-section {
   /* min-height: 80vh; */
-  margin-bottom: 10%;
+  margin-bottom: 20%;
+}
+
+.input-group {
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -303,7 +307,7 @@ textarea {
 }
 
 .info-section {
-  margin-top: 10%;
+  margin-top: 20%;
   margin-bottom: 30px;
 }
 
@@ -425,6 +429,19 @@ footer p {
     font-size: 1.4rem;
   }
 
+  .form-section {
+    /* min-height: 80vh; */
+    margin-bottom: 5%;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  .info-section {
+    margin-top: 6%;
+  }
+
   .map-col {
     margin-bottom: 0;
   }
@@ -435,20 +452,39 @@ footer p {
   }
 }
 
-/* iPad */
+/* iPad Mini and Air  */
 
-@media screen and (min-width: 768px) and (max-width: 1537px) and (min-height: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 840px) and (min-height: 1000px) {
+  .service-section {
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+
+  .text-col p:first-of-type {
+    font-size: 1.5rem;
+    margin: 80% auto;
+  }
+
   .spacer {
     height: 10vh;
   }
 
-  .transparent-text {
+  .contact-spacer .transparent-text {
     font-size: 2rem;
     background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
     color: transparent;
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
+  }
+
+  .form-section {
+    /* min-height: 80vh; */
+    margin-bottom: 10%;
+  }
+
+  .input-group {
+    margin-bottom: 0px;
   }
 
   .picture-col {
@@ -483,6 +519,37 @@ footer p {
 
   textarea {
     height: 100px;
+  }
+}
+
+/* iPad Pro */
+
+@media screen and (min-width: 1020px) and (max-width: 1028px) and (min-height: 1350px) {
+  .service-section {
+    margin-top: 100px;
+    margin-bottom: 140px;
+  }
+
+  .spacer {
+    height: 10vh;
+  }
+
+  .text-col p:first-of-type {
+    font-size: 1.8rem;
+    margin: 70% auto;
+  }
+
+  .contact-spacer .transparent-text {
+    font-size: 3rem;
+    background: linear-gradient(to top left, #212529 25%, yellow 50%, #212529 75%);
+    color: transparent;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .picture-col {
+    height: 35vh;
   }
 }
 
@@ -531,8 +598,8 @@ footer p {
 
 /* Height above 1100px */
 
-@media screen and (min-width: 1200px) and (min-height: 1100px) {
+/* @media screen and (min-width: 1200px) and (min-height: 1100px) {
   nav {
     min-height: 7%;
   }
-}
+} */

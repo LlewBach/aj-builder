@@ -754,13 +754,19 @@ This is irritating and inexplicable ballAche that I absolutely do not need right
 
 After some tinkering, I've realized that the GitHub Page version takes the stated screen dimensions much more seriously than the local version. I had asked GPT-4 why I had to use the md range to affect changes to the iPad view when its stated screen width was greater (1024). The answer I got was that there was a difference between real pixels and 'logical' pixels. GitHub clearly regards this answer as utter bullshit.
 
-I changed the original iPad media query to go up to 1025 width and pushed, and the media query then kicked in on the GitHub page. I think the difference in title/navbar gap is most probably due to a media query also. Using Chrome Dev Tools I measured the height of the navbar on both views and saw that the height of the better looking one (local) was 71px (the default) and the other (GitHub) was 95.6px, meaning that the min-height: 1100px media query was only working on GitHub, because again for some reason the GitHub version takes the stated height of the iPad (1366) more seriously. To solve this, I'm going to add a min-width of xl to the height media query, so that the %padding of the sticky title can move with the increasing navbar height. Ok, the iPad view is now fixed. 
+I changed the original iPad media query to go up to 1025 width and pushed, and the media query then kicked in on the GitHub page for the iPad Pro. I think the difference in title/navbar gap is most probably due to a media query also. Using Chrome Dev Tools I measured the height of the navbar on both views and saw that the height of the better looking one (local) was 71px (the default) and the other (GitHub) was 95.6px, meaning that the min-height: 1100px media query was only working on GitHub, because again for some reason the GitHub version takes the stated height of the iPad Pro (1366) more seriously. To solve this, I'm going to add a min-width of xl to the height media query, so that the %padding of the sticky title can move with the increasing navbar height. Ok, the iPad Pro view is now fixed. 
 
 This has been a good lesson to focus testing on the deployed version rather than the live server version.
 
-I later came back to it and saw it had reverted back...
+I later came back to it to test every single device view on dev tools, and saw that now, the iPad mini shows the appropriate view, but the iPad Air (820 x 1180) and iPad Pro (1024 x 1366) don't. 
 
+After some tinkering, I've found that unbelievably there is a difference in the stated screen dimensions and actual screen dimensions of the device simulators. For example, the iPad Mini has stated dimensions of 768 x 1024. However, using dev tools I measured actual dimensions of 768 x 1026. Here are the other iPad discrepencies: iPad Pro (stated: 1024 x 1366, actual: 1536 x 2486), iPad Air (stated: 820 x 1180, actual: 1230 x 2202).
 
+The different views between devices for GitHub pages and locally mean that I have to push to GitHub every time I want to test something.
+
+I'm also convinced that I had earlier got the iPad Pro view to work on the GitHub Page, but when I came back later, it wasn't. This gives me the feeling that the way the dev tool simulators size devices is actually variable.
+
+Because the ranges above cover such wide spans, I've left the original iPad media query for the iPad Mini and stated dimensions for the other iPads, and made separate ones at the end for the iPad Air and Pro, in order to not interfere with lg+ monitor screens as much as possible.
 
 ## Surface Plane
 
