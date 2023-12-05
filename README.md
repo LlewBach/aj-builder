@@ -861,7 +861,7 @@ Yes I can oh my god. Had I changed height to min-height earlier, I would have sa
 
 ### Responsiveness
 
-I documented most of the testing for responiveness in the [Building section](#building-process-and-functional-testing) above. I did however engage in a systematic examination of each page on every device on Chrome dev tools, as well as my own desktop screens. This is reflected in the media queries. 
+I documented most of the testing for responiveness in the [Building section](#building-process-and-functional-testing) above. I did however engage in a systematic examination of each page on every device on Chrome dev tools, as well as my own desktop screens. This is reflected in the media queries. Only on the 'Surface Pro 7' and 'Galaxy Fold' is the layout suboptimal, and I can live with this.
 
 ### Tall screens
 
