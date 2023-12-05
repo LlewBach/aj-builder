@@ -28,7 +28,7 @@
 
 This website is for educational purposes only. I originally planned to make this site for a real builder, but due to poor responsiveness, I've made it for an imaginary handyman.
 
-In the first instance, I wrote this README chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the README out of compassion for any readers. A chronological sense of the development process can be more reliably obtained from the git pushes.
+In the first instance, I wrote this README chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the README out of compassion for any brave readers. A chronological sense of the development process can be more reliably obtained from the git pushes.
 
 ## Strategy Plane
 
@@ -39,7 +39,7 @@ This website is for a builder/handyman, with the aim of functioning essentially 
 Handyman's goals...
 - wants to be found
 - wants the platform to inspire sense of **trust** and reliability in potential clients
-- wants a means of receiving quote requests. This could potentially save the handyman time driving to site if potential clients can submit pictures along with a description
+- wants a means of receiving quote requests. This could potentially save the handyman time driving to sites if potential clients can submit pictures along with a description
 
 Buyer's goals...
 - wants to find a good builder
@@ -86,7 +86,7 @@ User stories
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-Information needs to convey what (services), who (experience and character), how (contact) and how much (quote request form). Given that our strategy has set out to instill trust, this order makes sense for our site's pages. 
+Information needs to convey what (services), who (experience and character), how (contact) and how much (quote request form). This order makes sense for our site's pages, as the customer needs to know that this site is firstly relevant, secondly desireable, then actionable.
 
 Given that the customer getting in contact is the desired outcome, the contact information will always be visible in the footer, as will the 'Get Quote' call to action, one click away.
 
@@ -151,8 +151,6 @@ My first concern was centering the mobile menu items, for which I used CSS.
 I had a problem vertically aligning the logo text and the menu items due to the differing text sizes I presume. I resorted to eye-balling it with my client's business card and adjusting with CSS margin-top.
 
 The navbar and footer are fixed to top and bottom, so that everything is only one click away at all times.
-
-My mentor later pointed out that these items were still out of alignment...
 
 #### Bootstrap classes vs CSS?
 
@@ -224,7 +222,7 @@ I had previously tried to format the icons to appear in xs size, but I think the
 
 ![capture-4.png](assets/captures/capture-4.PNG)
 
-I realised that dealing with the awkward range at the lg breakpoint would be easy if I changed the sub-column stacking from stacked to inline at the xl breakpoint instead, only 3 changes.
+I realised that dealing with the awkward range at the lg breakpoint would be easy if I changed the sub-column stacking from stacked to inline at the xl breakpoint instead of lg, only 3 changes.
 
 I wanted to give the navbar and footer a dark theme so I could better see their outlines. I had to check the bootstrap docs to see that I needed a data-bs-theme attribute to apply this to the navbar. 
 
@@ -475,7 +473,7 @@ However, on a narrowed laptop screen, I get this...
 
 No image to be seen.
 
-Even though I'd given .sticky-row a minimum height of 100vh, this was not inherited by the columns. After I gave both .image-col and .text-col a height of 100vh, things improved. However, I noticed that the .text-col text was getting squeezed into the following row, probably due to the hard margin rules of the inner paragraph. I changed the .text-col declaration to 'min-height: 100vh' and the issue was resolved on all screens. (Note that here I didn't also immediately do this for the .image-col...).
+Even though I'd given .sticky-row a minimum height of 100vh, this was not inherited by the columns. After I gave both .image-col and .text-col a height of 100vh, things improved. However, I noticed that the .text-col text was getting squeezed into the following row, probably due to the hard margin rules of the inner paragraph. I changed the .text-col declaration to 'min-height: 100vh' and the issue was resolved on all screens. (Note that here I didn't also immediately do this for the .image-col...big mistake).
 
 I decided to center the fixed images by default and reposition the images to the left in the md media query. Because fixed images are positioned relative to the viewport, I had initially given the fixed images (.image-col) a background-position: 10% center; on md+ screens. I tried doing position: left then translatingX by 25%, but I realised that this was moving the whole column which was disastrous. I then settled back on background-position: 10% center;
 
@@ -485,7 +483,7 @@ But this did not resolve the issue ubiquitously. Below are the views of the page
 
 ![capture-33.png](assets/captures/capture-33.PNG)
 
-I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad. (Future me: I later fix the image again and fix the layout).
+I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad. (Future me: I later fix the image again and sort out the layout).
 
 #### Adjusting .text-col elements
 
@@ -582,9 +580,9 @@ Boom.
 
 My mentor pointed out that there was an x overflow, which I had fixed by taking the spacers outside of row containers. I thought this was fixed but he pointed out that it was still happening on the mobile view. There's also an issue with the supposedly fixed navbar and footer scrolling a small amount with the page. I've got a feeling the x-overflow is due to the bootstrap container and grid. My mentor mentioned a potential gutter issue. 
 
-I made the mistake of asking GPT-4 for quick advice on how to remove gutters, and the answer I got was to add the .no-gutters class to the rows. After seeing this not work, I went on for several hours trying a huge variety of different solutions. I later tried adding the class gx-0 to the rows and this finally worked! I went back to GPT-4 and asked if .no-gutters was still a current class, and it replied 'no'. I always used to think that if GPT-4 had a physical body I would be in danger for asking so many dumb questions, but now the idea of it fills me with vengeful lust.
+I made the mistake of asking GPT-4 for quick advice on how to remove gutters, and the answer I got was to add the .no-gutters class to the rows. After seeing this not work, I went on for several hours trying a huge variety of different solutions. I later tried adding the class gx-0 to the rows after perusing Bootstrap docs and this finally worked! I went back to GPT-4 and asked if .no-gutters was still a current class, to which it replied 'no'. I always used to think that if GPT-4 had a physical body I would be in danger for asking so many dumb questions, but now the idea of it fills me with vengeful lust.
 
-I've just noticed that this fix has solved the moving navbar and footer! Two in one.
+I've just noticed that this fix has solved the moving navbar and footer! Two in one. Ben called it fairplay.
 
 ### About page testimonial section
 
@@ -664,7 +662,7 @@ This has made this section look much better on all screen sizes already. However
 
 As per my mentor's recommendation, I added another overlay behind the text to make it more readable, and rounded the corners which looks cool.
 
-I tried to vertically center the caption by making the .carousel-item a flexbox but that did <u>not</u> work.
+I tried to vertically center the caption by making the .carousel-item a flexbox but that absolutely did <u>not</u> work.
 
 Searching for an easy fix, I Googled 'how to vertically center a Bootstrap carousel caption?' and found exactly what I was looking for on Stack Overflow.
 
@@ -740,7 +738,7 @@ I later added the blinged up spacer to this page for brand consistency.
 
 When the info row columns are stacked in mobile view, I added margins to space them out which I reset to zero in the md media query. I also reinstated the 'call me maybe' image for small screens and had to resize it so the hand gesture was visible, then reset it to height: 80vh; in the md media query.
 
-After a good while of tinkering, I finally cracked how to deal the different views of md widths on my laptop and on the ipad. I set a media query for only the md width range and a min-height of 1000px, which is just under the max height of the iPad (gleaned from testing). I had a huge amount of trouble sizing the .picture-col, but I found I had to change the min-height in the previous media query to 'height', and then I could change it within the iPad media query. This allowed me to fit everything on one page, by reducing picture to a size in which the hand gesture can be seen, and reducing the spacer height. Given that the page no longer scrolled, I changed the background gradient of the spacer to be wider in order for the text to be readable while maintaining some gradient effect.
+After a good while of tinkering, I finally cracked how to deal the different views of md widths on my laptop and on the ipad. I set a media query for only the md width range and a min-height of 1000px, which is just under the max height of the iPad (gleaned from testing). I had a huge amount of trouble sizing the .picture-col, but I found I had to change the min-height in the previous media query to 'height', and then I could change it within the iPad media query. This allowed me to fit everything on one page, by reducing the picture to a size in which the hand gesture can be seen, and reducing the spacer height. Given that the page no longer scrolled, I changed the background gradient of the spacer to be wider in order for the text to be readable while maintaining some gradient effect.
 
 ![capture-43.png](assets/captures/capture-43.png)
 
@@ -748,25 +746,11 @@ After I pushed to GitHub, I checked my GitHub Page on exactly the same view (iPa
 
 ![capture-44.png](assets/captures/capture-44.png)
 
-I also noticed that there is more space between the navbar and the title on the first (local) version than the deployed version.
+I also noticed that there is more space between the navbar and the title on the first (local) version than the deployed version...
 
-This is irritating and inexplicable ballAche that I absolutely do not need right now! The fact I have to test for two different appearances based on the same code is something wasn't expecting, nor the fact I can no longer trust that what changes I make locally are even real!
+This was the moment that I disappeared down yet another rabbit hole of madness for two days trying to fix this inexplicable difference between the deployed and local views. Due to the intervention of the Coding Gods, it just so happened that I twigged shortly into my first tech support call with a tutor, thus ensuring maximal embarrassment. Basically, one browser tab view was zoomed in more than the other, and this affected the device pixel dimensions, even though its stated zoom didn't change. If that wasn't gutting enough, I then realized that this is what my mentor had meant in his immediate answer to this puzzle days earlier! Hard but educational.
 
-After some tinkering, I've realized that the GitHub Page version takes the stated screen dimensions much more seriously than the local version. I had asked GPT-4 why I had to use the md range to affect changes to the iPad view when its stated screen width was greater (1024). The answer I got was that there was a difference between real pixels and 'logical' pixels. GitHub clearly regards this answer as utter bullshit.
-
-I changed the original iPad media query to go up to 1025 width and pushed, and the media query then kicked in on the GitHub page for the iPad Pro. I think the difference in title/navbar gap is most probably due to a media query also. Using Chrome Dev Tools I measured the height of the navbar on both views and saw that the height of the better looking one (local) was 71px (the default) and the other (GitHub) was 95.6px, meaning that the min-height: 1100px media query was only working on GitHub, because again for some reason the GitHub version takes the stated height of the iPad Pro (1366) more seriously. To solve this, I'm going to add a min-width of xl to the height media query, so that the %padding of the sticky title can move with the increasing navbar height. Ok, the iPad Pro view is now fixed. 
-
-This has been a good lesson to focus testing on the deployed version rather than the live server version.
-
-I later came back to it to test every single device view on dev tools, and saw that now, the iPad mini shows the appropriate view, but the iPad Air (820 x 1180) and iPad Pro (1024 x 1366) don't. 
-
-After some tinkering, I've found that unbelievably there is a difference in the stated screen dimensions and actual screen dimensions of the device simulators. For example, the iPad Mini has stated dimensions of 768 x 1024. However, using dev tools I measured actual dimensions of 768 x 1026. Here are the other iPad discrepencies: iPad Pro (stated: 1024 x 1366, actual: 1536 x 2486), iPad Air (stated: 820 x 1180, actual: 1230 x 2202).
-
-The different views between devices for GitHub pages and locally mean that I have to push to GitHub every time I want to test something.
-
-I'm also convinced that I had earlier got the iPad Pro view to work on the GitHub Page, but when I came back later, it wasn't. This gives me the feeling that the way the dev tool simulators size devices is actually variable.
-
-Because the ranges above cover such wide spans, I've left the original iPad media query for the iPad Mini and stated dimensions for the other iPads, and made separate ones at the end for the iPad Air and Pro, in order to not interfere with lg+ monitor screens as much as possible.
+In the light of this revalation, I had to make some changes to the attempted fixes I put through. In the end, I set one media query for the iPad Mini and Air, and one for the iPad Pro which is quite large. This was to avoid this media query covering too large a span and interfering with other queries and views.
 
 ## Surface Plane
 
@@ -776,7 +760,7 @@ Now I will work on the cosmetics of the website, such as colour palette, font pa
 
 ### Buttons and Links
 
-On the advice of GPT-4, I reformatted by footer button elements to an anchor element and styled it as a button. From the Bootstrap documentation, I gather that button elements are most often used to trigger JavaScripts. 
+On the advice of GPT-4, I reformatted my footer button elements to an anchor element and styled it as a button. From the Bootstrap documentation, I gather that button elements are most often used to trigger JavaScripts. 
 
 I formatted the footer button anchor to have a .btn-light class to contrast with the footer's dark theme.
 
@@ -825,11 +809,11 @@ I had my final meeting with my mentor today, and my key takeaway from his keen f
 
 I've had an idea to include the text Anthony Jones Handyman across the spacer, with transparent text over a second background with a gradient to create the effect of light shining through the letters as the spacer moves up the page.
 
-I initially asked GPT-4, but even before I tried it, it didn't look right and was confused with a huge amount of unnecessary lines. However, it introduced me to the concept of background-clip: text. I then turned to YouTube and from searching for 'background-clip text' I found this tutorial
+I initially asked GPT-4 for tips, but even before I tried it, it didn't look right and was confused with a huge amount of unnecessary lines. However, it introduced me to the concept of background-clip: text. I then turned to YouTube and from searching for 'background-clip text' I found this tutorial
 
 https://www.youtube.com/watch?v=9Kr3T4Ndl-o
 
-This was much simpler and made sense to me, and taught me to apply a background directly to the p element and clip it to the text. I then fixed the background, and from my previous experience, I knew that this meant that the background was now relative to the viewport and would take up the full screen which is what I wanted for the effect to work. Next I had to set the gradient stops in such a way as to simulate light passing behind, while also making enought of the surrounding text visible for coherence.
+This was much simpler and made sense to me, and taught me to apply a background directly to the p element and clip it to the text. I then fixed the background, and from my previous experience, I knew that this meant that the background was now relative to the viewport and would take up the full screen which is what I wanted for the effect to work. Next I had to set the gradient stops in such a way as to simulate light passing behind, while also making enough of the surrounding text visible for coherence.
 
 ```css
 .spacer {
@@ -870,7 +854,7 @@ Yes I can oh my god. Had I changed height to min-height earlier, I would have sa
 
 ### Responsiveness
 
-I documented most of the testing for responiveness in the [Building section](#building-process-and-functional-testing) above.
+I documented most of the testing for responiveness in the [Building section](#building-process-and-functional-testing) above. I did however engage in a systematic examination of each page on every device on Chrome dev tools, as well as my own desktop screens. This is reflected in the media queries. 
 
 ### Tall screens
 
@@ -1019,7 +1003,7 @@ Time for the last test (hopefully!)
   - Best Practices: 95
   - SEO: 100
 
-Mixed results with many scores actually coming down! 
+Mixed results with many scores actually coming down, but "tha'll do Donkeh, tha'll do'! 
 
 ### WAVE
 
@@ -1091,12 +1075,7 @@ I used the Bootstrap framework and documentation for advanced features such as t
 
 I used Unsplash for all real images as they are free to use. https://unsplash.com/
 
-I would like to thank my mentor Ben Kavanagh for his sharp eye, great feedback and encouragement. I also looked up to the README of his first project, [Hard Drivers](https://github.com/BAK2K3/hard-drivers) as a mark to aspire to.
-
-
-
-
-
+I would like to thank my mentor Ben Kavanagh for his sharp eye, great feedback and alleviation of my existential dread that web developers would soon be obsolete do to AGI. I also looked up to the README of his first project, [Hard Drivers](https://github.com/BAK2K3/hard-drivers) as a mark to aspire to.
 
 
 

@@ -593,12 +593,39 @@ footer p {
     margin: 30% auto;
   }
 
+  .form-section {
+    /* min-height: 80vh; */
+    margin: 5% auto 15%;
+  }
+
+  .form-section .row {
+    margin-bottom: 50px;
+    /* min-height: 100px; */
+  }
+
   .input-group {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* .input-group:not(.submit-button) {
+    margin-bottom: 50px;
+  } */
+
+  .info-section {
+    margin-bottom: 60px;
   }
 
   textarea {
     height: 200px;
+  }
+}
+
+/* XXL */
+
+@media only screen and (min-width: 1400px) {
+  .service-section {
+    margin-top: 120px;
+    margin-bottom: 160px;
   }
 }
 
