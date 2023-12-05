@@ -303,7 +303,7 @@ textarea {
 }
 
 .button-wrapper {
-  height: 50%;
+  /* min-height: 50%; */
 }
 
 .info-section {
@@ -431,11 +431,17 @@ footer p {
 
   .form-section {
     /* min-height: 80vh; */
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 12%;
   }
 
-  .input-group {
-    margin-bottom: 10px;
+  .form-section .row {
+    margin-bottom: 100px;
+    min-height: 220px;
+  }
+
+  textarea {
+    height: 200px;
   }
 
   .info-section {
@@ -483,8 +489,23 @@ footer p {
 
   .form-section {
     /* min-height: 80vh; */
-    margin-bottom: 10%;
+    margin-top: 0;
+    margin-bottom: 7%;
   }
+
+  .form-section .row {
+    margin-bottom: 0;
+    min-height: 120px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  /* .form-section {
+    min-height: 80vh;
+    margin-bottom: 10%;
+  } */
 
   .input-group {
     margin-bottom: 0px;
@@ -519,10 +540,6 @@ footer p {
   .input-group {
     margin-bottom: 10px;
   }
-
-  textarea {
-    height: 100px;
-  }
 }
 
 /* iPad Pro */
@@ -552,6 +569,21 @@ footer p {
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
+  }
+
+  .form-section {
+    /* min-height: 80vh; */
+    margin-top: 0;
+    margin-bottom: 7%;
+  }
+
+  .form-section .row {
+    margin-bottom: 0;
+    min-height: 120px;
+  }
+
+  textarea {
+    height: 100px;
   }
 
   .picture-col {
@@ -595,16 +627,11 @@ footer p {
 
   .form-section {
     /* min-height: 80vh; */
-    margin: 5% auto 15%;
-  }
-
-  .form-section .row {
-    margin-bottom: 50px;
-    /* min-height: 100px; */
+    /* margin: 5% auto 15%; */
   }
 
   .input-group {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   /* .input-group:not(.submit-button) {
@@ -612,11 +639,7 @@ footer p {
   } */
 
   .info-section {
-    margin-bottom: 60px;
-  }
-
-  textarea {
-    height: 200px;
+    /* margin-bottom: 60px; */
   }
 }
 
@@ -626,6 +649,25 @@ footer p {
   .service-section {
     margin-top: 120px;
     margin-bottom: 160px;
+  }
+
+  .form-section {
+    /* min-height: 80vh; */
+    margin-top: 6%;
+    margin-bottom: 8%;
+  }
+
+  .form-section .row {
+    margin-bottom: 100px;
+    min-height: 220px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  .info-section {
+    margin-bottom: 100px;
   }
 }
 

@@ -53,24 +53,28 @@
     <div class="container">
 
       <div class="row g-4">
-        <div class="col-md-6 col-lg-4 order-2 order-md-1">
+        <div class="col-md-6 col-lg-4 order-2 order-md-1 d-flex flex-column justify-content-between">
 
-          <label for="name" class="form-label">Name: </label>
-          <div class="input-group">
-            <span class="input-group-text">
-              <i class="fa-solid fa-signature"></i>
-            </span>
-            <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
+          <div>
+            <label for="name" class="form-label">Name: </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-signature"></i>
+              </span>
+              <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
           </div>
 
-          <label for="email" class="form-label">Email: </label>
-          <div class="input-group">
-            <span class="input-group-text">
-              <i class="fa-solid fa-envelope"></i>
-            </span>
-            <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com" required>
+          <div>
+            <label for="email" class="form-label">Email: </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com"
+                required>
+            </div>
           </div>
-
         </div>
         <div class="col-md-6 col-lg-8 order-1 order-md-2 d-flex flex-column justify-content-between">
 
@@ -87,33 +91,38 @@
       </div>
 
       <div class="second-row row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between">
 
-          <label for="phone" class="form-label">Phone: </label>
-          <div class="input-group">
-            <span class="input-group-text">
-              <i class="fa-solid fa-phone"></i>
-            </span>
-            <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required>
+          <div>
+            <label for="phone" class="form-label">Phone: </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required>
+            </div>
           </div>
 
-          <label for="postcode" class="form-label">Postcode: </label>
-          <div class="input-group">
-            <span class="input-group-text">
-              <i class="fa-solid fa-address-book"></i>
-            </span>
-            <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
-              required>
+          <div>
+            <label for="postcode" class="form-label">Postcode: </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-address-book"></i>
+              </span>
+              <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
+                required>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-8">
-
-          <label for="photo-upload" class="form-label">Upload Photos:</label>
-          <div class="input-group">
-            <span class="input-group-text">
-              <i class="fa-solid fa-image"></i>
-            </span>
-            <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
+        <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-between">
+          <div>
+            <label for="photo-upload" class="form-label">Upload Photos:</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-image"></i>
+              </span>
+              <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
+            </div>
           </div>
 
           <div class="button-wrapper d-flex justify-content-center align-items-end">

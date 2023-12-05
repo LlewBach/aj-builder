@@ -752,6 +752,13 @@ This was the moment that I disappeared down yet another rabbit hole of madness f
 
 In the light of this revalation, I had to make some changes to the attempted fixes I put through. In the end, I set one media query for the iPad Mini and Air, and one for the iPad Pro which is quite large. This was to avoid this media query covering too large a span and interfering with other queries and views.
 
+`console.log(ballAche);`
+In the final stages of responsiveness testing, I came across this problem while trying to make the contact form take up more screen space while maintaining alignment.
+
+![capture-49.PNG](assets/captures/capture-49.PNG)
+
+I think the answer to this will be to restructure the html. I turned the cols into flex boxes and wrapped each label and input in a div so they behave as units. The next phase was to figure out spacing, preferably in percentage in order to make the form take up the full screen. This is important for the spacer bar to move up and down well. I had to tune this for each media query. I then had a dilemma when testing responsiveness by compressing the monitor view. Each view is different when viewed on my laptop compared to my bigger monitor. I decided to prioritize the view for the larger monitor, as I guess a nice large monitor is probably what the assessor will test my site on, rather than a small, grimy laptop like me!
+
 ## Surface Plane
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
