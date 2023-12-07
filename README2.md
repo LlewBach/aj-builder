@@ -63,17 +63,87 @@ Given that in today's age, business is advertised and found via websites, the cr
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+1) What the customer says they need - a builder
+2) What the customer actually needs - a good value, trustworthy builder
+3) What the customer doesn't know they need - a long term contact who can offer other home-improvements that may be more affordable than previously realised
+
+#### User Stories
+
+'As an old lady, I would like to be able to find a reputable builder that I can be sure will help me fix my problems. For me, integrity is important and I'd much prefer to get a sense of the person I'm dealing with before I have them in my home.'
+
+'As a busy professional, I need a solid guy I can turn to when I'm trying to short all my stock in the middle of a market dive and suddenly s*** hits the fan at home, or floor should I say when the toilet starts overflowing. It would save me time making a decision about quotes if I could submit pictures and get an instant reply instead of having to wait for him to find time to drive over.'
+
+#### Acceptance Critiera
+
+- Users can successfully view information on all devices within the range 300px - 4000px width, 300px - 2200px height.
+- Users can input information into the contact form and submit successfully.
+- If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
+
+#### Information and features scope
+
+This site will act as an extended business card and will include information about
+
+- Services offered
+- Experience
+- Character
+- Contact details
+- Job quote request form
+
+As the handyman is based in South Wales, I wondered whether or not to make the site bilingual. However, as the client doesn't speak Welsh himself, I thought it would not offer sufficient benefit.
+
 ### Structure
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
+
+Information needs to convey what (services), who (experience and character), how (contact) and how much (quote request form). This order makes sense for our site's pages, as the customer needs to know that this site is firstly relevant, secondly desireable, then actionable.
+
+Given that the customer getting in contact is the desired outcome, the contact information will always be visible in the footer, as will the 'Get Quote' call to action, one click away.
+
+The information will be structured as follows:
+
+#### Header 
+
+1) Logo and name
+2) Nav bar
+
+#### Footer 
+
+1) Phone and email
+2) **Call to action** (Get Quote!)
+3) Instagram
+4) Checkatrade
+
+#### Home page
+
+1) Immediately understandable summary/hook.
+2) Provided services (categories, examples, and pics)
+
+#### About page
+
+1) Background, history, experience
+2) Ethos, customer care
+3) Specialties
+3) Testimonials
+
+#### Contact
+
+1) Get quote form (Job description, attach pics, customer details, submit button)
+2) Contact details 
+3) Map with base location
 
 ### Skeleton
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+I drew up some wireframes (available to view in the assets folder) in order to help direct the building phase. Upon inspection, it will be apparent that the end result is quite different to these, but given that this is my first website, I added more features and made more changes as my knowledged developed.
+
+Links!
+
 ### Surface
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
+
+
 
 ## Features
 
