@@ -135,15 +135,53 @@ The information will be structured as follows:
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-I drew up some wireframes (available to view in the assets folder) in order to help direct the building phase. Upon inspection, it will be apparent that the end result is quite different to these, but given that this is my first website, I added more features and made more changes as my knowledged developed.
+I drew up some wireframes (available to view in the assets folder) in order to help direct the building phase. Upon inspection, it will be apparent that the end result is quite different to these, but given that this is my first website, I added more features and made more changes as my knowledge and confidence developed.
 
-Links!
+[Header/footer wireframe](assets/wireframes/header-footer.png)
+
+[Home wireframe 1](assets/wireframes/home-1.PNG)
+
+[Home wireframe 2](assets/wireframes/home-2.PNG)
+
+[Home wireframe 3](assets/wireframes/home-3.PNG)
+
+[About wireframe 1](assets/wireframes/about-1.PNG)
+
+[About wireframe 2](assets/wireframes/about-2.PNG)
+
+[Contact wireframe](assets/wireframes/contact.PNG)
 
 ### Surface
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+#### Logo
 
+For the logo, I wanted something simple enough to be used as a favicon as well. To this end I put GPT-4 to the task, asking for a simple logo of a roof based on the letter 'A'. After a few goes I chose one I liked. 
+
+![Logo](assets/images/logo.PNG)
+
+I then compressed the image and put the logo through a logo to favicon converter.
+
+https://favicon.io/favicon-converter/
+
+I then added a border blur to the logo using box-shadow.
+
+#### Colour Palette
+
+Probably due to my lack of familiarity with it, I liked Bootstrap's dark theme, so I decided to simply add 'yellow' as a 'highlight' colour. The yellow and black combination is also strongly associated with builders.
+
+![Colour palette](assets/captures/capture-50.PNG)
+
+#### Font
+
+Using Google Fonts, I chose 'Stick No Bills' for header text, due to it's somewhat 'industrial' aesthetic. I chose 'Open Sans' for body text due to its readability and aesthetic simplicity.
+
+#### Parallax '.spacer' rows
+
+This refers to the horizontal bars that separate the sequential fixed parallax images in order to make a smoother transition between sections. This was especially true for the About page which has three fixed images one after the other, and each section has aesthetic effects of their own going on as well, in the form of 'sticky titles' and 'title covers' with opacity gradients. 
+
+Originally these spacers were simple block colours, but I later had the idea to spice these up with transparent text and a fixed secondary background with a colour gradient that would simulate light passing through the transparent text as the .spacer moves up the page. 
 
 ## Features
 
@@ -152,6 +190,29 @@ Links!
 ## Technologies Used
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
+
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes
+- HTML5 and CSS3
+- [VSC](https://code.visualstudio.com/) was my development environment
+- Google Chrome Dev Tools helped elucidate building and debugging
+- [Bootstrap](https://getbootstrap.com/) v5.3.2 frontend framework was used for elements such as the navbar, testimonial carousel, grid layouts and dark theme
+- [GitHub](https://github.com/LlewBach/aj-builder) was used for my online repository
+- [GitHub Pages](https://pages.github.com/) was used to deploy the site
+- [GPT-4](https://openai.com/research/gpt-4)
+  - Used to create the logo
+  - Used to create images of 'Anthony'
+  - Used for advice and discovering new options
+  - Used for debugging and syntax checking
+- [FontAwesome](https://fontawesome.com/) was used for all icons
+- [Google Fonts](https://fonts.google.com/) was used for typography
+- [Unsplash](https://unsplash.com/) was used to obtain all real images as they are free to use
+- [Image Resizer.com](https://imageresizer.com/image-compressor) was used to compress images
+- [Coolors.co](https://coolors.co/) was used to consider different colour palettes
+- [The W3C Markup Validation Service](https://validator.w3.org/) was used to check HTML syntax
+- [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check CSS syntax
+- [WebAIM](https://wave.webaim.org/) was used to examine accessibility
+- Chrome Dev Tools [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test performance, accessibility, SEO and best practices
+
 
 ## Testing
 
@@ -164,6 +225,10 @@ Links!
 ## Credits
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
+
+
+
+
 
 ## Acknowledgements
 
