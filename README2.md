@@ -76,6 +76,7 @@ Given that in today's age, business is advertised and found via websites, the cr
 #### Acceptance Critiera
 
 - Users can successfully view information on all devices within the range 300px - 4000px width, 300px - 2200px height.
+- Users can navigate between every page.
 - Users can input information into the contact form and submit successfully.
 - If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
 
@@ -275,6 +276,82 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+### Acceptance Critiera Testing
+
+#### Test that users can navigate between every page.
+
+1) Open website in the test-specific browser.
+2) From the 'Services' (main) page, use the menu to navigate to the other pages, returning back to the 'Services' page before each attempt. 
+3) Repeat this for the About and Contact pages.
+4) From each page, click the logo text to be taken to the 'Services' (main) page.
+5) From the Services and About pages, press the 'Get (Free) Quote" button in the footer to be taken to the Contact page.
+6) On the footer of each page, test that the links to Instagram and Checkatrade open in a new tab and display the correct sites.
+7) On the Contact page, test that the link to Instagram opens in a new page and displays the correct site.
+8) Using a mouse, test that each link turns yellow when hovering over it on every page.
+
+
+#### Test that users can successfully view information on all devices within the range 350px - 4000px width, 475px - 2200px height.
+
+For each test, I went about testing via the following steps:
+
+1) Open website in the test-specific browser.
+2) Right click and click inspect.
+3) Click the toggle device toolbar.
+4) From the device selector dropdown, choose 'Responsive'.
+5) Set zoom to 50%.
+6) Set view to test-specific dimensions.
+7) Navbar
+  - Check logo and text visible
+  - Check menu is collapsed or expanded appropriately
+  - Check menu opens and displays appropriately
+  - Check menu closes
+8) Footer
+  - Check that footer items appear symetrically and fit within the view
+  - Check that the call to action button is visible and centered
+9) Page spacer(s)
+  - Check that the .spacer text falls on one line and doesn't wrap
+  - Check that the text is legible while scrolling
+  - If unable to scroll, check that entire text is readable
+10) Services Hero
+  - Check that hero image takes up full screen width without distortion
+  - Check that text is centered, and legible
+11) Services Section
+  - Check that the service items align in a symetrical and ordered fashion
+  - Check that the dropdown menus work and all sub-category items are visible
+12) About Hero
+  - Check that hero image takes up full screen width without distortion
+  - Check that text is centered, and legible
+13) About parallax section
+  - Ensure image is visible between the navbar and footer
+  - Ensure image is aligned well, either centrally or left aligned
+  - Ensure sticky titles are initially invisible and become fully visible upon scrolling
+  - Ensure paragraph text does not reappear after disappearing below sticky title
+  - Ensure sticky title disappears completely at the end of every section
+14) About page testimonial carousel
+  - Ensure text is readable and centrally aligned
+  - Ensure that cycle forward and backward buttons work properly
+15) Contact form
+  - Ensure title is visible and central
+  - Ensure form fields are arranged in an organized way, either stacked in one or two columns
+  - Ensure Job Description, Name, Email, Phone, Post Code fields are required
+  - Ensure email field requires correct email syntax
+  - Given that this is a fictitious site, I'll not require that the submit button actually submits
+16) Contact page 'info row'
+  - Ensure map, contact info and 'call me' images are visible and ordered, either vertically or horizontally
+
+
+
+
+
+
+#### Users can input information into the contact form and submit successfully.
+
+
+
+#### If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
+
+
+
 ## Deployment
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
@@ -304,7 +381,12 @@ This site was deployed to GitHub Pages following the steps below:
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+### Media 
 
+- All real photographs were obtained from Unsplash. 
+- All pictures of 'Anthony' and the logo were made by GPT-4.
+
+### Code
 
 
 
@@ -312,6 +394,10 @@ This site was deployed to GitHub Pages following the steps below:
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+- I'd like to thank Ben Kavanagh for his great support, advice and feedback
+
 ## Disclaimer
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
+
+The contents of this site are fictitious and for educational purposes only.
