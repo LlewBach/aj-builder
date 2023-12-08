@@ -279,7 +279,26 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+### GitHub Pages
 
+This site was deployed to GitHub Pages following the steps below:
+1) Log into GitHub.
+2) Select the [LlewBach/aj-builder](https://github.com/LlewBach/aj-builder) repository.
+3) Click on the "Settings" tab.
+4) Scroll down to the 'Pages' section.
+5) Ensure 'Source' is set to 'Deploy from a branch'.
+6) Ensure the branch chosen is 'Main', from its '/(root)'.
+7) Click 'Save'.
+8) Refresh the page and at the top there will appear the link to the website. This link may take a few minutes to appear. Here is the link (https://llewbach.github.io/aj-builder/).
+
+### How to run this project locally
+
+1. Download the IDE of your choice as well as Git.
+1. Visit the GitHub repository for [AJHandyman](https://github.com/LlewBach/aj-builder).
+2. Click on "Code" and copy the HTTPS link.
+3. Create the folder where you would like to save the repository.
+4. In your terminal, navigate to the folder and then input 'git clone ', then paste the HTTPS link and press enter.
+5. Open the folder in your IDE. Use the Live Server extension to view the HTML pages.
 
 ## Credits
 
