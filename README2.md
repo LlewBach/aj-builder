@@ -292,7 +292,7 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 
 #### Test that users can successfully view information on all devices within the range 350px - 4000px width, 475px - 2200px height.
 
-For each test, I went about testing via the following steps:
+For each test, this was the testing function:
 
 1) Open website in the test-specific browser.
 2) Right click and click inspect.
@@ -333,23 +333,25 @@ For each test, I went about testing via the following steps:
 15) Contact form
   - Ensure title is visible and central
   - Ensure form fields are arranged in an organized way, either stacked in one or two columns
-  - Ensure Job Description, Name, Email, Phone, Post Code fields are required
-  - Ensure email field requires correct email syntax
-  - Given that this is a fictitious site, I'll not require that the submit button actually submits
 16) Contact page 'info row'
   - Ensure map, contact info and 'call me' images are visible and ordered, either vertically or horizontally
+17) Change screen dimensions to next test and go back to step 6
 
-
-
-
+For each browser, I ran the testing function at the following page dimensions 
 
 
 #### Users can input information into the contact form and submit successfully.
 
-
+1) Navigate to the website's contact page
+2) Enter correct information into the form and press submit
+3) Given that this is a fictitious site, I'll not require that the submit button actually submits
 
 #### If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
 
+1) Navigate to website's contact page
+2) Press submit with an empty form. Ensure user is notified that the first required field is required
+3) Enter correct text then press submit. Ensure user is notified that the second required field is required. Enter correct text. Repeat for all required input fields (all but 'add photos')
+4) For the email field, enter a random string to ensure that the user is prompted to enter a valid email address
 
 
 ## Deployment
