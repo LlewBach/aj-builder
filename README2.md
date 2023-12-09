@@ -290,21 +290,23 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 8) Using a mouse, test that each link turns yellow when hovering over it on every page.
 
 
-#### Test that users can successfully view information on all devices within the range 350px - 4000px width, 475px - 2200px height.
+#### Test that users can successfully view information on all devices within the range 350px - 4000px width, 720px - 2200px height.
 
-For each test, this was the testing function:
+This is my testing procedure:
 
+<!-- Setup -->
 1) Open website in the test-specific browser.
 2) Right click and click inspect.
 3) Click the toggle device toolbar.
 4) From the device selector dropdown, choose 'Responsive'.
-5) Set zoom to 50%.
+<!-- 5) Set zoom to 50%. -->
+<!-- Testing Function -->
 6) Set view to test-specific dimensions.
 7) Navbar
   - Check logo and text visible
   - Check menu is collapsed or expanded appropriately
-  - Check menu opens and displays appropriately
-  - Check menu closes
+  - Check menu opens and displays appropriately if collapsed
+  - Check menu closes if opened
 8) Footer
   - Check that footer items appear symetrically and fit within the view
   - Check that the call to action button is visible and centered
@@ -312,6 +314,7 @@ For each test, this was the testing function:
   - Check that the .spacer text falls on one line and doesn't wrap
   - Check that the text is legible while scrolling
   - If unable to scroll, check that entire text is readable
+  - If able to scroll, does spacer move across the whole viewport
 10) Services Hero
   - Check that hero image takes up full screen width without distortion
   - Check that text is centered, and legible
@@ -337,8 +340,33 @@ For each test, this was the testing function:
   - Ensure map, contact info and 'call me' images are visible and ordered, either vertically or horizontally
 17) Change screen dimensions to next test and go back to step 6
 
-For each browser, I ran the testing function at the following page dimensions 
+Now the screen dimensions to be tested need to be decided upon. I went to [statcounter.com](https://gs.statcounter.com/screen-resolution-stats) to find the most common screen resolutions. 
 
+Desktop
+
+- 1920x1080 - 23.2% (XXXL) - Pass
+- 1366x768 - 14.3% (XL) - Pass
+- 1536x864 - 10.6% (XXL) - Pass
+- 1440x900 - 6.8% (XXL) - Pass
+- 1280x720 - 5.8% (XL) - Pass
+- 2560x1440 - 3.0% - 
+
+Tablet
+
+- 768x1024 - 24.4% (MD) - Pass
+- 810x1080 - 10.23% (MD) - Pass
+- 1280x800 - 6.15% (XL) - Pass
+- 820x1180 - 5.65% (MD) - Pass
+- 601x962 - 3.6% (SM) - Pass
+
+Mobile
+
+- 360x800 - 11.0% (XS) - Pass
+- 390x844 - 7.8% (XS) - Pass
+- 393x873 - 5.5% (XS) - Pass
+- 414x896 - 5.0% (XS) - Pass
+- 412x915 - 4.8% (XS) - Pass
+- 360x780 - 3.9% (XS) - Pass
 
 #### Users can input information into the contact form and submit successfully.
 

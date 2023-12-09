@@ -672,10 +672,99 @@ footer p {
   }
 }
 
-/* Height above 1100px */
+/* Width 2000+, Height 1200+ */
 
-@media screen and (min-width: 1800px) and (min-height: 2000px) {
+@media screen and (min-width: 2000px) and (min-height: 1200px) {
   nav {
-    min-height: 7%;
+    min-height: 100px;
+  }
+
+  .logo {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    margin-right: 40px;
+    font-size: 1.5rem;
+  }
+
+  .nav-link i {
+    margin-right: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+
+  .spacer {
+    height: 20vh;
+    background-color: #212529;
+  }
+
+  .spacer p {
+    font-size: 8rem;
+    letter-spacing: 2rem;
+  }
+
+  .service-section.container {
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .container .row {}
+
+  .service-section h2 {
+    margin-top: 100px !important;
+    font-size: 4rem;
+  }
+
+  .service-item {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .img-thumbnail {
+    width: 380px;
+    max-height: 258px !important;
+    object-fit: cover;
+  }
+
+  .service-item .dropdown-menu li {
+    font-size: 2rem;
+  }
+
+  .service-item button {
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
+    min-width: 220px;
+    font-size: 2rem;
+  }
+
+  footer {
+    height: 100px;
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+  }
+
+  footer p {
+    /* margin: 0; */
+    font-size: 2rem;
+  }
+
+  .quote-button {
+    font-size: 2rem;
   }
 }
+
+/*  */
