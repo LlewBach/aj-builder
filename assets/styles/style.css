@@ -656,6 +656,14 @@ footer p {
     margin-bottom: 160px;
   }
 
+  .title-cover-top {
+    height: 22%;
+  }
+
+  .title-cover-bottom {
+    height: 22%;
+  }
+
   .form-section {
     /* min-height: 80vh; */
     margin-top: 6%;
