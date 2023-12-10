@@ -12,13 +12,14 @@
 >> 3. Structure
 >> 4. Skeleton
 >> 5. Surface
-> 3. Features
-> 4. Technologies Used
-> 5. Testing
-> 6. Deployment
-> 7. Credits
-> 8. Acknowledgements
-> 9. Disclaimer
+> 3. Build Log
+> 4. Features
+> 5. Technologies Used
+> 6. Testing
+> 7. Deployment
+> 8. Credits
+> 9. Acknowledgements
+> 10. Disclaimer
 
 ## Overview
 
@@ -187,6 +188,12 @@ I really like the parallax scroll effect using fixed images. It makes the page f
 #### About page sticky titles and title covers
 
 The About page contains a fair amount of text and I wanted to add effects in order to make it as engaging as possible. Having initially dabbled with ScrollMagic, I wanted to incorporate some fade in/out effects for my sticky titles using only CSS. To this end I used absolutely positioned covers with an opacity gradient to cover the title until it stuck in position, then appeared from beneath the cover.
+
+## Build Log
+
+[Back to top](#mileston-1-project---anthony-jones-handyman)
+
+Please see the [Build Log](build-log.md) for an insight into the build process.
 
 ## Features
 
@@ -385,6 +392,187 @@ My mentor uses a 4k screen so I accomodated this as well
 3) Enter correct text then press submit. Ensure user is notified that the second required field is required. Enter correct text. Repeat for all required input fields (all but 'add photos')
 4) For the email field, enter a random string to ensure that the user is prompted to enter a valid email address
 
+### Automated Testing
+
+#### Lighthouse 
+
+Here are my initial scores from Lighthouse:
+
+- index.html (mobile)
+  - Performance: 50
+  - Accessibility: 84
+  - Best Practices: 100
+  - SEO: 83
+
+- index.html (desktop)
+  - Performance 93
+  - Accessibility: 84
+  - Best Practices: 100
+  - SEO: 80
+
+- about.html (mobile)
+  - Performance: 74
+  - Accessibility: 91
+  - Best Practices: 100
+  - SEO: 92
+
+- about.html (desktop)
+  - Performance: 94
+  - Accessibility: 91
+  - Best Practices: 100
+  - SEO: 90
+
+- contact.html (mobile)
+  - Performance: 97
+  - Accessibility: 92
+  - Best Practices: 95
+  - SEO: 91
+
+- contact.html (desktop)
+  - Performance: 99
+  - Accessibility: 92
+  - Best Practices: 95
+  - SEO: 89
+
+The first thing that comes to mind is to compress the images on the index.html. I already downloaded the smallest image size from Unsplash, but they clearly need to be smaller, especially for the sake of the mobile site. 
+
+Having compressed the images, Lighthouse performance for the index page on mobile has gone from 50 to 93, but for desktop it's dropped from 93 to 82...
+
+I think now that I've deployed the page to GitHub Pages, I need to wait a bit longer before testing after a recent commit. I tried the same test later and performance came back 100.
+
+I added alt-text to all the index.html images. I then added aria-labels to all div background images on the other pages, as well as role="img". I then filled in the alt text for the bootstrap carousel. This brought the accessibility score up to 94. Lighthouse is telling me I need to add link text to my footer icon links on small screens. This I did with aria-labels. On the advice of GPT-4 I also added `rel="noopener noreferrer"` to all external links.
+
+Under SEO feedback I can see that I need to add a unique meta description to each page.
+
+Ok, time to review Lighthouse scores
+
+- index.html (mobile)
+  - Performance: 94
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- index.html (desktop)
+  - Performance 98
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (mobile)
+  - Performance: 92
+  - Accessibility: 98
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (desktop)
+  - Performance: 94
+  - Accessibility: 98
+  - Best Practices: 100
+  - SEO: 100
+
+- contact.html (mobile)
+  - Performance: 94
+  - Accessibility: 92
+  - Best Practices: 95
+  - SEO: 100
+
+- contact.html (desktop)
+  - Performance: 99
+  - Accessibility: 93
+  - Best Practices: 95
+  - SEO: 100
+
+Here are a few new points raised/noticed
+- It's advising that I convert jpeg/png format images to WebP/AVIF
+- I've realised that I probably still need to compress the carousel images
+- I have h elements in non-sequential order
+- I need an accessibility title on the Google Maps iframe
+- I need to remove unused Bootstrap JS script tags on the contact page which doesn't require it.
+
+Well, although converting the images to WebP definitely reduced their sizes, for some reason my lighthouse performance thereafter absolutely tanked. I put this to my mentor who told me I should avoid WebP for now as it's not supported by some versions of Safari. Thankfully, all my old images were still in the Recycling Bin! 
+
+I had indeed neglected to compress the carousel images, which I've now done.
+
+I changed the non-sequential h titles and replaced them with p elements whose classes I targeted to adjust font size.
+
+I added a title to the map iframe.
+
+I'm not going to mess around with removing bootstrap tags.
+
+Time for the last test (hopefully!)
+
+- index.html (mobile)
+  - Performance: 93
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- index.html (desktop)
+  - Performance 93
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (mobile)
+  - Performance: 86
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- about.html (desktop)
+  - Performance: 95
+  - Accessibility: 100
+  - Best Practices: 100
+  - SEO: 100
+
+- contact.html (mobile)
+  - Performance: 91
+  - Accessibility: 100
+  - Best Practices: 95
+  - SEO: 92
+
+- contact.html (desktop)
+  - Performance: 99
+  - Accessibility: 100
+  - Best Practices: 95
+  - SEO: 100
+
+Mixed results with many scores actually coming down, but "tha'll do Donkeh, tha'll do'! 
+
+#### WAVE
+
+I've had a look on WAVE (Web Accessibility Evaluation Tool) and the only issue that catches my eye is that is says low colour contrast, but I don't think the software can take overlays into account.
+
+#### HTML Validator
+
+https://validator.w3.org/
+
+The index and about pages passed straight away, but the contact page got caught out.
+
+- I'd given the form textarea a type="textarea", probably in an effort to be accessible, but I don't remember clearly why I added that
+  - Solution: delete attribute
+- The sections don't have their own headers
+  - Solution: remove section element from around the form, replace .info-row section with a div
+- "Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead"
+  - Solution: specify width and height with CSS instead
+- "Bad value 100% for attribute height on element iframe: Expected a digit but saw % instead.
+  - Solution: specify width and height with CSS instead
+- Typo: hp instead of p element
+  - Solution: delete 'h'
+- Other fallout from the 'hp' mistake above
+
+HTML Validator appeased!
+
+#### CSS Validator
+
+https://jigsaw.w3.org/css-validator/
+
+Thankfully passed first time. Two warnings though..
+
+- "The value text is deprecated"
+- "-webkit-background-clip is a vendor extension"
+
+GPT-4 advises to set a fallback, such as to make the text transparent, which is already the case for me, so I'm happy to move on.
 
 ## Deployment
 
