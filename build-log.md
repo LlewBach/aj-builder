@@ -54,7 +54,7 @@ In the spirit of DRY, I think I'm actually going to have to declare the string "
 
 `console.log(ballAche);`
 
-![capture-1.png](assets/captures/capture-1.png)
+![capture-1.PNG](assets/captures/capture-1.PNG)
 
 GPT-4 informed me that I'd forgotten to give the last div a class of .col-lg-6. I am so grateful that I am learning to code in the age of AI tools like this. The amount of time it has saved me debugging has been enormous. I have huge respect for all those who treaded this path without it, and made this possible for those behind them.
 
@@ -74,7 +74,7 @@ Vertical alignment this time. By drawing borders around the divs, I eventually r
 
 According to Chrome dev tools, between roughly 992px and 1236px width, I was getting this...
 
-![capture-2.png](assets/captures/capture-2.PNG)
+![capture-2.PNG](assets/captures/capture-2.PNG)
 
 With the dev tools, I could see that div padding was cramping the email. I removed this which resulted in the awkward range shrinking to 992-1120px. One temptation is to somehow redefine the lg breakpoint to skip this range. I will leave this problem for now however, as the content of the footer may change. (I did in fact do this later.)
 
@@ -100,11 +100,11 @@ I decided I wanted to have icons between xs-md. I initially tried to move the ic
   </div>
 </div>
 ```
-![capture-3.png](assets/captures/capture-3.PNG)
+![capture-3.PNG](assets/captures/capture-3.PNG)
 
 I had previously tried to format the icons to appear in xs size, but I think the button text size was compressing other columns which made it hard. I then thought that if I made the button text responsive (dropping 'Free' at smaller sizes) that the icons would align better which turned out to be true.
 
-![capture-4.png](assets/captures/capture-4.PNG)
+![capture-4.PNG](assets/captures/capture-4.PNG)
 
 I realised that dealing with the awkward range at the lg breakpoint would be easy if I changed the sub-column stacking from stacked to inline at the xl breakpoint instead of lg, only 3 changes.
 
@@ -136,11 +136,11 @@ https://imageresizer.com/image-compressor
 
 I used padding to reduce the thumbnail size. However, with dev tools, I realised that I could keep the image size and bring the items closer together by using .px-4 rather than .p-4.
 
-![capture-5.png](assets/captures/capture-5.PNG)
+![capture-5.PNG](assets/captures/capture-5.PNG)
 
 I decided to turn the service titles into bootstrap dropdown buttons using the documentation.
 
-![capture-6.png](assets/captures/capture-6.PNG)
+![capture-6.PNG](assets/captures/capture-6.PNG)
 
 My partner then strolled in and said this was a lot of whitespace and it wasn't clear which title belonged to what, so I decided to add dividers.
 
@@ -148,7 +148,7 @@ I asked GPT-4 for ideas on how I might do this and it suggested using an empty d
 
 The following day, my fears turned out to be justified! Trying to be clever, I wanted the service dividers to switch to vertical alignment at the md-breakpoint. I thought this would be easy by changing the col-md-x proportions and simply adding a media query and switching the width declaration for height as follows.
 
-![capture-7.png](assets/captures/capture-7.png)
+![capture-7.PNG](assets/captures/capture-7.PNG)
 
 ``` css
 .service-divider {
@@ -165,7 +165,7 @@ The following day, my fears turned out to be justified! Trying to be clever, I w
   }
 }
 ```
-![capture-8.png](assets/captures/capture-8.PNG)
+![capture-8.PNG](assets/captures/capture-8.PNG)
 
 I have no idea why it's behaving like this. I know that divs have different default widths and heights, but surely the horizontal dividers should at least not appear at all at the mid width range?
 
@@ -182,13 +182,13 @@ I managed to solve it by removing any reference to height whatsoever.
   }
 }
 ```
-![capture-9.png](assets/captures/capture-9.PNG)
+![capture-9.PNG](assets/captures/capture-9.PNG)
 
 Even if I set the divider height to 100% it completely disappears. I am however content to move on!
 
 `console.log(ballAche);`
 
-![capture-10.png](assets/captures/capture-10.PNG)
+![capture-10.PNG](assets/captures/capture-10.PNG)
 
 Some of the pictures have different sizes. I don't know how bootstraps .img-thumbnail class works.
 
@@ -196,7 +196,7 @@ This was actually easy to solve. Using dev tools, I realised that all the images
 
 As I'm working on the 4x2 layout for xl+ screens, I initially reactivated the fourth service div and limited the media query with a (max-width: 1200px) but I got this.
 
-![capture-11.png](assets/captures/capture-11.PNG)
+![capture-11.PNG](assets/captures/capture-11.PNG)
 
 I've got a feeling that this is due to the max-width declaration on this div.
 
@@ -234,9 +234,9 @@ https://www.youtube.com/watch?v=qTzXNJeoHDw&list=PLugdEmbrdWSwKttz5Yfqt9jpNakpA_
 
 On my About page, I have now been able to pin an item for a fixed duration of scrolling. 
 
-![capture-12.png](assets/captures/capture-12.PNG)
+![capture-12.PNG](assets/captures/capture-12.PNG)
 
-![capture-13.png](assets/captures/capture-13.PNG)
+![capture-13.PNG](assets/captures/capture-13.PNG)
 
 ### Coming back to sanity and simple CSS
 
@@ -272,9 +272,9 @@ However, because these values are relative to the viewport, not the container, i
 
 My next challenge is to replicate fading in and out of the .sticky-title elements. First I want to set the titles so that they start their 'fix' at the right time so that they can pop out from under their cover, have space to appear before paragraphs. This is how it currently looks...
 
-![capture-14.png](assets/captures/capture-14.PNG)
+![capture-14.PNG](assets/captures/capture-14.PNG)
 
-![capture-15.png](assets/captures/capture-15.PNG)
+![capture-15.PNG](assets/captures/capture-15.PNG)
 
 After some tinkering, I ended up inserting a div (.title-cover) above the h2 element in the .text-col, and styling as follows...
 
@@ -309,15 +309,15 @@ After some tinkering, I ended up inserting a div (.title-cover) above the h2 ele
 ```
 Which turned out pretty dang good...
 
-![capture-16.png](assets/captures/capture-16.PNG)
+![capture-16.PNG](assets/captures/capture-16.PNG)
 
-![capture-17.png](assets/captures/capture-17.PNG)
+![capture-17.PNG](assets/captures/capture-17.PNG)
 
-![capture-18.png](assets/captures/capture-18.PNG)
+![capture-18.PNG](assets/captures/capture-18.PNG)
 
 I had to leave a fair bit of padding at the top of the .sticky-title to help cover up the text passing underneath. I've noticed on the xs-screens, the bootstrap navbar shrinks from a height of 71 to 55px, which leaves a gap through which passing text appears. Since adding padding to the top of the title is problematic as it affects where it appears, another option is to add another cover but I'd rather not do this in order to minimise the number of components.
 
-![capture-19.png](assets/captures/capture-19.PNG)
+![capture-19.PNG](assets/captures/capture-19.PNG)
 
 Given that the footer doesn't change height across different widths, I am going to set a min-height of 71px to the navbar in order to avoid text exposure and improve symmetry with the footer. 
 
@@ -333,7 +333,7 @@ background: linear-gradient(to bottom,
 ```
 I had to use only a small colour stop range for the fade effect as the height of the cover is quite small and I don't want to add too much scrolling distance to the page.
 
-![capture-20.png](assets/captures/capture-20.PNG)
+![capture-20.PNG](assets/captures/capture-20.PNG)
 
 (Future me: I later manage to increase the padding size to extend the opacity gradient's 'zone').
 
@@ -349,11 +349,11 @@ What followed next was two day odessey of pain trying to resolve a problem I sti
 
 Anyway, what I'm now facing is a curious but at least functional situation. I've reinstated the first .image-col to appear on smaller screens. On the iPhone 12 simulator, I get this...
 
-![capture-30.png](assets/captures/capture-30.PNG)
+![capture-30.PNG](assets/captures/capture-30.PNG)
 
 However, on a narrowed laptop screen, I get this...
 
-![capture-31.png](assets/captures/capture-31.PNG)
+![capture-31.PNG](assets/captures/capture-31.PNG)
 
 No image to be seen.
 
@@ -363,9 +363,9 @@ I decided to center the fixed images by default and reposition the images to the
 
 But this did not resolve the issue ubiquitously. Below are the views of the page both on md screen sizes. The first on an iPad simulator, the second on my narrowed laptop screen.
 
-![capture-32.png](assets/captures/capture-32.PNG)
+![capture-32.PNG](assets/captures/capture-32.PNG)
 
-![capture-33.png](assets/captures/capture-33.PNG)
+![capture-33.PNG](assets/captures/capture-33.PNG)
 
 I am tempted to simply change the column .col-md-6 classes to .col-lg-6. However, whereas on a phone you can scroll vh-100 in one thumb swipe, on an iPad you'd have to move your whole arm repeatedly which is not ideal. I've decided to set background-attachment: scroll; for the md to lg range. This allows the image to be sized and positioned nicely within the .image-col, and doesn't compromise useability on the iPad. (Future me: I later fix the image again and sort out the layout).
 
@@ -385,7 +385,7 @@ Giving the title covers a % height rather than px has been tempting me for a whi
 
 I thought I could make the .text-col children completely responsive by giving them heights that would add up to 100%. Here is the html of the structure.
 
-![capture-34.png](assets/captures/capture-34.png)
+![capture-34.PNG](assets/captures/capture-34.PNG)
 
 I tried giving the title-covers a height of 20% each and the .p-wrapper a height of 60% but this didn't work and I don't know why. The .text-col has a defined height of 100vh, and the sticky-title is no longer in the flow. 
 
@@ -450,15 +450,15 @@ On the smaller simulators (iPhone and iPad), the percentage figures made very li
 
 I am now very happy with the layout settings of the .parallax-section, save for one thing, the image positioning on the iPad screen (md range). Here are the three scenes currently...
 
-![capture-35.png](assets/captures/capture-35.png)
+![capture-35.PNG](assets/captures/capture-35.PNG)
 
-![capture-36.png](assets/captures/capture-36.png)
+![capture-36.PNG](assets/captures/capture-36.PNG)
 
-![capture-37.png](assets/captures/capture-37.png)
+![capture-37.PNG](assets/captures/capture-37.PNG)
 
 To be clear, these are impossible to move, because on the compressed laptop view in the md range, they are completely visible and look fine. All attempts to reconcile these two views have completely failed. However, I've thought of a shameless easy fix. If you squint your eyes, you might agree that the first and third images actually still work in a 'kinda arty' way. For the second image to work similarly, all I need to do is get an image whose subject is mostly visible left of center!
 
-![capture-38.png](assets/captures/capture-38.PNG)
+![capture-38.PNG](assets/captures/capture-38.PNG)
 
 Boom.
 
@@ -504,7 +504,7 @@ Here is the HTML hierarchy
 ```
 I initially tried to control the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. I assume this is because the image only responds to the height settings of its direct parent. However, only the upper part of the image was in view. When I targeted the image element within that div and set the height to 100%, the full image filled the available view space on all screen sizes.
 
-![capture-21.png](assets/captures/capture-21.PNG)
+![capture-21.PNG](assets/captures/capture-21.PNG)
 
 After a short-lived feeling of relief, I encountered a new problem. On xs screen sizes, the images become squeezed width-wise. To fix this I added a media query.
 
@@ -530,7 +530,7 @@ Below md sizes, the bootstrap carousel is set up to remove captions. However, be
 
 The carousel is already in place but looks horrendous. I think because it is built to be full screen, I should enable this as much as possible. I've also realised that the whole point of this section is to give testimonials, not to be a gallery. This is how it currently looks on iPhone.
 
-![capture-39.png](assets/captures/capture-39.PNG)
+![capture-39.PNG](assets/captures/capture-39.PNG)
 
 After the Vietnam that was the last section's epic struggle, handling the carousel images now feels much easier this time around. I replaced all previous sizing attemps with:
 
@@ -577,23 +577,23 @@ As per the tutorial, I used .form-label, .form-control, .input-group and .input-
 
 This is what I have so far...
 
-![capture-22.png](assets/captures/capture-22.PNG)
+![capture-22.PNG](assets/captures/capture-22.PNG)
 
 What I would really like is for the job description label and box line up with the name and email inputs, and for the 'Upload Photos' label and input to line up with the 'Phone:' ones. 
 
 Having had a short break, I can see that the obvious answer is to split the form into two rows.
 
-![capture-23.png](assets/captures/capture-23.PNG)
+![capture-23.PNG](assets/captures/capture-23.PNG)
 
 I've just realised that this will cause the form items to stack in the wrong order on small screens.
 
-![capture-24.png](assets/captures/capture-24.PNG)
+![capture-24.PNG](assets/captures/capture-24.PNG)
 
 If I could switch the column order of the first row so that 'Job Description' and 'Name and Email' trade places, that will do. 
 
 Achieved with bootstrap order classes.
 
-![capture-25.png](assets/captures/capture-25.PNG)
+![capture-25.PNG](assets/captures/capture-25.PNG)
 
 ### Contact page info row
 
@@ -603,7 +603,7 @@ Below the 'form row' I created an 'info row' split into three. One with a map, o
 
 As far as I can see, the only things that need attention are the middle text column and the fact that on the iPad, the content only comes down two thirds of the page.
 
-![capture-40.png](assets/captures/capture-40.PNG)
+![capture-40.PNG](assets/captures/capture-40.PNG)
 
 My mentor quickly mentioned something about adding 'pipes' to the text column. I think I'm going to add dividers similar to those on the first page, to reinforce styling consistency and theme.
 
@@ -624,11 +624,11 @@ When the info row columns are stacked in mobile view, I added margins to space t
 
 After a good while of tinkering, I finally cracked how to deal the different views of md widths on my laptop and on the ipad. I set a media query for only the md width range and a min-height of 1000px, which is just under the max height of the iPad (gleaned from testing). I had a huge amount of trouble sizing the .picture-col, but I found I had to change the min-height in the previous media query to 'height', and then I could change it within the iPad media query. This allowed me to fit everything on one page, by reducing the picture to a size in which the hand gesture can be seen, and reducing the spacer height. Given that the page no longer scrolled, I changed the background gradient of the spacer to be wider in order for the text to be readable while maintaining some gradient effect.
 
-![capture-43.png](assets/captures/capture-43.png)
+![capture-43.PNG](assets/captures/capture-43.PNG)
 
 After I pushed to GitHub, I checked my GitHub Page on exactly the same view (iPad Pro, 1024 x 1366, 34% zoom), and looks unaffected...
 
-![capture-44.png](assets/captures/capture-44.png)
+![capture-44.PNG](assets/captures/capture-44.PNG)
 
 I also noticed that there is more space between the navbar and the title on the first (local) version than the deployed version...
 
@@ -674,6 +674,8 @@ I have set the button:hover color to the mikado yellow and used the other colour
 - rgb(255, 255, 0) (yellow)
 - white)
 
+![capture-50.PNG](assets/captures/capture-50.PNG)
+
 ### Font
 
 I used Google Fonts for this. I decided on Roboto, then found a consensus online that Open Sans, which I happen to like, pairs well with Roboto. GPT-4 recommended I use Open Sans for titles, due to more open style, and Roboto for body as it is more condensed and readable in smaller sizes.
@@ -715,7 +717,7 @@ I actually adjusted this by reducing the text spacing and increasing the font si
 
 My mentor pointed out that I was now getting a slight x-overflow on the about page. I fixed this by moving the .spacer divs out of the .container for the rows. This meant I had to create a separate section container for each row.
 
-![capture-41.png](assets/captures/capture-41.png)
+![capture-41.PNG](assets/captures/capture-41.PNG)
 
 ### .image-col tuneup
 
