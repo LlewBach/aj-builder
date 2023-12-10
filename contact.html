@@ -49,7 +49,7 @@
     <h1>Get in Touch</h1>
   </header>
 
-  <form class="form-section">
+  <form class="form-section" method="post" autocomplete="on">
     <div class="container">
 
       <div class="row g-4">
@@ -61,7 +61,8 @@
               <span class="input-group-text">
                 <i class="fa-solid fa-signature"></i>
               </span>
-              <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required>
+              <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required
+                autocomplete="name">
             </div>
           </div>
 
@@ -72,7 +73,7 @@
                 <i class="fa-solid fa-envelope"></i>
               </span>
               <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com"
-                required>
+                required autocomplete="email">
             </div>
           </div>
         </div>
@@ -99,7 +100,8 @@
               <span class="input-group-text">
                 <i class="fa-solid fa-phone"></i>
               </span>
-              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required>
+              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required
+                autocomplete="tel">
             </div>
           </div>
 
@@ -110,7 +112,7 @@
                 <i class="fa-solid fa-address-book"></i>
               </span>
               <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
-                required>
+                required autocomplete="postal-code">
             </div>
           </div>
         </div>
