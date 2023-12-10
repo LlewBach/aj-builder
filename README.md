@@ -5,21 +5,21 @@
 
 ## Table of contents
 
-> 1. Overview
-> 2. UX
->> 1. Strategy
->> 2. Scope
->> 3. Structure
->> 4. Skeleton
->> 5. Surface
-> 3. Build Log
-> 4. Features
-> 5. Technologies Used
-> 6. Testing
-> 7. Deployment
-> 8. Credits
-> 9. Acknowledgements
-> 10. Disclaimer
+> 1. [Overview](#overview)
+> 2. [UX](#ux)
+>> 1. [Strategy](#strategy)
+>> 2. [Scope](#scope)
+>> 3. [Structure](#structure)
+>> 4. [Skeleton](#skeleton)
+>> 5. [Surface](#surface)
+> 3. [Build Log](#build-log)
+> 4. [Features](#features)
+> 5. [Technologies Used](#technologies-used)
+> 6. [Testing](#testing)
+> 7. [Deployment](#deployment)
+> 8. [Credits](#credits)
+> 9. [Acknowledgements](#acknowledgements)
+> 10. [Disclaimer](#disclaimer)
 
 ## Overview
 
