@@ -72,18 +72,18 @@ Given that in today's age, business is advertised and found via websites, the cr
 
 'As an old lady, I would like to be able to find a reputable builder that I can be sure will help me fix my problems. For me, integrity is important and I'd much prefer to get a sense of the person I'm dealing with before I have them in my home.'
 
-'As a busy professional, I need a solid guy I can turn to when I'm trying to short all my stock in the middle of a market dive and suddenly s*** hits the fan at home, or floor should I say when the toilet starts overflowing. It would save me time making a decision about quotes if I could submit pictures and get an instant reply instead of having to wait for him to find time to drive over.'
+'As a busy professional, I need a solid guy I can turn to when I'm trying to short my portfolio shares in the middle of a market dive and suddenly s*** hits the fan at home, or floor should I say when the toilet starts overflowing. It would save me time making a decision about quotes if I could submit pictures and get an instant quote instead of having to wait for him to find time to drive over.'
 
 #### Acceptance Critiera
 
-- Users can successfully view information on all devices within the range 300px - 4000px width, 300px - 2200px height.
-- Users can navigate between every page.
+- Users can successfully view information on mobile devices and desktops with the most common screen dimensions.
+- Users can navigate to every page from every page.
 - Users can input information into the contact form and submit successfully.
-- If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
+- If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include giving user feedback such as required fields and syntax validation.
 
 #### Information and features scope
 
-This site will act as an extended business card and will include information about
+This site will act as an extended business card and will include information about:
 
 - Services offered
 - Experience
@@ -278,7 +278,6 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
   - [Clip an image to text with CSS](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
   - [Bootstrap 5 Crash Course Tutorial #14 - Working with Forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
 
-
 ## Testing
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
@@ -287,93 +286,98 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 
 #### Test that users can navigate between every page.
 
-1) Open website in the test-specific browser.
+1) Open website in the Chrome browser.
 2) From the 'Services' (main) page, use the menu to navigate to the other pages, returning back to the 'Services' page before each attempt. 
 3) Repeat this for the About and Contact pages.
 4) From each page, click the logo text to be taken to the 'Services' (main) page.
 5) From the Services and About pages, press the 'Get (Free) Quote" button in the footer to be taken to the Contact page.
 6) On the footer of each page, test that the links to Instagram and Checkatrade open in a new tab and display the correct sites.
-7) On the Contact page, test that the link to Instagram opens in a new page and displays the correct site.
+7) On the Contact page, test that the link to Instagram opens in a new tab and displays the correct site.
 8) Using a mouse, test that each link turns yellow when hovering over it on every page.
 
+Test result: Pass.
 
-#### Test that users can successfully view information on all devices within the range 350px - 4000px width, 720px - 2200px height.
+#### Test that users can successfully view information on mobile devices and desktops with the most popular screen dimensions.
 
 This is my testing procedure:
 
 <!-- Setup -->
-1) Open website in the test-specific browser.
+1) Open website in the Chrome browser.
 2) Right click and click inspect.
 3) Click the toggle device toolbar.
 4) From the device selector dropdown, choose 'Responsive'.
-<!-- 5) Set zoom to 50%. -->
 <!-- Testing Function -->
-6) Set view to test-specific dimensions.
-7) Navbar
+5) Set view to test-specific dimensions.
+6) Navbar:
   - Check logo and text visible
   - Check menu is collapsed or expanded appropriately
   - Check menu opens and displays appropriately if collapsed
   - Check menu closes if opened
-8) Footer
+7) Footer:
   - Check that footer items appear symetrically and fit within the view
   - Check that the call to action button is visible and centered
-9) Page spacer(s)
+8) Page spacer(s)
   - Check that the .spacer text falls on one line and doesn't wrap
   - Check that the text is legible while scrolling
   - If unable to scroll, check that entire text is readable
   - If able to scroll, does spacer move across the whole viewport
-10) Services Hero
+9) Services Hero
   - Check that hero image takes up full screen width without distortion
   - Check that text is centered, and legible
-11) Services Section
+10) Services Section
   - Check that the service items align in a symetrical and ordered fashion
   - Check that the dropdown menus work and all sub-category items are visible
-12) About Hero
+11) About Hero
   - Check that hero image takes up full screen width without distortion
   - Check that text is centered, and legible
-13) About parallax section
+12) About parallax section
   - Ensure image is visible between the navbar and footer
   - Ensure image is aligned well, either centrally or left aligned
   - Ensure sticky titles are initially invisible and become fully visible upon scrolling
   - Ensure paragraph text does not reappear after disappearing below sticky title
   - Ensure sticky title disappears completely at the end of every section
-14) About page testimonial carousel
+13) About page testimonial carousel
   - Ensure text is readable and centrally aligned
   - Ensure that cycle forward and backward buttons work properly
-15) Contact form
+14) Contact form
   - Ensure title is visible and central
   - Ensure form fields are arranged in an organized way, either stacked in one or two columns
-16) Contact page 'info row'
+15) Contact page 'info row'
   - Ensure map, contact info and 'call me' images are visible and ordered, either vertically or horizontally
-17) Change screen dimensions to next test and go back to step 6
 
 Now the screen dimensions to be tested need to be decided upon. I went to [statcounter.com](https://gs.statcounter.com/screen-resolution-stats) to find the most common screen resolutions. 
 
-Desktop
+<u>Desktop</u>
 
-- 1920x1080 - 23.2% - Pass
-- 1366x768 - 14.3% (XL) - Pass
-- 1536x864 - 10.6% (XXL) - Pass
-- 1440x900 - 6.8% (XXL) - Pass
-- 1280x720 - 5.8% (XL) - Pass
-- 2560x1440 - 3.0% - Pass
+| Resolution | Frequency | Test Result |
+| :--------: | :-------: | :---------: |
+| 1920x1080 | 23.2% | Pass |
+| 1366x768 | 14.3% | Pass |
+| 1536x864 | 10.6% | Pass |
+| 1440x900 | 6.8% | Pass |
+| 1280x720 | 5.8% | Pass |
+| 2560x1440 | 3.0% | Pass |
 
-Tablet
+<u>Tablet</u>
 
-- 768x1024 - 24.4% (MD) - Pass
-- 810x1080 - 10.23% (MD) - Pass
-- 1280x800 - 6.15% (XL) - Pass
-- 820x1180 - 5.65% (MD) - Pass
-- 601x962 - 3.6% (SM) - Pass
+| Resolution | Frequency | Test Result |
+| :---: | :---: | :---: |
+| 768x1024 | 24.4% | Pass |
+| 810x1080 | 10.23% | Pass |
+| 1280x800 | 6.15% | Pass |
+| 820x1180 | 5.65% | Pass |
+| 601x962 | 3.6% | Pass |
 
-Mobile
+<u>Mobile</u>
 
-- 360x800 - 11.0% (XS) - Pass
-- 390x844 - 7.8% (XS) - Pass
-- 393x873 - 5.5% (XS) - Pass
-- 414x896 - 5.0% (XS) - Pass
-- 412x915 - 4.8% (XS) - Pass
-- 360x780 - 3.9% (XS) - Pass
+| Resolution | Frequency | Test Result |
+| :---: | :---: | :---: |
+| 360x800 | 11.0% | Pass |
+| 390x844 | 7.8% | Pass |
+| 393x873 | 5.5% | Pass |
+| 414x896 | 5.0% | Pass |
+| 412x915 | 4.8% | Pass |
+| 360x780 | 3.9% | Pass |
 
 My mentor uses a 4k screen so I accomodated this as well
 
@@ -385,12 +389,16 @@ My mentor uses a 4k screen so I accomodated this as well
 2) Enter correct information into the form and press submit
 3) Given that this is a fictitious site, I'll not require that the submit button actually submits
 
+Test result: Pass.
+
 #### If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
 
 1) Navigate to website's contact page
 2) Press submit with an empty form. Ensure user is notified that the first required field is required
 3) Enter correct text then press submit. Ensure user is notified that the second required field is required. Enter correct text. Repeat for all required input fields (all but 'add photos')
 4) For the email field, enter a random string to ensure that the user is prompted to enter a valid email address
+
+Test result: Pass.
 
 ### Automated Testing
 
