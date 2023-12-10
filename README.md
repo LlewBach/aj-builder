@@ -161,7 +161,7 @@ I drew up some wireframes (available to view in the assets folder) in order to h
 
 For the logo, I wanted something simple enough to be used as a favicon as well. To this end I put GPT-4 to the task, asking for a simple logo of a roof based on the letter 'A'. After a few goes I chose one I liked. 
 
-![Logo](assets/images/logo.PNG)
+![Logo](assets/images/logo.png)
 
 I then compressed the image and put the logo through a logo to favicon converter.
 
