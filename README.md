@@ -611,6 +611,10 @@ This site was deployed to GitHub Pages following the steps below:
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
+### Text
+
+- All text was written by me, except for the carousel testimonials, which were done by GPT-4.
+
 ### Media 
 
 - All real photographs were obtained from Unsplash. 
@@ -618,13 +622,19 @@ This site was deployed to GitHub Pages following the steps below:
 
 ### Code
 
+- GPT-4: `transition: none !important;` for carousel transitions
+- StackOverlow: [Vertically centering Bootstrap carousel caption](https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption)
+- [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for code relating to navbar, dropdowns, dark theme, light theme, carousel, form formatting.
+- [W3Schools](https://www.w3schools.com/) for fixing background images
+- YouTube: [clipping a background-image to text](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
+- YouTube: [Working with Bootstrap forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
 
 
 ## Acknowledgements
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-- I'd like to thank Ben Kavanagh for his great support, advice and feedback
+I'd like to thank my mentor Ben Kavanagh for his great support, advice and feedback.
 
 ## Disclaimer
 

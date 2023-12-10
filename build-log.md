@@ -18,7 +18,7 @@ By Gareth Llewelyn
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-In the first instance, I wrote this README chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the README out of compassion for any brave readers. A chronological sense of the development process can be more reliably obtained from the git pushes.
+In the first instance, I wrote this Build Log chronologically including the whole build process. However, given the meandering nature of my learning process, trial and error, multiple revamps and occasional intervention from the Coding Gods, I have put matters relating to the same sections within the same chapters of the Build Log out of compassion for any brave readers. A chronological sense of the development process can be more reliably obtained from the git pushes.
 
 ## Navbar and footer
 
@@ -502,7 +502,7 @@ Here is the HTML hierarchy
   height: 100%;
 }
 ```
-I initially tried to controll the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. I assume this is because the image only responds to the height settings of its direct parent. However, only the upper part of the image was in view. When I targeted the image element within that div and set the height to 100%, the full image filled the available view space on all screen sizes.
+I initially tried to control the carousel size by targeting .testimonial-section, then #carousel, but it only worked when I targeted #carousel .carousel-item. I assume this is because the image only responds to the height settings of its direct parent. However, only the upper part of the image was in view. When I targeted the image element within that div and set the height to 100%, the full image filled the available view space on all screen sizes.
 
 ![capture-21.png](assets/captures/capture-21.PNG)
 
@@ -520,7 +520,7 @@ This works because at the xs breakpoint, the image width becomes the constrainin
 
 ### Carousel transitions
 
-Another issue was with the transitions between images. I'm not sure why, but the images would transition at a larger size then snap back into the size set by me. I asked GPT-4 for advice and one of its suggestions was to add `transition: none !important;` as shown above.
+Another issue was with the transitions between images. I'm not sure why, but the images would transition at a larger size then snap back into the size set by me. I asked GPT-4 for advice and one of its suggestions was to add  `transition: none !important;`as shown above.
 
 ### Carousel captions
 
@@ -654,14 +654,6 @@ I linked the footer labels for Instagram and Checkatrade to the corresponding si
 I was going to link the phone number and email address to the .info-section on the contact page in the same way, but after initially failing, GPT-4 told me that do link to another page you need to link to the page's URL with the id tagged on to the end. As my site doesn't have a domain yet, I'll leave this.
 
 I set all a tags to have decoration: none;
-
-### Icons, logo and favicon
-
-At the request of my mentor I added icons to the menu items, as well as a logo and favicon. To do this I asked GPT-4 to make a logo with a roof based on the letter A, which eventually produced one I liked. I then compressed this image and included it in the bootstrap navbar. I then made a favicon out of this logo using a logo to favicon converter
-
-https://favicon.io/favicon-converter/
-
-I then added a border blur to the logo using box-shadow.
 
 ### Colour Palette
 
