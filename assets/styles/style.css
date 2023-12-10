@@ -605,6 +605,10 @@ footer p {
     margin: 0 auto 30px auto;
   }
 
+  .parallax-section {
+    max-width: 100%;
+  }
+
   .image-col {
     background-size: auto 80%;
   }
@@ -761,10 +765,6 @@ footer p {
 
   .quote-button {
     font-size: 2rem;
-  }
-
-  .parallax-section {
-    max-width: 100%;
   }
 
   .image-col {

@@ -400,6 +400,17 @@ Test result: Pass.
 
 Test result: Pass.
 
+### Browser Testing
+
+To test the site on different browsers, I repeated the tests above, but without trying different resolutions.
+
+Chrome: Pass.
+Edge: Pass.
+Firefox: Pass.
+Opera: Pass.
+
+I don't have a device that uses Safari but I asked my parents to give feedback on the site from their iPad.
+
 ### Automated Testing
 
 #### Lighthouse 
