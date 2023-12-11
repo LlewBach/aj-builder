@@ -630,21 +630,96 @@ footer p {
     margin: 30% auto;
   }
 
+  .contact-header {
+    /* margin-top: 150px; */
+    margin-top: 18vh;
+  }
+
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+
   .form-section {
     /* min-height: 80vh; */
-    /* margin: 5% auto 15%; */
+    margin-top: 12vh;
+    margin-bottom: 20vh;
+    /* width: 80%; */
+    /* border: 1px solid black; */
   }
 
-  .input-group {
-    /* margin-bottom: 50px; */
+  .form-section .row {
+    margin-bottom: 0;
+    min-height: 120px;
   }
 
-  /* .input-group:not(.submit-button) {
-    margin-bottom: 50px;
-  } */
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .input-group input {
+    background-color: rgb(248, 248, 248);
+  }
+
+  .input-group span,
+  .input-group input {
+    font-size: 1rem;
+  }
+
+  #job-description {
+    height: 120px;
+    font-size: 1rem;
+    background-color: rgb(248, 248, 248);
+  }
+
+  .submit-button {
+    font-size: 1rem;
+  }
+
+  .contact-spacer {
+    height: 20vh;
+  }
+
+  .contact-spacer .transparent-text {
+    background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
+    color: transparent;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 3rem;
+  }
 
   .info-section {
-    /* margin-bottom: 60px; */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    /* max-width: 80%; */
+  }
+
+  .info-section a {
+    /* color: #212529; */
+  }
+
+  .info-section a:hover {
+    /* color: rgb(255, 196, 0); */
+  }
+
+  .map-col {
+    margin-bottom: 0;
+  }
+
+  .contact-info-title {
+    font-size: 2rem;
+  }
+
+  .contact-title {
+    font-size: 1rem;
+  }
+
+  .picture-col {
+    height: 70vh;
+    margin-top: 0;
+    background-image: url(../images/call-me.png);
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -664,23 +739,97 @@ footer p {
     height: 22%;
   }
 
+  .contact-header {
+    /* margin-top: 150px; */
+    margin-top: 8vh;
+  }
+
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+
   .form-section {
     /* min-height: 80vh; */
-    margin-top: 6%;
-    margin-bottom: 8%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    /* width: 80%; */
+    /* border: 1px solid black; */
   }
 
   .form-section .row {
-    margin-bottom: 100px;
-    min-height: 220px;
+    /* margin-bottom: 0; */
+    /* min-height: 120px; */
   }
 
-  textarea {
-    height: 200px;
+  .form-label {
+    /* font-size: 1rem; */
+  }
+
+  .input-group input {
+    /* background-color: rgb(248, 248, 248); */
+  }
+
+  .input-group span,
+  .input-group input {
+    /* font-size: 1rem; */
+  }
+
+  #job-description {
+    /* height: 120px; */
+    font-size: 1rem;
+    background-color: rgb(248, 248, 248);
+  }
+
+  .submit-button {
+    font-size: 1rem;
+  }
+
+  .contact-spacer {
+    height: 8vh;
+  }
+
+  .contact-spacer .transparent-text {
+    background: linear-gradient(to top left, #212529 00%, yellow 50%, #212529 100%);
+    color: transparent;
+    background-attachment: scroll;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2rem;
+    letter-spacing: 2rem;
   }
 
   .info-section {
-    margin-bottom: 100px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    max-width: 80%;
+  }
+
+  .info-section a {
+    /* color: #212529; */
+  }
+
+  .info-section a:hover {
+    /* color: rgb(255, 196, 0); */
+  }
+
+  .map-col {
+    margin-bottom: 0;
+  }
+
+  .contact-info-title {
+    font-size: 2rem;
+  }
+
+  .contact-title {
+    font-size: 1rem;
+  }
+
+  .picture-col {
+    height: 35vh;
+    margin-top: 0;
+    background-image: url(../images/call-me.png);
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -858,7 +1007,7 @@ footer p {
   .contact-spacer .transparent-text {
     background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
     color: transparent;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
     font-size: 6rem;
