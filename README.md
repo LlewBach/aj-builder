@@ -25,7 +25,11 @@
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-This website is for educational purposes only. I originally planned to make this site for a real builder, but due to poor responsiveness, I've made it for an imaginary handyman.
+This website is for educational purposes only. I originally planned to make this site for a real builder, but due to poor responsiveness, I've made it for an imaginary handyman. 
+
+In order to avoid confusion while looking at the git pushes, I need to explain the naming history of this document.
+
+The original README I wrote was not fit for purpose so I created README2. I then turned the original README into a 'Build Log' and renamed it that. The Build Log contains the bulk of the original README I wrote. I then created README2, which I later renamed 'README'. 
 
 ## UX
 
@@ -274,9 +278,6 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 - [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check CSS syntax
 - [WebAIM](https://wave.webaim.org/) was used to examine accessibility
 - Chrome Dev Tools [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test performance, accessibility, SEO and best practices
-- YouTube
-  - [Clip an image to text with CSS](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
-  - [Bootstrap 5 Crash Course Tutorial #14 - Working with Forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
 
 ## Testing
 
@@ -639,6 +640,8 @@ This site was deployed to GitHub Pages following the steps below:
 - [W3Schools](https://www.w3schools.com/) for fixing background images
 - YouTube: [clipping a background-image to text](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
 - YouTube: [Working with Bootstrap forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
+- YouTube: [Clip an image to text with CSS](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
+- YouTube: [Bootstrap 5 Crash Course Tutorial #14 - Working with Forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
 
 
 ## Acknowledgements
