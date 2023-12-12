@@ -207,7 +207,7 @@ Please see the [Build Log](build-log.md) for an insight into the build process.
 
 On the left of the navbar, I have the logo and company name, and the menu items on the right. The navbar is fixed to the top of every page for ease of navigation.
 
-The structure of the navbar was taken from Bootstrap and the menu items collapse on smaller screens.
+The structure of the navbar was taken from Bootstrap and the menu items collapse on smaller screens which aids responsiveness.
 
 ### Footer
 
@@ -217,13 +217,13 @@ On extra small screens, only the icons are to be seen and the call to action but
 
 ### Hero sections
 
-Hero sections feature at the top of the 'Services' page (index.html) and 'About' page. For consistency, these both feature fixed background images and centered text above an overlay. 
+Hero sections feature at the top of the 'Services' page (index.html) and 'About' page. For consistency, these both feature fixed background images and centered text above an overlay. These help to foster a sense of place and introduce the contents of the page with a sense of prestige.
 
 ### Services section
 
-For this I used Bootstrap grid for responsive layouts. On small screens, each service items appears stacked, with alternating image/category button orders, with horizontal dividers. On medium screens, the service items become a 2 x 4 table with one vertical divider. On extra large screens, this becomes a 4 x 2 table with one horizontal divider.
+For this I used Bootstrap grid for responsive layouts. On small screens, each 'service item' appears stacked, with an alternating order of image and button, with horizontal dividers. On medium screens, the service items become a 2 x 4 table with one vertical divider. On extra large screens, this becomes a 4 x 2 table with one horizontal divider.
 
-The images use Bootstrap's .img-thumbnail which helped to size the images. Each category button is a dropdown menu of subcategories of the services offered.
+The images use Bootstrap's .img-thumbnail which helped to size the images. Each category button is a dropdown menu of subcategories of the services offered. These dropdowns have a z-index higher than the footer so that they never appear below.
 
 ### About page parallax sections
 
@@ -231,7 +231,7 @@ These were built with Bootstrap rows and columns. On small screens, these become
 
 ### Parallax '.spacer' rows
 
-This refers to the horizontal bars that separate the sequential fixed parallax images in order to make a smoother transition between sections. This was especially true for the About page which has three fixed images one after the other, and each section has aesthetic effects of their own going on as well, in the form of 'sticky titles' and 'title covers' with opacity gradients. 
+This refers to the horizontal bars that separate the sequential fixed parallax images in order to make a smoother transition between sections. This was especially true for the About page which has three fixed images one after the other, and each of these parallax section has aesthetic effects of their own going on as well, in the form of 'sticky titles' and 'title covers' with opacity gradients. 
 
 Originally these spacers were simple block colours, but I later had the idea to spice these up with transparent text and a fixed secondary background with a colour gradient that would simulate light passing through the transparent text as the .spacer moves up the page.
 
