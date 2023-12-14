@@ -308,10 +308,6 @@ textarea {
   height: 100px;
 }
 
-.button-wrapper {
-  /* min-height: 50%; */
-}
-
 .info-section {
   margin-top: 20%;
   margin-bottom: 30px;
@@ -355,10 +351,6 @@ textarea {
 
 footer {
   height: 71px;
-  /* z-index: 1; */
-  /* bottom: 0;
-  left: 0;
-  right: 0; */
 }
 
 footer p {
@@ -437,7 +429,6 @@ footer p {
   }
 
   .form-section {
-    /* min-height: 80vh; */
     margin-top: 10%;
     margin-bottom: 12%;
   }
@@ -509,11 +500,6 @@ footer p {
     height: 100px;
   }
 
-  /* .form-section {
-    min-height: 80vh;
-    margin-bottom: 10%;
-  } */
-
   .input-group {
     margin-bottom: 0px;
   }
@@ -579,7 +565,6 @@ footer p {
   }
 
   .form-section {
-    /* min-height: 80vh; */
     margin-top: 0;
     margin-bottom: 7%;
   }
@@ -637,7 +622,6 @@ footer p {
   }
 
   .contact-header {
-    /* margin-top: 150px; */
     margin-top: 18vh;
   }
 
@@ -646,11 +630,8 @@ footer p {
   }
 
   .form-section {
-    /* min-height: 80vh; */
     margin-top: 12vh;
     margin-bottom: 20vh;
-    /* width: 80%; */
-    /* border: 1px solid black; */
   }
 
   .form-section .row {
@@ -697,15 +678,6 @@ footer p {
   .info-section {
     margin-top: 10vh;
     margin-bottom: 10vh;
-    /* max-width: 80%; */
-  }
-
-  .info-section a {
-    /* color: #212529; */
-  }
-
-  .info-section a:hover {
-    /* color: rgb(255, 196, 0); */
   }
 
   .map-col {
@@ -746,7 +718,6 @@ footer p {
   }
 
   .contact-header {
-    /* margin-top: 150px; */
     margin-top: 8vh;
   }
 
@@ -755,33 +726,11 @@ footer p {
   }
 
   .form-section {
-    /* min-height: 80vh; */
     margin-top: 1vh;
     margin-bottom: 1vh;
-    /* width: 80%; */
-    /* border: 1px solid black; */
-  }
-
-  .form-section .row {
-    /* margin-bottom: 0; */
-    /* min-height: 120px; */
-  }
-
-  .form-label {
-    /* font-size: 1rem; */
-  }
-
-  .input-group input {
-    /* background-color: rgb(248, 248, 248); */
-  }
-
-  .input-group span,
-  .input-group input {
-    /* font-size: 1rem; */
   }
 
   #job-description {
-    /* height: 120px; */
     font-size: 1rem;
     background-color: rgb(248, 248, 248);
   }
@@ -808,14 +757,6 @@ footer p {
     margin-top: 1vh;
     margin-bottom: 1vh;
     max-width: 80%;
-  }
-
-  .info-section a {
-    /* color: #212529; */
-  }
-
-  .info-section a:hover {
-    /* color: rgb(255, 196, 0); */
   }
 
   .map-col {
@@ -888,8 +829,6 @@ footer p {
     margin-bottom: 60px;
   }
 
-  .container .row {}
-
   .service-section h2 {
     margin-top: 100px !important;
     font-size: 4rem;
@@ -912,7 +851,6 @@ footer p {
 
   .service-item button {
     margin-top: 20px;
-    /* margin-bottom: 30px; */
     min-width: 220px;
     font-size: 2rem;
   }
@@ -922,20 +860,11 @@ footer p {
   }
 
   footer p {
-    /* margin: 0; */
     font-size: 2rem;
   }
 
   .quote-button {
     font-size: 2rem;
-  }
-
-  .image-col {
-    /* min-height: 100vh; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-size: auto 70%; */
-    /* background-attachment: fixed; */
   }
 
   .sticky-title {
@@ -962,7 +891,6 @@ footer p {
   }
 
   .contact-header {
-    /* margin-top: 150px; */
     margin-top: 10vh;
   }
 
@@ -971,11 +899,8 @@ footer p {
   }
 
   .form-section {
-    /* min-height: 80vh; */
     margin-top: 3vh;
     margin-bottom: 3vh;
-    /* width: 80%; */
-    /* border: 1px solid black; */
   }
 
   .form-section .row {
@@ -1023,14 +948,6 @@ footer p {
     margin-top: 3vh;
     margin-bottom: 10px;
     max-width: 80%;
-  }
-
-  .info-section a {
-    /* color: #212529; */
-  }
-
-  .info-section a:hover {
-    /* color: rgb(255, 196, 0); */
   }
 
   .map-col {
@@ -1113,7 +1030,6 @@ footer p {
   .img-thumbnail {
     width: 570px;
     max-height: 387px !important;
-    /* object-fit: cover; */
   }
 
   .service-item .dropdown-menu li {
@@ -1122,7 +1038,6 @@ footer p {
 
   .service-item button {
     margin-top: 20px;
-    /* margin-bottom: 30px; */
     min-width: 300px;
     font-size: 3rem;
   }
@@ -1157,7 +1072,6 @@ footer p {
   }
 
   .contact-header {
-    /* margin-top: 150px; */
     margin-top: 10vh;
   }
 
@@ -1168,10 +1082,6 @@ footer p {
   .form-section {
     margin-top: 2vh;
     margin-bottom: 2vh;
-    /* width: 100%;
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0; */
   }
 
   .form-section .container {
@@ -1179,7 +1089,6 @@ footer p {
   }
 
   .form-section .row {
-    /* margin-bottom: 0; */
     min-height: 120px;
     margin: 0;
   }
@@ -1205,12 +1114,6 @@ footer p {
 
   .info-section {
     margin-top: 2vh;
-    /* margin-bottom: 10px; */
-    /* max-width: 80%; */
-  }
-
-  .map-col {
-    /* margin-bottom: 0; */
   }
 
   .contact-info-title {
@@ -1219,13 +1122,5 @@ footer p {
 
   .contact-title {
     font-size: 3rem;
-  }
-
-  .picture-col {
-    /* height: 35vh;
-    margin-top: 0;
-    background-image: url(../images/call-me.png);
-    background-size: cover;
-    background-position: center; */
   }
 }
