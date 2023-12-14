@@ -25,11 +25,15 @@
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-This website is for educational purposes only. I originally planned to make this site for a real builder, but due to poor responsiveness, I've made it for an imaginary handyman. 
+This website is for educational purposes only. I originally planned to make this site for a real handyman I know, but the content is not specifically relevant to him. In the future I intend on swapping in media and content by him so that it more accurately reflects himself and his business.
 
 In order to avoid confusion while looking at the git pushes, I need to explain the naming history of this document.
 
-The original README I wrote was not fit for purpose so I created README2. I then turned the original README into a 'Build Log' and renamed it that. The Build Log contains the bulk of the original README I wrote. I then created README2, which I later renamed 'README'. 
+The original README I wrote was not fit for purpose so I created README2. I then turned the original README into a 'Build Log' and renamed it that. The Build Log contains the bulk of the original README I wrote. I then created README2, which I later renamed 'README'.
+
+README.md => build-log.md
+
+README2.md => README.md
 
 ## UX
 
@@ -74,16 +78,23 @@ Given that in today's age, business is advertised and found via websites, the cr
 
 #### User Stories
 
-'As an old lady, I would like to be able to find a reputable builder that I can be sure will help me fix my problems. For me, integrity is important and I'd much prefer to get a sense of the person I'm dealing with before I have them in my home.'
+1) "As a visitor to the website, I want to know if this site is relevant to me so I can decide whether I want to engage with it."
 
-'As a busy professional, I need a solid guy I can turn to when I'm trying to short my portfolio shares in the middle of a market dive and suddenly s*** hits the fan at home, or floor should I say when the toilet starts overflowing. It would save me time making a decision about quotes if I could submit pictures and get an instant quote instead of having to wait for him to find time to drive over.'
+2) "As a potential customer, I want to get a sense of the handyman's character and experience."
+
+3) "As an interested customer, I want to be able to contact the handyman, and get a quote."
+
+4) "As a customer who's in a rush or who wants to minimise home visits, I want to be able to submit pictures of the required job so that I can increase the chance of getting a quote back more quickly and remotely."
 
 #### Acceptance Critiera
 
-- Users can successfully view information on mobile devices and desktops with the most common screen dimensions.
-- Users can navigate to every page from every page.
-- Users can input information into the contact form and submit successfully.
-- If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include giving user feedback such as required fields and syntax validation.
+1) "Users can immediately identify the company name, understand the industry/profession it relates to and see the scope of what services are offered."
+
+2) "Users can navigate between the pages, to every page from every page. The page headings are clear and relevant. Users can view the information of each page on all viewports."
+
+3) "Users can easily navigate to the contact page. Autocomplete works for the input fields. The form requires essential information and a valid email syntax in order to successfully submit. The form provides feedback if there has been an input error that needs addressing or has successfully submitted."
+
+4) "Users can upload pictures to the contact form."
 
 #### Information and features scope
 
@@ -269,6 +280,7 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
   - Used to create images of 'Anthony'
   - Used for advice and discovering new options
   - Used for debugging and syntax checking
+- [favicon.io's Logo to Favicon converter](https://favicon.io/favicon-converter/) was used to make a favicon out of the logo
 - [FontAwesome](https://fontawesome.com/) was used for all icons
 - [Google Fonts](https://fonts.google.com/) was used for interesting fonts
 - [Unsplash](https://unsplash.com/) was used to obtain all real images as they are free to use
@@ -635,9 +647,9 @@ This site was deployed to GitHub Pages following the steps below:
 ### Code
 
 - GPT-4: `transition: none !important;` for carousel transitions
-- StackOverlow: [Vertically centering Bootstrap carousel caption](https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption)
 - [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for code relating to navbar, dropdowns, dark theme, light theme, carousel, form formatting.
 - [W3Schools](https://www.w3schools.com/) for fixing background images
+- StackOverlow: [Vertically centering Bootstrap carousel caption](https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption)
 - YouTube: [clipping a background-image to text](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
 - YouTube: [Working with Bootstrap forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
 - YouTube: [Clip an image to text with CSS](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
