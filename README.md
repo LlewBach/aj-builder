@@ -547,7 +547,7 @@ Well, although converting the images to WebP definitely reduced their sizes, for
 
 I had indeed neglected to compress the carousel images, which I've now done.
 
-I changed the non-sequential h titles and replaced them with p elements whose classes I targeted to adjust font size.
+I changed the original h5 titles with p elements whose classes I targeted to adjust font size, as this makes more semantic sense.
 
 I added a title to the map iframe.
 
@@ -669,7 +669,9 @@ This site was deployed to GitHub Pages following the steps below:
 ### Code
 
 - GPT-4: `transition: none !important;` for carousel transitions
-- [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for code relating to navbar, dropdowns, dark theme, light theme, carousel, form formatting.
+- GPT-4: `rel="noopener noreferrer"` for all external links
+- GPT-4: advice on styling links as buttons
+- [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for code relating to navbar, dropdowns, dark theme, light theme, carousel, form formatting and grid gutter management.
 - [W3Schools](https://www.w3schools.com/) for fixing background images
 - StackOverlow: [Vertically centering Bootstrap carousel caption](https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption)
 - YouTube: [clipping a background-image to text](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
@@ -682,7 +684,7 @@ This site was deployed to GitHub Pages following the steps below:
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
 
-I'd like to thank my mentor Ben Kavanagh for his great support, advice and feedback.
+I'd like to thank my mentor Ben Kavanagh for his great support, advice and feedback and investing so much time to do this.
 
 ## Disclaimer
 
