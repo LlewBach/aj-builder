@@ -90,7 +90,7 @@ Given that in today's age, business is advertised and found via websites, the cr
 
 1) "Users can immediately identify the company name, understand the industry/profession it relates to and see the scope of what services are offered."
 
-2) "Users can navigate between the pages, to every page from every page. The page headings are clear and relevant. Users can view the information of each page on all viewports."
+2) "Users can navigate between the pages, to every page from every page. The page headings are clear and relevant. Users can view the information of each page on mobile devices and desktops with the most popular screen dimensions."
 
 3) "Users can easily navigate to the contact page. Autocomplete works for the input fields. The form requires essential information and a valid email syntax in order to successfully submit. The form provides feedback if there has been an input error that needs addressing or has successfully submitted."
 
@@ -256,7 +256,7 @@ The default carousel transitions caused image flickering due to automatic resizi
 
 This form was built using Bootstrap rows and columns for responsivity. On smaller screens, each field label and input appear vertially stacked. On medium screens these appear in two columns. On larger screens, these have a 4:8 width ratio, with the inputs requiring more input taking up more space.
 
-The form requires all essential information except 'upload photos'. The form will validate input for correct syntax and informs the user of any errors. The user will not be able to submit an incorrectly filled form.
+The form requires all essential information except 'upload photos'. The form will validate input for correct syntax and informs the user of any errors. The user will not be able to submit an incorrectly filled form. Autocomplete as been activated for this form.
 
 The form items are styled using Bootstrap classes and FontAwesome icons.
 
@@ -297,16 +297,29 @@ This is a Bootstrap grid, featuring a Google Map iframe showing the base locatio
 
 ### Acceptance Critiera Testing
 
+1) "Users can immediately identify the company name, understand the industry/profession it relates to and see the scope of what services are offered."
+
+#### Test that users can navigate to website and immediately understand purpose of website
+
+> 1) Navigate to website in the Chrome browser. Don't scroll down.
+> 2) Check that the business name is visible. This name should contain the word 'handyman' which indicates the profession of the business.
+> 3) Check that the imagery is relevant to this theme.
+> 4) Check that the footer call to action is always visible, which lets the user know what action they can take.
+
+Test result: Pass.
+
+2) "Users can navigate between the pages, to every page from every page. The page headings are clear and relevant. Users can view the information of each page on all viewports."
+
 #### Test that users can navigate between every page.
 
-1) Open website in the Chrome browser.
-2) From the 'Services' (main) page, use the menu to navigate to the other pages, returning back to the 'Services' page before each attempt. 
-3) Repeat this for the About and Contact pages.
-4) From each page, click the logo text to be taken to the 'Services' (main) page.
-5) From the Services and About pages, press the 'Get (Free) Quote" button in the footer to be taken to the Contact page.
-6) On the footer of each page, test that the links to Instagram and Checkatrade open in a new tab and display the correct sites.
-7) On the Contact page, test that the link to Instagram opens in a new tab and displays the correct site.
-8) Using a mouse, test that each link turns yellow when hovering over it on every page.
+> 1) Open website in the Chrome browser.
+> 2) From the 'Services' (main) page, use the menu to navigate to the other pages, returning back to the 'Services' page before each attempt. 
+> 3) Repeat this for the About and Contact pages.
+> 4) From each page, click the logo text to be taken to the 'Services' (main) page.
+> 5) From the Services and About pages, press the 'Get (Free) Quote" button in the footer to be taken to the Contact page.
+> 6) On the footer of each page, test that the links to Instagram and Checkatrade open in a new tab and display the correct sites.
+> 7) On the Contact page, test that the link to Instagram opens in a new tab and displays the correct site.
+> 8) Using a mouse, test that each link turns yellow when hovering over it on every page.
 
 Test result: Pass.
 
@@ -315,47 +328,47 @@ Test result: Pass.
 This is my testing procedure:
 
 <!-- Setup -->
-1) Open website in the Chrome browser.
-2) Right click and click inspect.
-3) Click the toggle device toolbar.
-4) From the device selector dropdown, choose 'Responsive'.
+> 1) Open website in the Chrome browser.
+> 2) Right click and click inspect.
+> 3) Click the toggle device toolbar.
+> 4) From the device selector dropdown, choose 'Responsive'.
 <!-- Testing Function -->
-5) Set view to test-specific dimensions.
-6) Navbar:
+> 5) Set view to test-specific dimensions.
+> 6) Navbar:
   - Check logo and text visible
   - Check menu is collapsed or expanded appropriately
   - Check menu opens and displays appropriately if collapsed
   - Check menu closes if opened
-7) Footer:
+> 7) Footer:
   - Check that footer items appear symetrically and fit within the view
   - Check that the call to action button is visible and centered
-8) Page spacer(s)
+> 8) Page spacer(s)
   - Check that the .spacer text falls on one line and doesn't wrap
   - Check that the text is legible while scrolling
   - If unable to scroll, check that entire text is readable
   - If able to scroll, does spacer move across the whole viewport
-9) Services Hero
+> 9) Services Hero
   - Check that hero image takes up full screen width without distortion
-  - Check that text is centered, and legible
-10) Services Section
+  - Check that text is centered and legible
+> 10) Services Section
   - Check that the service items align in a symetrical and ordered fashion
   - Check that the dropdown menus work and all sub-category items are visible
-11) About Hero
+> 11) About Hero
   - Check that hero image takes up full screen width without distortion
   - Check that text is centered, and legible
-12) About parallax section
+> 12) About parallax section
   - Ensure image is visible between the navbar and footer
   - Ensure image is aligned well, either centrally or left aligned
   - Ensure sticky titles are initially invisible and become fully visible upon scrolling
   - Ensure paragraph text does not reappear after disappearing below sticky title
   - Ensure sticky title disappears completely at the end of every section
-13) About page testimonial carousel
+> 13) About page testimonial carousel
   - Ensure text is readable and centrally aligned
   - Ensure that cycle forward and backward buttons work properly
-14) Contact form
+> 14) Contact form
   - Ensure title is visible and central
   - Ensure form fields are arranged in an organized way, either stacked in one or two columns
-15) Contact page 'info row'
+> 15) Contact page 'info row'
   - Ensure map, contact info and 'call me' images are visible and ordered, either vertically or horizontally
 
 Now the screen dimensions to be tested need to be decided upon. I went to [statcounter.com](https://gs.statcounter.com/screen-resolution-stats) to find the most common screen resolutions. 
@@ -394,22 +407,31 @@ Now the screen dimensions to be tested need to be decided upon. I went to [statc
 
 My mentor uses a 4k screen so I accomodated this as well
 
-- 3840x2160 - Pass
+- 3840x2160 - Pass.
 
-#### Users can input information into the contact form and submit successfully.
+3) "Users can easily find the contact page. Autocomplete works for the input fields. The form requires essential information and a valid email syntax in order to successfully submit. The form provides feedback if there has been an input error that needs addressing or has successfully submitted."
 
-1) Navigate to the website's contact page
-2) Enter correct information into the form and press submit
-3) Given that this is a fictitious site, I'll not require that the submit button actually submits
+#### Users can input information into the contact form with autocomplete options available and submit successfully.
+
+> 1) Navigate to the website's contact page
+> 2) Enter correct information into the form, check to see if autocomplete options appear for relevant input fields and press submit
+> 3) Given that this is a fictitious site, I'll not require that the submit button actually submits
 
 Test result: Pass.
 
 #### If users input information incorrectly into the contact form, they will not be able to submit and they will be notified of any errors. This will include required fields, syntax validation and user feedback.
 
-1) Navigate to website's contact page
-2) Press submit with an empty form. Ensure user is notified that the first required field is required
-3) Enter correct text then press submit. Ensure user is notified that the second required field is required. Enter correct text. Repeat for all required input fields (all but 'add photos')
-4) For the email field, enter a random string to ensure that the user is prompted to enter a valid email address
+> 1) Navigate to website's contact page
+> 2) Press submit with an empty form. Ensure user is notified that the first required field is required
+> 3) Enter correct text then press submit. Ensure user is notified that the second required field is required. Enter correct text. Repeat for all required input fields (all but 'add photos')
+> 4) For the email field, enter a random string to ensure that the user is prompted to enter a valid email address
+
+Test result: Pass.
+
+4) "Users can upload pictures to the contact form."
+
+> 1) Navigate to website's contact page
+> 2) Under 'Upload Photos', select 'Choose Files' and check that images can be added
 
 Test result: Pass.
 
