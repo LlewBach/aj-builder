@@ -113,7 +113,8 @@ nav {
   background-attachment: fixed;
   background-clip: text;
   -webkit-background-clip: text;
-  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  /* background-size: cover; */
   /* position: relative; */
   /* -moz-background-clip: text; */
 }
@@ -553,7 +554,8 @@ footer p {
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
-    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
   }
@@ -666,7 +668,8 @@ footer p {
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
-    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
     font-size: 3rem;
@@ -746,7 +749,8 @@ footer p {
     background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
-    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
     font-size: 2rem;
@@ -877,7 +881,8 @@ footer p {
     background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
-    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
   }
