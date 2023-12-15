@@ -104,7 +104,6 @@ nav {
 .spacer {
   height: 20vh;
   background-color: #212529;
-  box-sizing: content-box;
 }
 
 .transparent-text {
