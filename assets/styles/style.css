@@ -39,16 +39,7 @@ a:hover {
 
 nav {
   min-height: 71px;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
 }
-
-/* .navbar-brand {
-  padding-top: 0;
-  margin-top: 0;
-} */
 
 .navbar-brand:hover {
   color: yellow;
@@ -58,10 +49,6 @@ nav {
   box-shadow: 0 0 4px 4px white;
   margin-right: 10px;
 }
-
-/* nav ul {
-  margin-top: 7px;
-} */
 
 .nav-link {
   margin-right: 20px;
@@ -116,6 +103,7 @@ nav {
 .spacer {
   height: 20vh;
   background-color: #212529;
+  box-sizing: content-box;
 }
 
 .transparent-text {
@@ -125,6 +113,7 @@ nav {
   background-attachment: fixed;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
 .service-section {
@@ -142,7 +131,6 @@ nav {
 }
 
 .service-section ul {
-  /* position: relative; */
   z-index: 1031;
 }
 
@@ -296,7 +284,6 @@ nav {
 }
 
 .form-section {
-  /* min-height: 80vh; */
   margin-bottom: 20%;
 }
 
@@ -483,10 +470,10 @@ footer p {
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
   }
 
   .form-section {
-    /* min-height: 80vh; */
     margin-top: 0;
     margin-bottom: 7%;
   }
@@ -562,6 +549,7 @@ footer p {
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
   }
 
   .form-section {
@@ -672,6 +660,7 @@ footer p {
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     font-size: 3rem;
   }
 
@@ -749,6 +738,7 @@ footer p {
     background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     font-size: 2rem;
     letter-spacing: 2rem;
   }
@@ -792,35 +782,16 @@ footer p {
     margin-right: 30px;
   }
 
-  .navbar-brand {
-    /* font-size: 1.8rem; */
-  }
-
   .nav-link {
     margin-right: 40px;
-    /* font-size: 1.5rem; */
   }
 
   .nav-link i {
     margin-right: 10px;
   }
 
-  .hero-text h1 {
-    /* font-size: 4rem; */
-  }
-
-  .hero-text p {
-    /* font-size: 2rem; */
-  }
-
   .spacer {
-    /* height: 20vh; */
     background-color: #212529;
-  }
-
-  .spacer p {
-    /* font-size: 8rem; */
-    /* letter-spacing: 2rem; */
   }
 
   .service-section.container {
@@ -831,7 +802,6 @@ footer p {
 
   .service-section h2 {
     margin-top: 100px !important;
-    /* font-size: 4rem; */
   }
 
   .service-item {
@@ -845,43 +815,17 @@ footer p {
     object-fit: cover;
   }
 
-  .service-item .dropdown-menu li {
-    /* font-size: 2rem; */
-  }
-
   .service-item button {
     margin-top: 20px;
     min-width: 220px;
-    /* font-size: 2rem; */
   }
 
   footer {
     height: 100px;
   }
 
-  footer p {
-    /* font-size: 2rem; */
-  }
-
-  .quote-button {
-    /* font-size: 2rem; */
-  }
-
-  .sticky-title {
-    /* font-size: 4rem; */
-  }
-
   .text-col p:first-of-type {
-    /* font-size: 3rem; */
     margin: 50% auto;
-  }
-
-  .carousel-caption {
-    /* font-size: 2rem; */
-  }
-
-  .caption-title {
-    /* font-size: 3rem; */
   }
 
   .carousel-control-prev-icon,
@@ -894,10 +838,6 @@ footer p {
     margin-top: 10vh;
   }
 
-  .contact-header h1 {
-    /* font-size: 4rem; */
-  }
-
   .form-section {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -908,27 +848,13 @@ footer p {
     min-height: 120px;
   }
 
-  .form-label {
-    /* font-size: 1.6rem; */
-  }
-
   .input-group input {
     background-color: rgb(248, 248, 248);
-  }
-
-  .input-group span,
-  .input-group input {
-    /* font-size: 1.4rem; */
   }
 
   #job-description {
     height: 150px;
-    /* font-size: 1.4rem; */
     background-color: rgb(248, 248, 248);
-  }
-
-  .submit-button {
-    /* font-size: 2rem; */
   }
 
   .contact-spacer {
@@ -941,7 +867,7 @@ footer p {
     background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
-    /* font-size: 6rem; */
+    -moz-background-clip: text;
   }
 
   .info-section {
@@ -952,14 +878,6 @@ footer p {
 
   .map-col {
     margin-bottom: 0;
-  }
-
-  .contact-info-title {
-    /* font-size: 3rem; */
-  }
-
-  .contact-title {
-    /* font-size: 2rem; */
   }
 
   .picture-col {
@@ -985,30 +903,12 @@ footer p {
     height: 5%;
   }
 
-  .navbar-brand {
-    /* font-size: 4rem; */
-  }
-
   .nav-link {
     margin-right: 80px;
-    /* font-size: 2.5rem; */
   }
 
   .nav-link i {
     margin-right: 20px;
-  }
-
-  .hero-text h1 {
-    /* font-size: 8rem; */
-  }
-
-  .hero-text p {
-    /* font-size: 4rem; */
-  }
-
-  .spacer p {
-    /* font-size: 12rem; */
-    /* letter-spacing: 4rem; */
   }
 
   .service-section.container {
@@ -1019,7 +919,6 @@ footer p {
 
   .service-section h2 {
     margin-top: 200px !important;
-    /* font-size: 8rem; */
   }
 
   .service-item {
@@ -1032,51 +931,21 @@ footer p {
     max-height: 387px !important;
   }
 
-  .service-item .dropdown-menu li {
-    /* font-size: 3rem; */
-  }
-
   .service-item button {
     margin-top: 20px;
     min-width: 300px;
-    /* font-size: 3rem; */
   }
 
   footer {
     height: 200px;
   }
 
-  footer p {
-    /* font-size: 3rem; */
-  }
-
-  .quote-button {
-    /* font-size: 3rem; */
-  }
-
-  .sticky-title {
-    /* font-size: 6rem; */
-  }
-
   .text-col p:first-of-type {
-    /* font-size: 4.5rem; */
     margin: 30% auto;
-  }
-
-  .carousel-caption {
-    /* font-size: 4rem; */
-  }
-
-  .caption-title {
-    /* font-size: 6rem; */
   }
 
   .contact-header {
     margin-top: 10vh;
-  }
-
-  .contact-header h1 {
-    /* font-size: 6rem; */
   }
 
   .form-section {
@@ -1093,34 +962,12 @@ footer p {
     margin: 0;
   }
 
-  .form-label {
-    /* font-size: 3rem; */
-  }
-
-  .input-group span,
-  .input-group input {
-    /* font-size: 2.4rem; */
-  }
-
   #job-description {
     height: 220px;
-    /* font-size: 2.4rem; */
     background-color: rgb(243, 243, 243);
-  }
-
-  .submit-button {
-    /* font-size: 3rem; */
   }
 
   .info-section {
     margin-top: 2vh;
-  }
-
-  .contact-info-title {
-    /* font-size: 4rem; */
-  }
-
-  .contact-title {
-    /* font-size: 3rem; */
   }
 }
