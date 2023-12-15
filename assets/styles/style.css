@@ -77,7 +77,6 @@ nav {
 .hero-text {
   position: relative;
   padding: 20px;
-  margin-top: 0.5rem;
 }
 
 .hero-text:before {
@@ -92,9 +91,11 @@ nav {
 }
 
 .hero-text h1,
+.hero-text h2,
 .hero-text p {
   position: relative;
   z-index: 1;
+  margin-top: 0.5rem;
 }
 
 .hero-text p {
@@ -113,7 +114,7 @@ nav {
   background-attachment: fixed;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   /* background-size: cover; */
   /* position: relative; */
   /* -moz-background-clip: text; */
@@ -351,6 +352,20 @@ footer p {
   padding: 0;
 }
 
+/* --------------------------------------- 404 */
+
+.no-page-header {
+  height: 100vh;
+  background-image: url(../images/page-not-found.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.hero-text h2 {
+  color: red;
+}
+
 /* --------------------------------------- Media Queries */
 
 /* XS Only */
@@ -472,8 +487,8 @@ footer p {
     color: transparent;
     background-attachment: fixed;
     background-clip: text;
-    -webkit-background-clip: text;
-    background-size: cover;
+    /* -webkit-background-clip: text; */
+    /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
   }
