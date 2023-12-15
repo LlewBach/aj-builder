@@ -262,6 +262,10 @@ The form items are styled using Bootstrap classes and FontAwesome icons.
 
 This is a Bootstrap grid, featuring a Google Map iframe showing the base location of Anthony the Handyman in the first column. The next column features Anthony's contact details. The third column features a fun and friendly picture of a 'call me maybe' gesture, encouraging engagement and instilling a positive emotional response.
 
+### 404 page
+
+This page catches users who try to navigate to a non-existant page. The user can still make use of the navbar to find the page they require.
+
 ## Technologies Used
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
