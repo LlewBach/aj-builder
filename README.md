@@ -76,25 +76,23 @@ Given that in today's age, business is advertised and found via websites, the cr
 2) What the customer actually needs - a good value, trustworthy builder
 3) What the customer doesn't know they need - a long term contact who can offer other home-improvements that may be more affordable than previously realised
 
-#### User Stories
+#### User Stories (US) and Acceptance Criteria (AC)
 
-1) "As a visitor to the website, I want to know if this site is relevant to me so I can decide whether I want to engage with it."
+US1 - "As a visitor to the website, I want to know if this site is relevant to me so I can decide whether I want to engage with it."
 
-2) "As a potential customer, I want to get a sense of the handyman's character and experience."
+AC1 - "Users can immediately identify the company name, understand the industry/profession it relates to and see the scope of what services are offered."
 
-3) "As an interested customer, I want to be able to contact the handyman, and get a quote."
+US2 - "As a potential customer, I want to get a sense of the handyman's character and experience."
 
-4) "As a customer who's in a rush or who wants to minimise home visits, I want to be able to submit pictures of the required job so that I can increase the chance of getting a quote back more quickly and remotely."
+AC2 - "Users can navigate between the pages, to every page from every page. The page headings are clear and relevant. Users can view the information of each page on mobile devices and desktops with the most popular screen dimensions."
 
-#### Acceptance Critiera
+US3 - "As an interested customer, I want to be able to contact the handyman, and get a quote."
 
-1) "Users can immediately identify the company name, understand the industry/profession it relates to and see the scope of what services are offered."
+AC3 - "Users can easily navigate to the contact page. Autocomplete works for the input fields. The form requires essential information and a valid email syntax in order to successfully submit. The form provides feedback if there has been an input error that needs addressing or has successfully submitted."
 
-2) "Users can navigate between the pages, to every page from every page. The page headings are clear and relevant. Users can view the information of each page on mobile devices and desktops with the most popular screen dimensions."
+US4 - "As a customer who's in a rush or who wants to minimise home visits, I want to be able to submit pictures of the required job so that I can increase the chance of getting a quote back more quickly and remotely."
 
-3) "Users can easily navigate to the contact page. Autocomplete works for the input fields. The form requires essential information and a valid email syntax in order to successfully submit. The form provides feedback if there has been an input error that needs addressing or has successfully submitted."
-
-4) "Users can upload pictures to the contact form."
+AC4 - "Users can upload pictures to the contact form."
 
 #### Information and features scope
 
