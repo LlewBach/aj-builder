@@ -670,7 +670,7 @@ This site was deployed to GitHub Pages following the steps below:
 - GPT-4: `rel="noopener noreferrer"` for all external links
 - GPT-4: advice on styling links as buttons
 - [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for code relating to navbar, dropdowns, dark theme, light theme, carousel, form formatting and grid gutter management.
-- [W3Schools](https://www.w3schools.com/) for fixing background images
+- W3Schools for fixing background images, which produced a [parallax effect](https://www.w3schools.com/howto/howto_css_parallax.asp).
 - StackOverlow: [Vertically centering Bootstrap carousel caption](https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption)
 - YouTube: [clipping a background-image to text](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
 - YouTube: [Working with Bootstrap forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
