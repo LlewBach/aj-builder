@@ -793,12 +793,12 @@ footer p {
   }
 
   .navbar-brand {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .nav-link {
     margin-right: 40px;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .nav-link i {
@@ -806,21 +806,21 @@ footer p {
   }
 
   .hero-text h1 {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .hero-text p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .spacer {
-    height: 20vh;
+    /* height: 20vh; */
     background-color: #212529;
   }
 
   .spacer p {
-    font-size: 8rem;
-    letter-spacing: 2rem;
+    /* font-size: 8rem; */
+    /* letter-spacing: 2rem; */
   }
 
   .service-section.container {
@@ -831,7 +831,7 @@ footer p {
 
   .service-section h2 {
     margin-top: 100px !important;
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .service-item {
@@ -846,13 +846,13 @@ footer p {
   }
 
   .service-item .dropdown-menu li {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .service-item button {
     margin-top: 20px;
     min-width: 220px;
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   footer {
@@ -860,28 +860,28 @@ footer p {
   }
 
   footer p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .quote-button {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .sticky-title {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .text-col p:first-of-type {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     margin: 50% auto;
   }
 
   .carousel-caption {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .caption-title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .carousel-control-prev-icon,
@@ -895,7 +895,7 @@ footer p {
   }
 
   .contact-header h1 {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .form-section {
@@ -909,7 +909,7 @@ footer p {
   }
 
   .form-label {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
 
   .input-group input {
@@ -918,21 +918,21 @@ footer p {
 
   .input-group span,
   .input-group input {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 
   #job-description {
     height: 150px;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     background-color: rgb(248, 248, 248);
   }
 
   .submit-button {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .contact-spacer {
-    height: 10vh;
+    /* height: 10vh; */
   }
 
   .contact-spacer .transparent-text {
@@ -955,11 +955,11 @@ footer p {
   }
 
   .contact-info-title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .contact-title {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .picture-col {
@@ -986,12 +986,12 @@ footer p {
   }
 
   .navbar-brand {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .nav-link {
     margin-right: 80px;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 
   .nav-link i {
@@ -1003,12 +1003,12 @@ footer p {
   }
 
   .hero-text p {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .spacer p {
-    font-size: 12rem;
-    letter-spacing: 4rem;
+    /* font-size: 12rem; */
+    /* letter-spacing: 4rem; */
   }
 
   .service-section.container {
@@ -1019,7 +1019,7 @@ footer p {
 
   .service-section h2 {
     margin-top: 200px !important;
-    font-size: 8rem;
+    /* font-size: 8rem; */
   }
 
   .service-item {
@@ -1033,13 +1033,13 @@ footer p {
   }
 
   .service-item .dropdown-menu li {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .service-item button {
     margin-top: 20px;
     min-width: 300px;
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   footer {
@@ -1047,28 +1047,28 @@ footer p {
   }
 
   footer p {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .quote-button {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .sticky-title {
-    font-size: 6rem;
+    /* font-size: 6rem; */
   }
 
   .text-col p:first-of-type {
-    font-size: 4.5rem;
+    /* font-size: 4.5rem; */
     margin: 30% auto;
   }
 
   .carousel-caption {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .caption-title {
-    font-size: 6rem;
+    /* font-size: 6rem; */
   }
 
   .contact-header {
@@ -1076,7 +1076,7 @@ footer p {
   }
 
   .contact-header h1 {
-    font-size: 6rem;
+    /* font-size: 6rem; */
   }
 
   .form-section {
@@ -1094,22 +1094,22 @@ footer p {
   }
 
   .form-label {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .input-group span,
   .input-group input {
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
   }
 
   #job-description {
     height: 220px;
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
     background-color: rgb(243, 243, 243);
   }
 
   .submit-button {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .info-section {
@@ -1117,10 +1117,10 @@ footer p {
   }
 
   .contact-info-title {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   .contact-title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 }

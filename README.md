@@ -442,7 +442,7 @@ Edge: Pass.
 Firefox: Pass.
 Opera: Pass.
 
-I don't have a device that uses Safari but I asked my parents to give feedback on the site from their iPad.
+I don't have a device that uses Safari but I asked my parents to give feedback on the site from their iPad, which was positive.
 
 ### Automated Testing
 
