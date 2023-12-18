@@ -54,10 +54,17 @@
   </header>
 
   <div class="spacer d-flex justify-content-center align-items-center">
-    <div class="transparent-text">Anthony Jones Handyman</div>
-    <!-- <svg height="100%" width="100%">
-      <text x="50%" y="50%" fill="red" text-anchor="middle">Anthony Jones Handyman</text>
-    </svg> -->
+    <!-- <div class="transparent-text">Anthony Jones Handyman</div> -->
+    <div class="svg-bg"></div>
+    <svg height="100%" width="100%">
+      <defs>
+        <mask id="mask" x="0" y="0" height="100%" width="100%">
+          <rect x="0" y="0" height="100%" width="100%" />
+          <text x="50%" y="50%" text-anchor="middle">Anthony Jones Handyman</text>
+        </mask>
+      </defs>
+      <rect class="mystery-rect" x="0" y="0" height="100%" width="100%" />
+    </svg>
   </div>
 
   <section class="service-section container">
