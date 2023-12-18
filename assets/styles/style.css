@@ -1006,7 +1006,7 @@ footer p {
 
 /* --------------------------------------- Firefox Specific */
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   body {
     background-color: orange;
   }
@@ -1021,4 +1021,4 @@ footer p {
     -webkit-background-clip: text;
 
   }
-}
+} */
