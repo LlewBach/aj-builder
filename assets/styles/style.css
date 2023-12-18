@@ -1003,3 +1003,20 @@ footer p {
     margin-top: 2vh;
   }
 }
+
+/* --------------------------------------- Firefox Specific */
+
+@-moz-document url-prefix() {
+  body {
+    background-color: orange;
+  }
+
+  .transparent-text {
+    font-size: 2rem;
+    background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
+    color: transparent;
+    background-attachment: scroll;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+  }
