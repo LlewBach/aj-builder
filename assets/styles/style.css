@@ -1015,7 +1015,8 @@ footer p {
     font-size: 2rem;
     background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
     color: transparent;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
 
