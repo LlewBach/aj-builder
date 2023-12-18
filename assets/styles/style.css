@@ -115,8 +115,8 @@ nav {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: cover;
-  /* position: relative; */
+  /* background-size: cover; */
+  position: relative;
   /* -moz-background-clip: text; */
 }
 
