@@ -129,8 +129,34 @@ svg {
   fill: #212529;
 }
 
+.service-section-wrapper {
+  min-height: 100vh;
+  background-image: url(../images/services-bg-2.jpg);
+  background-size: cover;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  position: relative;
+  /* z-index: -2; */
+}
+
+.service-section-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* z-index: -1; */
+}
+
+.services-h2 {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
 .service-section {
-  margin-bottom: 87px;
+  margin-bottom: 71px;
+  position: relative;
+  z-index: 1;
 }
 
 .service-item img {
@@ -141,6 +167,7 @@ svg {
   margin-top: 10px;
   margin-bottom: 30px;
   min-width: 130px;
+  z-index: 100;
 }
 
 .service-section ul {
@@ -148,7 +175,7 @@ svg {
 }
 
 .service-divider {
-  border-bottom: 4px solid #212529;
+  border-bottom: 4px solid yellow;
   width: 60%;
   margin: 15px auto;
 }
