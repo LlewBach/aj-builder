@@ -635,6 +635,14 @@ Thankfully passed first time. Two warnings though..
 
 GPT-4 advises to set a fallback, such as to make the text transparent, which is already the case for me, so I'm happy to move on.
 
+### Bugs
+
+Having made the .spacers SVG masks rather than basing them on 'background-clip: text', I noticed that often on loading the contact page, the 'top-rect' was not fully masking the right edge.
+
+![capture54.PNG](assets/captures/capture-54.PNG)
+
+Upon reloading, it would disappear. Given that first impressions are important, I decided to cover this with a pseudo element patch.
+
 ## Deployment
 
 [Back to top](#mileston-1-project---anthony-jones-handyman)
