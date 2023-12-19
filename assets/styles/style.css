@@ -39,6 +39,7 @@ a:hover {
 
 nav {
   min-height: 71px;
+  max-height: 72px;
 }
 
 .navbar-brand:hover {
@@ -363,7 +364,7 @@ textarea {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .info-section {
