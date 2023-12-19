@@ -103,7 +103,7 @@ nav {
 }
 
 .spacer {
-  height: 20vh;
+  height: 15vh;
   position: relative;
 }
 
@@ -119,12 +119,12 @@ svg {
   position: absolute;
 }
 
-svg rect {
+.rect1 {
   fill: white;
-  mask: url("#mask");
+  mask: url("#mask1");
 }
 
-.mystery-rect {
+.top-rect {
   fill: #212529;
 }
 
@@ -174,6 +174,25 @@ svg rect {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.rect2 {
+  fill: white;
+  mask: url("#mask2");
+}
+
+.rect3 {
+  fill: white;
+  mask: url("#mask3");
+}
+
+.rect4 {
+  fill: white;
+  mask: url("#mask4");
+}
+
+.top-rect {
+  fill: #212529;
 }
 
 .parallax-section {
@@ -416,9 +435,13 @@ footer p {
 /* MD */
 
 @media only screen and (min-width: 768px) {
-  .transparent-text {
+  .spacer {
+    height: 20vh;
+  }
+
+  svg text {
     font-size: 3rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.6rem;
   }
 
   .service-divider {
@@ -499,15 +522,19 @@ footer p {
     height: 10vh;
   }
 
-  .spacer .transparent-text {
+  .contact-spacer .svg-bg {
+    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
+  }
+
+  svg text {
     font-size: 3.2rem;
   }
 
   .contact-spacer .transparent-text {
-    background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
+    /* background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
     color: transparent;
     background-attachment: fixed;
-    background-clip: text;
+    background-clip: text; */
     /* -webkit-background-clip: text; */
     /* background-size: cover; */
     /* position: relative; */
@@ -580,17 +607,21 @@ footer p {
     height: 10vh;
   }
 
-  .spacer .transparent-text {
+  .contact-spacer .svg-bg {
+    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
+  }
+
+  svg text {
     font-size: 4rem;
   }
 
   .contact-spacer .transparent-text {
-    background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
+    /* background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
     color: transparent;
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
@@ -618,7 +649,7 @@ footer p {
 /* XL */
 
 @media only screen and (min-width: 1200px) {
-  .transparent-text {
+  svg text {
     font-size: 4rem;
     letter-spacing: 1rem;
   }
@@ -699,16 +730,16 @@ footer p {
   }
 
   .contact-spacer .transparent-text {
-    background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
+    /* background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
     color: transparent;
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     /* background-size: cover; */
     /* position: relative; */
     /* -moz-background-clip: text; */
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   .info-section {
@@ -779,19 +810,26 @@ footer p {
     height: 8vh;
   }
 
-  .contact-spacer .transparent-text {
+  .contact-spacer .svg-bg {
+    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
+  }
+
+  .contact-spacer text {
+    font-size: 2rem;
+    letter-spacing: 2rem;
+  }
+
+  /* .contact-spacer .transparent-text {
     background: linear-gradient(to top left, #212529 00%, yellow 50%, #212529 100%);
     color: transparent;
     background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* background-size: cover; */
-    /* position: relative; */
-    /* -moz-background-clip: text; */
-    font-size: 2rem;
-    letter-spacing: 2rem;
-  }
+    background-size: cover;
+    position: relative;
+    -moz-background-clip: text;
+  } */
 
   .info-section {
     margin-top: 1vh;
@@ -838,10 +876,6 @@ footer p {
 
   .nav-link i {
     margin-right: 10px;
-  }
-
-  .spacer {
-    background-color: #212529;
   }
 
   .service-section.container {
@@ -911,17 +945,21 @@ footer p {
     height: 10vh;
   }
 
-  .contact-spacer .transparent-text {
+  .contact-spacer .svg-bg {
+    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
+  }
+
+  /* .contact-spacer .transparent-text {
     background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
     color: transparent;
     background-attachment: scroll;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* background-size: cover; */
-    /* position: relative; */
-    /* -moz-background-clip: text; */
-  }
+    background-size: cover;
+    position: relative;
+    -moz-background-clip: text;
+  } */
 
   .info-section {
     margin-top: 3vh;
