@@ -128,19 +128,6 @@ svg {
   fill: #212529;
 }
 
-.transparent-text {
-  /* font-size: 2rem;
-  background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
-  color: transparent;
-  background-attachment: fixed;
-  background-clip: text;
-  -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-  /* background-size: cover; */
-  /* position: relative; */
-  /* -moz-background-clip: text; */
-}
-
 .service-section {
   margin-bottom: 87px;
 }
@@ -408,10 +395,6 @@ footer p {
 
 /* --------------------------------------- Media Queries */
 
-/* XS Only */
-
-@media only screen and (max-width: 576px) {}
-
 /* SM */
 
 @media only screen and (min-width: 576px) {
@@ -530,17 +513,6 @@ footer p {
     font-size: 3.2rem;
   }
 
-  .contact-spacer .transparent-text {
-    /* background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
-    color: transparent;
-    background-attachment: fixed;
-    background-clip: text; */
-    /* -webkit-background-clip: text; */
-    /* background-size: cover; */
-    /* position: relative; */
-    /* -moz-background-clip: text; */
-  }
-
   .form-section {
     margin-top: 0;
     margin-bottom: 7%;
@@ -613,18 +585,6 @@ footer p {
 
   svg text {
     font-size: 4rem;
-  }
-
-  .contact-spacer .transparent-text {
-    /* background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
-    color: transparent;
-    background-attachment: fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* background-size: cover; */
-    /* position: relative; */
-    /* -moz-background-clip: text; */
   }
 
   .form-section {
@@ -729,19 +689,6 @@ footer p {
     height: 20vh;
   }
 
-  .contact-spacer .transparent-text {
-    /* background: linear-gradient(to top left, #212529 30%, yellow 50%, #212529 70%);
-    color: transparent;
-    background-attachment: fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* background-size: cover; */
-    /* position: relative; */
-    /* -moz-background-clip: text; */
-    /* font-size: 3rem; */
-  }
-
   .info-section {
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -818,18 +765,6 @@ footer p {
     font-size: 2rem;
     letter-spacing: 2rem;
   }
-
-  /* .contact-spacer .transparent-text {
-    background: linear-gradient(to top left, #212529 00%, yellow 50%, #212529 100%);
-    color: transparent;
-    background-attachment: scroll;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: cover;
-    position: relative;
-    -moz-background-clip: text;
-  } */
 
   .info-section {
     margin-top: 1vh;
@@ -949,18 +884,6 @@ footer p {
     background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
   }
 
-  /* .contact-spacer .transparent-text {
-    background: linear-gradient(to top left, #212529 20%, yellow 50%, #212529 80%);
-    color: transparent;
-    background-attachment: scroll;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: cover;
-    position: relative;
-    -moz-background-clip: text;
-  } */
-
   .info-section {
     margin-top: 3vh;
     margin-bottom: 10px;
@@ -1062,22 +985,3 @@ footer p {
     margin-top: 2vh;
   }
 }
-
-/* --------------------------------------- Firefox Specific */
-
-/* @-moz-document url-prefix() {
-  body {
-    background-color: orange;
-  }
-
-  .transparent-text {
-    font-size: 2rem;
-    background: linear-gradient(to top left, #212529 40%, yellow 50%, #212529 60%);
-    color: transparent;
-    background-attachment: fixed;
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-
-  }
-} */
