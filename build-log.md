@@ -727,6 +727,24 @@ https://www.youtube.com/watch?v=OTKnhVTeN4w
 
 I initially worried that I would have to use images as the SVGs but thankfully I discovered that there is a specific svg html element that accepts a text element. This meant that I could resize the text in my media queries quite easily.
 
+I noticed a bug, where often when the contact page was loading for the first time, the 'top-rect' was not fully masking the background. 
+
+![capture-54.PNG](assets/captures/capture-54.PNG)
+
+This was the only spacer that seemed to be affected. Upon refreshing the page, it would always disappear. To address this, I simply added a pseudo element to the .contact-spacer to cover this part.
+
+```css
+.contact-spacer::after {
+    content: '';
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3%;
+    background-color: #212529;
+    position: absolute;
+  }
+```
+
 ### .image-col tuneup
 
 If you notice in the screenshot above, as my partner did rather brutally, there is effectively a white bar above the black spacer which looks sub-optimal. I am keen to try and displace this, although I am nervous I will have to 'tune' many other elements as a result!
