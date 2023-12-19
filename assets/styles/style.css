@@ -312,17 +312,31 @@ svg {
 
 .form-wrapper {
   min-height: 100vh;
-  background-color: red;
+  background-image: url(../images/contact-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.form-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .form-wrapper h1 {
   margin-top: 16vh;
   margin-bottom: 3vh;
+  color: white;
+  z-index: 1;
 }
 
 form {
   padding-bottom: 5vh;
   width: 80%;
+  color: white;
+  z-index: 1;
 }
 
 .input-group {
@@ -339,12 +353,23 @@ textarea {
 
 .info-section-wrapper {
   min-height: 100vh;
-  background-color: orange;
+  background-image: url(../images/contact-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.info-section-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .info-section {
   padding-top: 3vh;
   padding-bottom: 3vh;
+  z-index: 1;
 }
 
 .map-col {
@@ -357,13 +382,18 @@ textarea {
   height: 100%;
 }
 
+.contact-info-title {
+  color: white;
+}
+
 .contact-title {
   font-size: 1.2rem;
+  color: white;
 }
 
 .contact-divider {
   width: 80%;
-  border-bottom: 4px solid #212529;
+  border-bottom: 4px solid white;
 }
 
 .picture-col {
