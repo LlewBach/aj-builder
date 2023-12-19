@@ -422,6 +422,16 @@ footer p {
     height: 20vh;
   }
 
+  .contact-spacer::after {
+    content: '';
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3%;
+    background-color: #212529;
+    position: absolute;
+  }
+
   svg text {
     font-size: 3rem;
     letter-spacing: 0.6rem;
