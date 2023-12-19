@@ -704,6 +704,10 @@ footer p {
   .form-wrapper h1 {
     margin-bottom: 10vh;
   }
+
+  textarea {
+    height: 165px;
+  }
 }
 
 /* Width 2000+, Height 1200+ */
@@ -766,8 +770,8 @@ footer p {
     height: 100px;
   }
 
-  #job-description {
-    /* height: 150px; */
+  textarea {
+    height: 180px;
   }
 }
 
@@ -826,7 +830,7 @@ footer p {
     margin: 30% auto;
   }
 
-  #job-description {
-    /* height: 220px; */
+  textarea {
+    height: 220px;
   }
 }
