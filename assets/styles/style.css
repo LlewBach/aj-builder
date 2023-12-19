@@ -367,7 +367,7 @@ textarea {
 }
 
 .picture-col {
-  min-height: 70vh;
+  min-height: 65vh;
   margin-top: 3vh;
   background-image: url(../images/call-me.png);
   background-size: cover;
@@ -528,34 +528,33 @@ footer p {
     height: 10vh;
   }
 
-  .contact-spacer .svg-bg {
-    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
-  }
-
   svg text {
     font-size: 3.2rem;
   }
 
-  .form-section {
-    margin-top: 0;
-    margin-bottom: 7%;
-  }
-
-  .form-section .row {
-    margin-bottom: 0;
-    min-height: 120px;
+  .form-wrapper h1 {
+    margin-top: 0vh;
+    margin-bottom: 6vh;
   }
 
   textarea {
-    height: 100px;
+    height: 150px;
   }
 
   .input-group {
-    margin-bottom: 0px;
+    margin-bottom: 3vh;
+  }
+
+  .button-wrapper {
+    margin-bottom: 3vh;
+  }
+
+  .map-col {
+    min-height: 30vh;
   }
 
   .picture-col {
-    height: 30vh;
+    min-height: 30vh;
   }
 }
 
@@ -602,34 +601,25 @@ footer p {
     margin: 70% auto;
   }
 
-  .spacer {
-    height: 10vh;
-  }
-
-  .contact-spacer .svg-bg {
-    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
-  }
-
   svg text {
     font-size: 4rem;
   }
 
-  .form-section {
-    margin-top: 0;
-    margin-bottom: 7%;
-  }
-
-  .form-section .row {
-    margin-bottom: 0;
-    min-height: 120px;
+  .form-wrapper h1 {
+    margin-top: 0px;
+    margin-bottom: 5vh;
   }
 
   textarea {
-    height: 100px;
+    height: 180px;
+  }
+
+  .map-col {
+    min-height: 35vh;
   }
 
   .picture-col {
-    height: 35vh;
+    min-height: 35vh;
   }
 }
 
