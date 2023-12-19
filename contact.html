@@ -45,92 +45,91 @@
     </div>
   </nav>
 
-  <header class="contact-header text-center">
+  <section class="form-wrapper d-flex flex-column justify-content-center align-items-center">
     <h1>Get in Touch</h1>
-  </header>
+    <form autocomplete="on" method="POST" action="https://formdump.codeinstitute.net/">
+      <div class="container">
 
-  <form class="form-section" autocomplete="on" method="POST" action="https://formdump.codeinstitute.net/">
-    <div class="container">
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4 order-2 order-md-1 d-flex flex-column justify-content-between">
-          <div>
-            <label for="name" class="form-label">Name: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-signature"></i>
-              </span>
-              <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required
-                autocomplete="name">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 mt-0 order-2 order-md-1 d-flex flex-column justify-content-between">
+            <div>
+              <label for="name" class="form-label">Name: </label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-signature"></i>
+                </span>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required
+                  autocomplete="name">
+              </div>
+            </div>
+            <div>
+              <label for="email" class="form-label">Email: </label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com"
+                  required autocomplete="email">
+              </div>
             </div>
           </div>
-          <div>
-            <label for="email" class="form-label">Email: </label>
+          <div class="col-md-6 col-lg-8 mt-0 order-1 order-md-2 d-flex flex-column justify-content-between">
+
+            <label for="job-description" class="form-label">Job Description:</label>
             <div class="input-group">
               <span class="input-group-text">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-wrench"></i>
               </span>
-              <input id="email" name="email" type="email" class="form-control" placeholder="anthony@example.com"
-                required autocomplete="email">
+              <textarea id="job-description" name="job-description" class="form-control"
+                placeholder="Please provide a short description of the jobs you have in mind" required></textarea>
             </div>
+
           </div>
         </div>
-        <div class="col-md-6 col-lg-8 order-1 order-md-2 d-flex flex-column justify-content-between">
 
-          <label for="job-description" class="form-label">Job Description:</label>
-          <div class="input-group">
-            <span class="input-group-text">
-              <i class="fa-solid fa-wrench"></i>
-            </span>
-            <textarea id="job-description" name="job-description" class="form-control"
-              placeholder="Please provide a short description of the jobs you have in mind" required></textarea>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between">
+            <div>
+              <label for="phone" class="form-label">Phone: </label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required
+                  autocomplete="tel">
+              </div>
+            </div>
+
+            <div>
+              <label for="postcode" class="form-label">Postcode: </label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-address-book"></i>
+                </span>
+                <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
+                  required autocomplete="postal-code">
+              </div>
+            </div>
           </div>
+          <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-between">
+            <div>
+              <label for="photo-upload" class="form-label">Upload Photos:</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-image"></i>
+                </span>
+                <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
+              </div>
+            </div>
 
+            <div class="button-wrapper d-flex justify-content-center">
+              <input class="submit-button btn btn-dark" type="submit" value="Submit">
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="second-row row">
-        <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between">
-          <div>
-            <label for="phone" class="form-label">Phone: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-phone"></i>
-              </span>
-              <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter your number" required
-                autocomplete="tel">
-            </div>
-          </div>
-
-          <div>
-            <label for="postcode" class="form-label">Postcode: </label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-address-book"></i>
-              </span>
-              <input id="postcode" name="postcode" type="text" class="form-control" placeholder="Enter your postcode"
-                required autocomplete="postal-code">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-between">
-          <div>
-            <label for="photo-upload" class="form-label">Upload Photos:</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="fa-solid fa-image"></i>
-              </span>
-              <input class="form-control" type="file" id="photo-upload" name="photos" multiple>
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-center align-items-end">
-            <input class="submit-button btn btn-dark" type="submit" value="Submit">
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
+    </form>
+  </section>
 
   <div class="contact-spacer spacer d-flex">
     <div class="svg-bg"></div>
@@ -145,25 +144,27 @@
     </svg>
   </div>
 
-  <div class="info-section container">
-    <div class="row">
-      <div class="map-col col-md-4">
-        <iframe title="Map showing Anthony Jones Handyman's center of operations in Bridgend, South Wales"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356677.1675700863!2d-3.9362775243772634!3d51.52192509053625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e6c329f26c021%3A0xa384446c5b4ac703!2s2%20Park%20Ct%20Rd%2C%20Bridgend%20CF31%204BW!5e0!3m2!1sen!2suk!4v1700674112977!5m2!1sen!2suk"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="col-md-4 d-flex flex-column justify-content-around align-items-center">
-        <h2 class="contact-info-title">Contact Me</h2>
-        <div class="contact-divider"></div>
-        <p class="contact-title">07739 487651</p>
-        <div class="contact-divider"></div>
-        <p class="contact-title">anthony@example.com</p>
-        <div class="contact-divider"></div>
-        <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Instagram" rel="noopener noreferrer">
-          <p class="contact-title">Instagram</p>
-        </a>
-      </div>
-      <div class="picture-col col-md-4" role="img" aria-label="Anthony making a call-me gesture">
+  <div class="info-section-wrapper d-flex flex-column justify-content-center">
+    <div class="info-section container-fluid">
+      <div class="row">
+        <div class="map-col col-md-4">
+          <iframe title="Map showing Anthony Jones Handyman's center of operations in Bridgend, South Wales"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356677.1675700863!2d-3.9362775243772634!3d51.52192509053625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e6c329f26c021%3A0xa384446c5b4ac703!2s2%20Park%20Ct%20Rd%2C%20Bridgend%20CF31%204BW!5e0!3m2!1sen!2suk!4v1700674112977!5m2!1sen!2suk"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-around align-items-center">
+          <h2 class="contact-info-title">Contact Me</h2>
+          <div class="contact-divider"></div>
+          <p class="contact-title">07739 487651</p>
+          <div class="contact-divider"></div>
+          <p class="contact-title">anthony@example.com</p>
+          <div class="contact-divider"></div>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Instagram" rel="noopener noreferrer">
+            <p class="contact-title">Instagram</p>
+          </a>
+        </div>
+        <div class="picture-col col-md-4" role="img" aria-label="Anthony making a call-me gesture">
+        </div>
       </div>
     </div>
   </div>

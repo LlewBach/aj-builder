@@ -310,12 +310,18 @@ svg {
 
 /* --------------------------------------- Contact */
 
-.contact-header {
-  margin: 100px 0 30px;
+.form-wrapper {
+  min-height: 100vh;
+  background-color: red;
 }
 
-.form-section {
-  margin-bottom: 20%;
+.form-wrapper h1 {
+  margin-top: 16vh;
+  margin-bottom: 3vh;
+}
+
+form {
+  padding-bottom: 5vh;
 }
 
 .input-group {
@@ -326,21 +332,23 @@ textarea {
   height: 100px;
 }
 
+.button-wrapper {
+  margin-bottom: 5vh;
+}
+
+.info-section-wrapper {
+  min-height: 100vh;
+  background-color: orange;
+}
+
 .info-section {
-  margin-top: 20%;
-  margin-bottom: 30px;
-}
-
-.info-section a {
-  color: #212529;
-}
-
-.info-section a:hover {
-  color: rgb(255, 196, 0);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .map-col {
-  margin-bottom: 10%;
+  min-height: 35vh;
+  margin-bottom: 3vh;
 }
 
 .map-col iframe {
@@ -358,11 +366,19 @@ textarea {
 }
 
 .picture-col {
-  height: 60vh;
-  margin-top: 10%;
+  min-height: 70vh;
+  margin-top: 3vh;
   background-image: url(../images/call-me.png);
   background-size: cover;
   background-position: center;
+}
+
+.info-section a {
+  color: #212529;
+}
+
+.info-section a:hover {
+  color: rgb(255, 196, 0);
 }
 
 /* --------------------------------------- Footer */
@@ -413,16 +429,26 @@ footer p {
   .text-col p:first-of-type {
     margin: 50% auto;
   }
+
+  .map-col {
+    min-height: 50vh;
+    /* margin-bottom: 3vh; */
+  }
+
+  .picture-col {
+    min-height: 80vh;
+    /* margin-top: 3vh; */
+  }
 }
 
 /* MD */
 
 @media only screen and (min-width: 768px) {
-  .spacer {
+  /* .spacer {
     height: 20vh;
-  }
+  } */
 
-  .contact-spacer::after {
+  /* .contact-spacer::after {
     content: '';
     right: 0;
     top: 0;
@@ -430,7 +456,7 @@ footer p {
     width: 3%;
     background-color: #212529;
     position: absolute;
-  }
+  } */
 
   svg text {
     font-size: 3rem;
@@ -470,22 +496,8 @@ footer p {
     font-size: 1.4rem;
   }
 
-  .form-section {
-    margin-top: 10%;
-    margin-bottom: 12%;
-  }
-
-  .form-section .row {
-    margin-bottom: 100px;
-    min-height: 220px;
-  }
-
   textarea {
-    height: 200px;
-  }
-
-  .info-section {
-    margin-top: 6%;
+    height: 120px;
   }
 
   .map-col {
@@ -493,7 +505,7 @@ footer p {
   }
 
   .picture-col {
-    height: 75vh;
+    min-height: 50vh;
     margin-top: 0;
   }
 }
@@ -568,7 +580,11 @@ footer p {
   }
 
   .input-group {
-    margin-bottom: 10px;
+    margin-bottom: 5vh;
+  }
+
+  textarea {
+    height: 150px;
   }
 }
 
@@ -654,74 +670,12 @@ footer p {
     margin: 30% auto;
   }
 
-  .contact-header {
-    margin-top: 18vh;
-  }
-
-  .contact-header h1 {
-    font-size: 2.5rem;
-  }
-
-  .form-section {
-    margin-top: 12vh;
-    margin-bottom: 20vh;
-  }
-
-  .form-section .row {
-    margin-bottom: 0;
-    min-height: 120px;
-  }
-
-  .form-label {
-    font-size: 1rem;
-  }
-
   .input-group input {
     background-color: rgb(248, 248, 248);
   }
 
-  .input-group span,
-  .input-group input {
-    font-size: 1rem;
-  }
-
-  #job-description {
-    height: 120px;
-    font-size: 1rem;
-    background-color: rgb(248, 248, 248);
-  }
-
-  .submit-button {
-    font-size: 1rem;
-  }
-
-  .contact-spacer {
-    height: 20vh;
-  }
-
-  .info-section {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-  }
-
-  .map-col {
-    margin-bottom: 0;
-  }
-
-  .contact-info-title {
-    font-size: 2rem;
-  }
-
-  .contact-title {
-    font-size: 1rem;
-  }
-
-  .picture-col {
-    height: 70vh;
-    margin-top: 0;
-    background-image: url(../images/call-me.png);
-    background-size: cover;
-    background-position: center;
+  textarea {
+    height: 155px;
   }
 }
 
@@ -741,65 +695,8 @@ footer p {
     height: 22%;
   }
 
-  .contact-header {
-    margin-top: 8vh;
-  }
-
-  .contact-header h1 {
-    font-size: 2.5rem;
-  }
-
-  .form-section {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-
-  #job-description {
-    font-size: 1rem;
-    background-color: rgb(248, 248, 248);
-  }
-
-  .submit-button {
-    font-size: 1rem;
-  }
-
-  .contact-spacer {
-    height: 8vh;
-  }
-
-  .contact-spacer .svg-bg {
-    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
-  }
-
-  .contact-spacer text {
-    font-size: 2rem;
-    letter-spacing: 2rem;
-  }
-
-  .info-section {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    max-width: 80%;
-  }
-
-  .map-col {
-    margin-bottom: 0;
-  }
-
-  .contact-info-title {
-    font-size: 2rem;
-  }
-
-  .contact-title {
-    font-size: 1rem;
-  }
-
-  .picture-col {
-    height: 35vh;
-    margin-top: 0;
-    background-image: url(../images/call-me.png);
-    background-size: cover;
-    background-position: center;
+  .form-wrapper h1 {
+    margin-bottom: 10vh;
   }
 }
 
@@ -863,53 +760,8 @@ footer p {
     height: 100px;
   }
 
-  .contact-header {
-    margin-top: 10vh;
-  }
-
-  .form-section {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-  }
-
-  .form-section .row {
-    margin-bottom: 0;
-    min-height: 120px;
-  }
-
-  .input-group input {
-    background-color: rgb(248, 248, 248);
-  }
-
   #job-description {
-    height: 150px;
-    background-color: rgb(248, 248, 248);
-  }
-
-  .contact-spacer {
-    height: 10vh;
-  }
-
-  .contact-spacer .svg-bg {
-    background: linear-gradient(to top left, #212529 10%, yellow 50%, #212529 90%);
-  }
-
-  .info-section {
-    margin-top: 3vh;
-    margin-bottom: 10px;
-    max-width: 80%;
-  }
-
-  .map-col {
-    margin-bottom: 0;
-  }
-
-  .picture-col {
-    height: 35vh;
-    margin-top: 0;
-    background-image: url(../images/call-me.png);
-    background-size: cover;
-    background-position: center;
+    /* height: 150px; */
   }
 }
 
@@ -968,30 +820,7 @@ footer p {
     margin: 30% auto;
   }
 
-  .contact-header {
-    margin-top: 10vh;
-  }
-
-  .form-section {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-
-  .form-section .container {
-    max-width: 60%;
-  }
-
-  .form-section .row {
-    min-height: 120px;
-    margin: 0;
-  }
-
   #job-description {
-    height: 220px;
-    background-color: rgb(243, 243, 243);
-  }
-
-  .info-section {
-    margin-top: 2vh;
+    /* height: 220px; */
   }
 }
