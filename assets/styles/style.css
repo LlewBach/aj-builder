@@ -322,6 +322,7 @@ svg {
 
 form {
   padding-bottom: 5vh;
+  width: 80%;
 }
 
 .input-group {
@@ -693,6 +694,11 @@ footer p {
 
   .title-cover-bottom {
     height: 22%;
+  }
+
+  form {
+    /* padding-bottom: 5vh; */
+    width: 65%;
   }
 
   .form-wrapper h1 {
