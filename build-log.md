@@ -719,6 +719,14 @@ My mentor pointed out that I was now getting a slight x-overflow on the about pa
 
 ![capture-41.PNG](assets/captures/capture-41.PNG)
 
+This was fully fixed by removing x-gutters from the bootstrap grids.
+
+Upon browser testing, the spacer 'passing light' effect was not working in Firefox! I eventually had to turn to another method to rebuild the spacers, using SVG text masking. Here is the video I learned this from.
+
+https://www.youtube.com/watch?v=OTKnhVTeN4w
+
+I initially worried that I would have to use images as the SVGs but thankfully I discovered that there is a specific svg html element that accepts a text element. This meant that I could resize the text in my media queries quite easily.
+
 ### .image-col tuneup
 
 If you notice in the screenshot above, as my partner did rather brutally, there is effectively a white bar above the black spacer which looks sub-optimal. I am keen to try and displace this, although I am nervous I will have to 'tune' many other elements as a result!

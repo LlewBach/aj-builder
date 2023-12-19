@@ -443,8 +443,13 @@ To test the site on different browsers, I repeated the tests above, but without 
 
 Chrome: Pass.
 Edge: Pass.
-Firefox: Pass.
+Firefox: Fail.
 Opera: Pass.
+
+The site initially failed on Firefox because the .spacer 'background-clip: text' declaration was not working properly. I then had to rebuild the spacer banners using a different method, using SVG
+text masking. This method appears to be better supported and now works on Firefox.
+
+Firefox: Pass.
 
 I don't have a device that uses Safari but I asked my parents to give feedback on the site from their iPad, which was positive.
 
@@ -680,6 +685,7 @@ This site was deployed to GitHub Pages following the steps below:
 - YouTube: [Working with Bootstrap forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
 - YouTube: [Clip an image to text with CSS](https://www.youtube.com/watch?v=9Kr3T4Ndl-o)
 - YouTube: [Bootstrap 5 Crash Course Tutorial #14 - Working with Forms](https://www.youtube.com/watch?v=dKVX22GR7zQ)
+- YouTube: [Awesome SVG Text Masking with Video - Tutorial](https://www.youtube.com/watch?v=OTKnhVTeN4w)
 
 
 ## Acknowledgements
