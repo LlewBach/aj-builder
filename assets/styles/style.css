@@ -136,7 +136,6 @@ svg {
   padding-top: 5vh;
   padding-bottom: 5vh;
   position: relative;
-  /* z-index: -2; */
 }
 
 .service-section-wrapper::before {
@@ -144,7 +143,6 @@ svg {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  /* z-index: -1; */
 }
 
 .services-h2 {
@@ -491,40 +489,24 @@ footer p {
 
   .map-col {
     min-height: 50vh;
-    /* margin-bottom: 3vh; */
   }
 
   .picture-col {
     min-height: 80vh;
-    /* margin-top: 3vh; */
   }
 }
 
 /* MD */
 
 @media only screen and (min-width: 768px) {
-  /* .spacer {
-    height: 20vh;
-  } */
-
-  /* .contact-spacer::after {
-    content: '';
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 3%;
-    background-color: #212529;
-    position: absolute;
-  } */
-
   svg text {
     font-size: 3rem;
     letter-spacing: 0.6rem;
   }
 
   .service-divider {
-    border-left: 2px solid #212529;
-    border-right: 2px solid #212529;
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
     width: 0px;
     margin: 0 auto;
     padding: 0;
@@ -745,7 +727,6 @@ footer p {
   }
 
   form {
-    /* padding-bottom: 5vh; */
     width: 65%;
   }
 
