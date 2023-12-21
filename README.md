@@ -347,8 +347,7 @@ This is my testing procedure:
 > 8) Page spacer(s)
   - Check that the .spacer text falls on one line and doesn't wrap
   - Check that the text is legible while scrolling
-  - If unable to scroll, check that entire text is readable
-  - If able to scroll, does spacer move across the whole viewport
+  - Check that the spacer moves across the whole viewport
 > 9) Services Hero
   - Check that hero image takes up full screen width without distortion
   - Check that text is centered and legible
